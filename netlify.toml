@@ -2,3 +2,15 @@
 [build]
   publish = "."
   command = ""
+
+# 서비스워커는 항상 재검증(구버전 SW가 캐시에 박히는 것 방지)
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# 매니페스트 MIME 명시
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"

@@ -1,0 +1,19 @@
+{
+  "name": "공모 한눈에 — 중장년 정책·지원사업",
+  "short_name": "공모 한눈에",
+  "description": "중장년이 신청하는 공모·지원사업과 단체가 응찰하는 용역을 마감 임박 순으로 모아 보여줍니다.",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f3ee",
+  "theme_color": "#355e8a",
+  "categories": ["government", "business", "productivity"],
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

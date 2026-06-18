@@ -8,6 +8,15 @@
 <meta property="og:title" content="공모 한눈에 — 중장년 정책·지원사업" />
 <meta property="og:description" content="중장년 공모·지원사업을 마감 임박 순으로 한눈에." />
 <meta name="robots" content="index,follow" />
+<!-- PWA -->
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#355e8a" />
+<link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon-180.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="공모 한눈에" />
 <style>
   :root {
     --bg: #f5f3ee; --card: #ffffff; --ink: #1e2630; --ink-soft: #51616e;
@@ -329,6 +338,13 @@
     $('#search').addEventListener('input', e => { fQuery = e.target.value.trim(); render(); });
   }
   init();
+
+  // PWA 서비스워커 등록
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
 </script>
 </body>
 </html>
