@@ -1,0 +1,147 @@
+{
+  "_comment": "운영팀 큐레이션 시드. API 키가 없어도 사이트가 비지 않도록 항상 병합된다(빈 화면 노출 금지). 여기에는 '특정 마감일'이 아니라 중장년 공모가 상시 올라오는 공식 채널·대표 사업만 둔다. 새 공모를 직접 추가할 때도 이 파일에 항목을 더하면 된다. apply_begin/apply_end 에 'YYYY-MM-DD'를 넣으면 마감 임박 계산에 자동 반영된다.",
+  "programs": [
+    {
+      "title": "서울시50플러스 포털 — 일자리·교육·사회공헌 공모",
+      "summary": "서울시50플러스재단이 운영하는 중장년 전용 포털. 일자리, 사회공헌, 창업·창직, 교육 프로그램 모집 공고가 상시 올라온다. 서울 거주 중장년이라면 가장 먼저 볼 채널.",
+      "field": "일자리",
+      "organizer": "서울시50플러스재단",
+      "target": "서울 거주 만 40~64세",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 모집",
+      "url": "https://www.50plus.or.kr",
+      "tags": [
+        "50플러스",
+        "서울",
+        "일자리",
+        "사회공헌"
+      ],
+      "source": "seed",
+      "applicant": "개인"
+    },
+    {
+      "title": "고용24(워크넷) — 신중년 사회공헌활동 지원사업",
+      "summary": "만 50세 이상 퇴직 전문인력이 비영리단체·공공기관에서 사회공헌활동에 참여하도록 활동비를 지원하는 고용노동부 사업. 매년 지역별로 참여자를 모집한다.",
+      "field": "사회공헌",
+      "organizer": "고용노동부",
+      "target": "만 50세 이상 (지역별 상이)",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "연중·지역별 모집",
+      "url": "https://www.work24.go.kr",
+      "tags": [
+        "신중년",
+        "사회공헌",
+        "퇴직전문인력"
+      ],
+      "source": "seed",
+      "applicant": "개인"
+    },
+    {
+      "title": "기업마당 — '중장년' 지원사업 검색",
+      "summary": "중앙부처·지자체·공공기관의 모든 지원사업 공고를 모은 기업마당에서 '중장년'으로 검색한 결과. 창업·재취업·경영 관련 공모가 가장 많이 모이는 정부 종합 창구.",
+      "field": "창업",
+      "organizer": "중소벤처기업부",
+      "target": "사업별 상이",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 갱신",
+      "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do?searchCondition=&searchKeyword=%EC%A4%91%EC%9E%A5%EB%85%84",
+      "tags": [
+        "기업마당",
+        "정부지원",
+        "창업",
+        "재취업"
+      ],
+      "source": "seed",
+      "applicant": "개인"
+    },
+    {
+      "title": "보조금24 (정부24) — 맞춤 보조금·지원금 안내",
+      "summary": "정부24가 본인 조건에 맞는 정부·지자체 보조금과 지원금을 한 번에 찾아주는 서비스. 로그인 후 '나의 혜택'에서 연령·지역 기준 맞춤 공모를 확인할 수 있다.",
+      "field": "복지",
+      "organizer": "행정안전부",
+      "target": "전 국민(조건별 맞춤)",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 조회",
+      "url": "https://www.gov.kr/portal/rcvfvrSvc/main",
+      "tags": [
+        "보조금24",
+        "정부24",
+        "맞춤혜택"
+      ],
+      "source": "seed",
+      "applicant": "개인"
+    },
+    {
+      "title": "한국사회적기업진흥원 — 협동조합·사회적기업 공모",
+      "summary": "협동조합 설립·사회적기업 육성·소셜벤처 등 사회적경제 영역의 공모와 지원사업 공고. 중장년이 동료와 함께 일을 벌이려 할 때 보는 창구(두두협동조합 등과도 연결되는 영역).",
+      "field": "창업",
+      "organizer": "한국사회적기업진흥원",
+      "target": "협동조합·사회적기업 준비·운영 주체",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 갱신",
+      "url": "https://www.socialenterprise.or.kr",
+      "tags": [
+        "협동조합",
+        "사회적기업",
+        "사회적경제"
+      ],
+      "source": "seed",
+      "applicant": "기업·기관"
+    },
+    {
+      "title": "경기도일자리재단 — 중장년 일자리·교육 공모",
+      "summary": "경기도 중장년·신중년의 재취업, 직업훈련, 창업, 인생이모작을 지원하는 공공기관. 경기 거주 중장년 대상 모집·교육 공고가 상시 올라온다.",
+      "field": "일자리",
+      "organizer": "경기도일자리재단",
+      "target": "경기 거주 중장년",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 모집",
+      "url": "https://www.gjf.or.kr",
+      "tags": ["경기", "중장년", "일자리", "재취업"],
+      "source": "seed",
+      "applicant": "개인"
+    },
+    {
+      "title": "국가평생교육진흥원 — 중장년 평생교육 강좌·공모",
+      "summary": "전국 평생학습 강좌·프로그램 정보. 중장년이 새 역량을 배우거나 생애전환을 준비할 때 활용하는 국가 평생교육 창구(늘배움 연계).",
+      "field": "교육",
+      "organizer": "국가평생교육진흥원",
+      "target": "성인 누구나",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 갱신",
+      "url": "https://www.nile.or.kr",
+      "tags": ["평생교육", "생애전환", "교육"],
+      "source": "seed",
+      "applicant": "개인"
+    },
+    {
+      "title": "한국노인인력개발원 — 시니어 일자리·사회활동",
+      "summary": "60대 전후 중장년·고령층의 일자리와 사회활동 지원사업. 시니어 인턴십, 사회서비스형, 시장형 일자리 등 참여자 모집 정보를 안내한다.",
+      "field": "일자리",
+      "organizer": "한국노인인력개발원",
+      "target": "만 60세 이상 중심",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "연중·지역별 모집",
+      "url": "https://www.kordi.or.kr",
+      "tags": ["시니어", "노인일자리", "사회활동"],
+      "source": "seed",
+      "applicant": "개인"
+    }
+  ]
+}

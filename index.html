@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>공모 한눈에 — 중장년 정책·지원사업 모음</title>
+<meta name="description" content="중장년이 공모할 수 있는 정부·지자체 정책사업과 지원사업을 매일 모아 마감 임박 순으로 보여드립니다. 일자리·교육·창업·사회공헌 공모를 한눈에." />
+<meta property="og:title" content="공모 한눈에 — 중장년 정책·지원사업" />
+<meta property="og:description" content="중장년 공모·지원사업을 마감 임박 순으로 한눈에." />
+<meta name="robots" content="index,follow" />
+<style>
+  :root {
+    --bg: #f5f3ee; --card: #ffffff; --ink: #1e2630; --ink-soft: #51616e;
+    --line: #e4dfd4; --brand: #355e8a; --brand-soft: #e6eef6; --brand-ink: #23425f;
+    --accent: #c0552a; --accent-soft: #f6e2d6;
+    --open: #1f7a4d; --open-soft: #e3f1e9;
+    --urgent: #c0392b; --urgent-soft: #fae5e1;
+    --soon: #9a6b1e; --soon-soft: #f6ecd8;
+    --always: #5b6470; --always-soft: #ebe9e3;
+    --shadow: 0 2px 12px rgba(30,38,48,.07); --radius: 16px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font-family: "Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif; background: var(--bg); color: var(--ink); font-size: 19px; line-height: 1.65; letter-spacing: -0.01em; }
+  a { color: inherit; }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 16px 18px 90px; }
+
+  /* 상단바 */
+  .topbar { position: sticky; top: 0; z-index: 50; background: rgba(245,243,238,.93); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .topbar .inner { max-width: 940px; margin: 0 auto; padding: 11px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .brand { font-weight: 800; font-size: 20px; color: var(--brand-ink); display: flex; align-items: center; gap: 8px; }
+  .brand .dot { color: var(--accent); }
+  .topbar .src { font-size: 14px; color: var(--ink-soft); }
+
+  /* 헤더 */
+  header.hero { text-align: center; padding: 26px 0 8px; }
+  .hero .eyebrow { display: inline-block; background: var(--brand-soft); color: var(--brand-ink); font-weight: 700; font-size: 16px; padding: 6px 14px; border-radius: 999px; margin-bottom: 14px; }
+  .hero h1 { font-size: 34px; line-height: 1.28; margin: 4px 0 10px; font-weight: 800; }
+  .hero p { font-size: 19px; color: var(--ink-soft); margin: 0 auto; max-width: 600px; }
+  .updated { margin-top: 14px; font-size: 15px; color: var(--ink-soft); }
+  .updated .b { color: var(--brand); font-weight: 700; }
+
+  .sample-note { max-width: 720px; margin: 18px auto 0; background: var(--accent-soft); border: 1px solid #eccab4; color: #7a3a1c; border-radius: 12px; padding: 12px 16px; font-size: 16px; line-height: 1.55; }
+  .sample-note b { color: var(--accent); }
+
+  /* 통계 */
+  .stats { display: flex; gap: 10px; justify-content: center; margin: 22px 0 6px; flex-wrap: wrap; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 20px; text-align: center; box-shadow: var(--shadow); min-width: 104px; }
+  .stat .num { font-size: 28px; font-weight: 800; line-height: 1.1; }
+  .stat .lbl { font-size: 14px; color: var(--ink-soft); margin-top: 2px; }
+  .stat.open .num { color: var(--open); }
+  .stat.urgent .num { color: var(--urgent); }
+
+  /* 필터 */
+  .filters { margin: 26px 0 8px; }
+  .filter-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .filter-label { font-size: 14px; color: var(--ink-soft); font-weight: 700; margin-right: 2px; min-width: 38px; }
+  .chip { font-size: 16px; font-weight: 700; padding: 8px 15px; border-radius: 999px; border: 2px solid var(--line); background: #fff; color: var(--ink-soft); cursor: pointer; transition: .12s; }
+  .chip:hover { border-color: var(--brand); }
+  .chip.on { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .search { width: 100%; font-size: 17px; padding: 13px 16px; border-radius: 12px; border: 2px solid var(--line); background: #fff; }
+  .search:focus { outline: none; border-color: var(--brand); }
+
+  /* 카드 */
+  .count-line { font-size: 15px; color: var(--ink-soft); margin: 18px 2px 12px; }
+  .grid { display: grid; gap: 14px; }
+  .pcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); display: block; text-decoration: none; transition: .12s; }
+  .pcard:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(30,38,48,.1); border-color: #d6cfc0; }
+  .pcard .row1 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 9px; }
+  .badge { font-size: 13.5px; font-weight: 800; padding: 4px 11px; border-radius: 999px; }
+  .badge.open { background: var(--open-soft); color: var(--open); }
+  .badge.urgent { background: var(--urgent-soft); color: var(--urgent); }
+  .badge.upcoming { background: var(--soon-soft); color: var(--soon); }
+  .badge.always { background: var(--always-soft); color: var(--always); }
+  .badge.field { background: var(--brand-soft); color: var(--brand-ink); }
+  .badge.appl.indiv { background: #e7f1ea; color: #1f7a4d; }
+  .badge.appl.biz { background: #efeae3; color: #7a6a4f; }
+  .badge.appl.unk { background: #f1eee7; color: #8a94a0; }
+  .dday { font-size: 14px; font-weight: 800; color: var(--urgent); margin-left: auto; }
+  .pcard h3 { font-size: 21px; font-weight: 800; margin: 2px 0 8px; line-height: 1.35; color: var(--ink); }
+  .meta { font-size: 15.5px; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 8px; }
+  .meta .k { color: #8a94a0; }
+  .summary { font-size: 16.5px; color: #3c4654; line-height: 1.6; margin: 6px 0 10px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: 13px; color: var(--ink-soft); background: #f1eee7; border-radius: 6px; padding: 2px 8px; }
+  .go { margin-top: 12px; font-size: 16px; font-weight: 700; color: var(--brand); }
+  .go::after { content: " →"; }
+
+  .empty { text-align: center; color: var(--ink-soft); padding: 50px 20px; font-size: 18px; }
+
+  footer { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 22px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.7; }
+  footer b { color: var(--ink); }
+  footer a { color: var(--brand); }
+
+  @media (max-width: 560px) {
+    body { font-size: 18px; }
+    .hero h1 { font-size: 27px; }
+    .stat { padding: 10px 14px; min-width: 92px; }
+    .stat .num { font-size: 24px; }
+    .pcard h3 { font-size: 19px; }
+    .dday { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="inner">
+      <div class="brand"><span class="dot">●</span> 공모 한눈에</div>
+      <div class="src">중장년 정책·지원사업</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header class="hero">
+      <span class="eyebrow">중장년이 공모할 수 있는 것</span>
+      <h1>지금 신청할 수 있는 공모를<br>마감 임박 순으로 모았습니다</h1>
+      <p>중장년 개인이 신청하는 일자리·교육·창업·사회공헌 공모부터, 단체·협동조합이 응찰하는 사회서비스 용역까지 매일 모아드립니다.</p>
+      <div class="updated">마지막 갱신 <span class="b" id="updated">—</span></div>
+      <div class="sample-note" id="sampleNote" style="display:none">
+        <b>안내</b> — 지금은 운영팀이 골라둔 <b>상시 공모 채널</b>만 표시 중입니다.
+        기업마당 API 키를 연결하면 매일 새 공고가 자동으로 채워집니다(<span id="sampleHow">README 참고</span>).
+      </div>
+    </header>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="filters">
+      <div class="filter-row" id="applicantFilters">
+        <span class="filter-label">신청</span>
+      </div>
+      <div class="filter-row" id="statusFilters">
+        <span class="filter-label">상태</span>
+      </div>
+      <div class="filter-row" id="fieldFilters">
+        <span class="filter-label">분야</span>
+      </div>
+      <input class="search" id="search" type="search" placeholder="공고명·기관·키워드로 찾기 (예: 재취업, 협동조합)" />
+    </div>
+
+    <div class="count-line" id="countLine"></div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none">조건에 맞는 공모가 없습니다. 필터를 바꿔보세요.</div>
+
+    <footer>
+      <p><b>공모 한눈에</b>는 중장년 네트워크 <b>컴투게더</b>가 운영하는 공개 정보 페이지입니다.
+      매일 <b>기업마당(중소벤처기업부)</b> 지원사업 공고를 모아 '중장년' 관련만 추리고,
+      운영팀이 고른 상시 공모 채널을 함께 보여드립니다.</p>
+      <p>표시 정보는 각 기관 공고를 그대로 옮긴 것이며, <b>신청 전 반드시 원문 링크에서 자격·기간·서류를 확인</b>하세요.
+      누락·오류가 있으면 운영팀에 알려주세요.</p>
+      <p id="srcLine" style="color:#8a94a0;"></p>
+    </footer>
+  </div>
+
+<script>
+  const $ = s => document.querySelector(s);
+  const STATUS_DEFS = [
+    { key: 'all',      label: '전체' },
+    { key: 'urgent',   label: '마감임박' },
+    { key: 'open',     label: '접수중' },
+    { key: 'upcoming', label: '예정' },
+    { key: 'always',   label: '상시' },
+  ];
+  const STATUS_TEXT = { open: '접수중', upcoming: '접수 예정', always: '상시 모집', unknown: '확인 필요' };
+
+  const APPLICANT_DEFS = [
+    { key: 'all',      label: '전체' },
+    { key: '개인',     label: '개인 신청' },
+    { key: '기업·기관', label: '기업·기관' },
+  ];
+
+  let DATA = null;
+  let fStatus = 'all';
+  let fField = '전체';
+  let fApplicant = 'all';
+  let fQuery = '';
+
+  function fmtDday(p) {
+    if (p.status !== 'open' || p.dday == null) return '';
+    if (p.dday <= 0) return '오늘 마감';
+    return 'D-' + p.dday;
+  }
+
+  function badgeFor(p) {
+    if (p.urgent) return '<span class="badge urgent">마감임박</span>';
+    if (p.status === 'open') return '<span class="badge open">접수중</span>';
+    if (p.status === 'upcoming') return '<span class="badge upcoming">예정</span>';
+    if (p.status === 'always') return '<span class="badge always">상시</span>';
+    return '<span class="badge always">확인</span>';
+  }
+
+  function passFilter(p) {
+    if (fStatus === 'urgent' && !p.urgent) return false;
+    if (fStatus === 'open' && p.status !== 'open') return false;
+    if (fStatus === 'upcoming' && p.status !== 'upcoming') return false;
+    if (fStatus === 'always' && p.status !== 'always') return false;
+    if (fField !== '전체' && p.field !== fField) return false;
+    if (fApplicant !== 'all' && p.applicant !== fApplicant) return false;
+    if (fQuery) {
+      const hay = (p.title + ' ' + p.organizer + ' ' + p.summary + ' ' + (p.tags||[]).join(' ') + ' ' + p.target).toLowerCase();
+      if (!hay.includes(fQuery.toLowerCase())) return false;
+    }
+    return true;
+  }
+
+  function esc(s) { return String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+  function render() {
+    const list = (DATA.programs || []).filter(passFilter);
+    $('#countLine').textContent = `${list.length}건 표시`;
+    const grid = $('#grid');
+    grid.innerHTML = list.map(p => {
+      const dday = fmtDday(p);
+      const period = p.period_text ? `<span><span class="k">기간</span> ${esc(p.period_text)}</span>` : '';
+      const target = p.target ? `<span><span class="k">대상</span> ${esc(p.target)}</span>` : '';
+      const org = p.organizer ? `<span><span class="k">주관</span> ${esc(p.organizer)}</span>` : '';
+      const tags = (p.tags||[]).length ? `<div class="tags">${p.tags.map(t=>`<span class="tag">#${esc(t)}</span>`).join('')}</div>` : '';
+      return `<a class="pcard" href="${esc(p.url)}" target="_blank" rel="noopener">
+        <div class="row1">
+          ${badgeFor(p)}
+          <span class="badge field">${esc(p.field||'기타')}</span>
+          ${p.applicant ? `<span class="badge appl ${p.applicant==='개인'?'indiv':p.applicant==='기업·기관'?'biz':'unk'}">${esc(p.applicant==='개인'?'개인 신청':p.applicant)}</span>` : ''}
+          ${dday ? `<span class="dday">${dday}</span>` : ''}
+        </div>
+        <h3>${esc(p.title)}</h3>
+        <div class="meta">${org}${target}${period}</div>
+        ${p.summary ? `<div class="summary">${esc(p.summary)}</div>` : ''}
+        ${tags}
+        <div class="go">자세히 보기·신청하기</div>
+      </a>`;
+    }).join('');
+    $('#empty').style.display = list.length ? 'none' : 'block';
+  }
+
+  function buildStats() {
+    const total = DATA.count || 0;
+    const open = DATA.open_count || 0;
+    const urgent = DATA.urgent_count || 0;
+    $('#stats').innerHTML = `
+      <div class="stat"><div class="num">${total}</div><div class="lbl">전체 공모</div></div>
+      <div class="stat open"><div class="num">${open}</div><div class="lbl">접수 중</div></div>
+      <div class="stat urgent"><div class="num">${urgent}</div><div class="lbl">마감 임박</div></div>`;
+  }
+
+  function buildFilters() {
+    // 신청 주체
+    const af = $('#applicantFilters');
+    APPLICANT_DEFS.forEach(s => {
+      const n = s.key === 'all' ? DATA.count : (DATA.programs||[]).filter(p => p.applicant === s.key).length;
+      const b = document.createElement('button');
+      b.className = 'chip' + (s.key === fApplicant ? ' on' : '');
+      b.textContent = `${s.label} ${n}`;
+      b.onclick = () => { fApplicant = s.key; document.querySelectorAll('#applicantFilters .chip').forEach(c=>c.classList.remove('on')); b.classList.add('on'); render(); };
+      af.appendChild(b);
+    });
+    // 상태
+    const sf = $('#statusFilters');
+    STATUS_DEFS.forEach(s => {
+      const b = document.createElement('button');
+      b.className = 'chip' + (s.key === fStatus ? ' on' : '');
+      b.textContent = s.label;
+      b.onclick = () => { fStatus = s.key; document.querySelectorAll('#statusFilters .chip').forEach(c=>c.classList.remove('on')); b.classList.add('on'); render(); };
+      sf.appendChild(b);
+    });
+    // 분야 — 데이터에 실재하는 분야만
+    const fields = ['전체', ...[...new Set((DATA.programs||[]).map(p=>p.field).filter(Boolean))]];
+    const ff = $('#fieldFilters');
+    fields.forEach(f => {
+      const b = document.createElement('button');
+      b.className = 'chip' + (f === fField ? ' on' : '');
+      b.textContent = f;
+      b.onclick = () => { fField = f; document.querySelectorAll('#fieldFilters .chip').forEach(c=>c.classList.remove('on')); b.classList.add('on'); render(); };
+      ff.appendChild(b);
+    });
+  }
+
+  async function init() {
+    try {
+      const res = await fetch('./assets/data/programs.json', { cache: 'no-store' });
+      DATA = await res.json();
+    } catch (e) {
+      $('#grid').innerHTML = '<div class="empty">데이터를 불러오지 못했습니다.</div>';
+      return;
+    }
+    $('#updated').textContent = DATA.generated_at_kst || '—';
+    if (DATA.is_sample) $('#sampleNote').style.display = 'block';
+    const live = (DATA.sources||[]).filter(s => s.count > 0).map(s => `${s.label} ${s.count}건`);
+    $('#srcLine').textContent = '데이터 출처 · ' + (live.join(' / ') || '운영팀 큐레이션');
+    buildStats();
+    buildFilters();
+    render();
+    $('#search').addEventListener('input', e => { fQuery = e.target.value.trim(); render(); });
+  }
+  init();
+</script>
+</body>
+</html>

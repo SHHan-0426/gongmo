@@ -1,0 +1,10 @@
+{
+  "name": "gongmo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "공모 한눈에 — 중장년이 공모할 수 있는 정책·지원사업 모음",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "collect": "node scripts/collect.js"
+  }
+}
