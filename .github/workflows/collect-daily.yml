@@ -1,0 +1,49 @@
+name: 공모 일일 자동 수집·배포
+
+on:
+  schedule:
+    - cron: '30 21 * * *'   # 매일 06:30 KST (UTC 21:30)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Node.js 셋업
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 공모 수집 실행
+        env:
+          BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
+          NARA_API_KEY: ${{ secrets.NARA_API_KEY }}
+          GOV24_API_KEY: ${{ secrets.GOV24_API_KEY }}
+        run: node scripts/collect.js
+
+      - name: 데이터 변경분 커밋(저장소 최신 유지)
+        run: |
+          git config user.name "gongmo-bot"
+          git config user.email "noreply@github.com"
+          git add assets/data/programs.json
+          if git diff --staged --quiet; then
+            echo "변경 없음 — 커밋 건너뜀"
+          else
+            DAY=$(date -u -d '+9 hours' +'%Y-%m-%d')
+            git commit -m "공모 일일 자동 수집 ($DAY)"
+            git push origin main
+          fi
+
+      - name: Netlify 배포
+        run: npx --yes netlify-cli@17 deploy --prod --dir . --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_AUTH_TOKEN"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
