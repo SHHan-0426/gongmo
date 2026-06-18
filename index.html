@@ -88,6 +88,21 @@
 
   .empty { text-align: center; color: var(--ink-soft); padding: 50px 20px; font-size: 18px; }
 
+  /* 상시 채널 섹션 */
+  .channels-sec { margin-top: 42px; padding-top: 26px; border-top: 2px dashed var(--line); }
+  .ch-title { font-size: 22px; font-weight: 800; margin: 0 0 6px; }
+  .ch-desc { font-size: 15.5px; color: var(--ink-soft); margin: 0 0 16px; }
+  .ch-desc b { color: var(--accent); }
+  .channels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .channel { display: block; background: #faf8f3; border: 1px solid var(--line); border-radius: 13px; padding: 15px 17px; text-decoration: none; transition: .12s; }
+  .channel:hover { background: #fff; border-color: var(--brand); transform: translateY(-2px); }
+  .ch-org { font-size: 13.5px; font-weight: 700; color: var(--brand-ink); margin-bottom: 3px; }
+  .ch-name { font-size: 17px; font-weight: 800; color: var(--ink); line-height: 1.35; margin-bottom: 6px; }
+  .ch-sum { font-size: 14.5px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 8px; }
+  .ch-go { font-size: 14.5px; font-weight: 700; color: var(--brand); }
+  .ch-go::after { content: " →"; }
+  @media (max-width: 560px) { .channels { grid-template-columns: 1fr; } }
+
   footer { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 22px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.7; }
   footer b { color: var(--ink); }
   footer a { color: var(--brand); }
@@ -141,6 +156,12 @@
     <div class="grid" id="grid"></div>
     <div class="empty" id="empty" style="display:none">조건에 맞는 공모가 없습니다. 필터를 바꿔보세요.</div>
 
+    <section class="channels-sec" id="channelsSec">
+      <h2 class="ch-title">상시로 더 찾아볼 곳</h2>
+      <p class="ch-desc">특정 공고가 아니라, 중장년 공모가 <b>상시</b> 올라오는 공식 채널입니다. 들어가서 직접 찾아보세요.</p>
+      <div class="channels" id="channels"></div>
+    </section>
+
     <footer>
       <p><b>공모 한눈에</b>는 중장년 네트워크 <b>컴투게더</b>가 운영하는 공개 정보 페이지입니다.
       매일 <b>기업마당(중소벤처기업부)</b> 지원사업 공고를 모아 '중장년' 관련만 추리고,
@@ -169,6 +190,8 @@
   ];
 
   let DATA = null;
+  let FEED = [];      // 마감 있는 구체 공모(기업마당·나라장터)
+  let CHANNELS = [];  // 상시 채널(운영팀 시드)
   let fStatus = 'all';
   let fField = '전체';
   let fApplicant = 'all';
@@ -205,7 +228,7 @@
   function esc(s) { return String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
   function render() {
-    const list = (DATA.programs || []).filter(passFilter);
+    const list = FEED.filter(passFilter);
     $('#countLine').textContent = `${list.length}건 표시`;
     const grid = $('#grid');
     grid.innerHTML = list.map(p => {
@@ -232,9 +255,9 @@
   }
 
   function buildStats() {
-    const total = DATA.count || 0;
-    const open = DATA.open_count || 0;
-    const urgent = DATA.urgent_count || 0;
+    const total = FEED.length;
+    const open = FEED.filter(p => p.status === 'open').length;
+    const urgent = FEED.filter(p => p.urgent).length;
     $('#stats').innerHTML = `
       <div class="stat"><div class="num">${total}</div><div class="lbl">전체 공모</div></div>
       <div class="stat open"><div class="num">${open}</div><div class="lbl">접수 중</div></div>
@@ -245,7 +268,7 @@
     // 신청 주체
     const af = $('#applicantFilters');
     APPLICANT_DEFS.forEach(s => {
-      const n = s.key === 'all' ? DATA.count : (DATA.programs||[]).filter(p => p.applicant === s.key).length;
+      const n = s.key === 'all' ? FEED.length : FEED.filter(p => p.applicant === s.key).length;
       const b = document.createElement('button');
       b.className = 'chip' + (s.key === fApplicant ? ' on' : '');
       b.textContent = `${s.label} ${n}`;
@@ -262,7 +285,7 @@
       sf.appendChild(b);
     });
     // 분야 — 데이터에 실재하는 분야만
-    const fields = ['전체', ...[...new Set((DATA.programs||[]).map(p=>p.field).filter(Boolean))]];
+    const fields = ['전체', ...[...new Set(FEED.map(p=>p.field).filter(Boolean))]];
     const ff = $('#fieldFilters');
     fields.forEach(f => {
       const b = document.createElement('button');
@@ -273,6 +296,18 @@
     });
   }
 
+  function renderChannels() {
+    const wrap = $('#channels');
+    if (!CHANNELS.length) { $('#channelsSec').style.display = 'none'; return; }
+    wrap.innerHTML = CHANNELS.map(c => `
+      <a class="channel" href="${esc(c.url)}" target="_blank" rel="noopener">
+        <div class="ch-org">${esc(c.organizer || '')}</div>
+        <div class="ch-name">${esc(c.title)}</div>
+        ${c.summary ? `<div class="ch-sum">${esc(c.summary)}</div>` : ''}
+        <div class="ch-go">바로 찾아보기</div>
+      </a>`).join('');
+  }
+
   async function init() {
     try {
       const res = await fetch('./assets/data/programs.json', { cache: 'no-store' });
@@ -281,13 +316,16 @@
       $('#grid').innerHTML = '<div class="empty">데이터를 불러오지 못했습니다.</div>';
       return;
     }
+    FEED = (DATA.programs || []).filter(p => p.source !== 'seed');
+    CHANNELS = (DATA.programs || []).filter(p => p.source === 'seed');
     $('#updated').textContent = DATA.generated_at_kst || '—';
     if (DATA.is_sample) $('#sampleNote').style.display = 'block';
-    const live = (DATA.sources||[]).filter(s => s.count > 0).map(s => `${s.label} ${s.count}건`);
+    const live = (DATA.sources||[]).filter(s => s.count > 0 && s.source !== 'seed').map(s => `${s.label} ${s.count}건`);
     $('#srcLine').textContent = '데이터 출처 · ' + (live.join(' / ') || '운영팀 큐레이션');
     buildStats();
     buildFilters();
     render();
+    renderChannels();
     $('#search').addEventListener('input', e => { fQuery = e.target.value.trim(); render(); });
   }
   init();
