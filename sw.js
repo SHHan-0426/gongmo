@@ -3,7 +3,7 @@
  * 앱 셸은 캐시 우선(빠른 실행·오프라인), 데이터(programs.json)는 네트워크 우선
  * (항상 최신, 오프라인 시 캐시 폴백). 캐시 버전을 올리면 구버전은 정리된다.
  */
-const CACHE = 'gongmo-v1';
+const CACHE = 'gongmo-v2';
 const SHELL = [
   '/',
   '/index.html',

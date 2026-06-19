@@ -144,6 +144,9 @@
         <b>안내</b> — 지금은 운영팀이 골라둔 <b>상시 공모 채널</b>만 표시 중입니다.
         기업마당 API 키를 연결하면 매일 새 공고가 자동으로 채워집니다(<span id="sampleHow">README 참고</span>).
       </div>
+      <div class="sample-note" id="degradedNote" style="display:none">
+        <b>안내</b> — 일부 공고 출처가 일시적으로 갱신되지 않아, <b>직전에 모은 정보</b>를 함께 보여드리고 있습니다. 신청 전 원문 링크에서 한 번 더 확인해 주세요.
+      </div>
     </header>
 
     <div class="stats" id="stats"></div>
@@ -329,6 +332,7 @@
     CHANNELS = (DATA.programs || []).filter(p => p.source === 'seed');
     $('#updated').textContent = DATA.generated_at_kst || '—';
     if (DATA.is_sample) $('#sampleNote').style.display = 'block';
+    if (DATA.degraded && !DATA.is_sample) $('#degradedNote').style.display = 'block';
     const live = (DATA.sources||[]).filter(s => s.count > 0 && s.source !== 'seed').map(s => `${s.label} ${s.count}건`);
     $('#srcLine').textContent = '데이터 출처 · ' + (live.join(' / ') || '운영팀 큐레이션');
     buildStats();

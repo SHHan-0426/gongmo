@@ -73,6 +73,18 @@ function loadSeed() {
   }
 }
 
+// 직전 결과(programs.json)를 읽는다. API 일시 장애로 이번 수집이 비거나
+// 줄어도 '마감 안 지난' 이전 공고를 이월해 빈 화면을 막는다.
+function loadPrevious() {
+  const outPath = path.join(__dirname, '..', 'assets', 'data', 'programs.json');
+  try {
+    const prev = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+    return Array.isArray(prev.programs) ? prev.programs : [];
+  } catch (e) {
+    return [];
+  }
+}
+
 async function main() {
   const env = process.env;
   const collected = [];
@@ -97,20 +109,33 @@ async function main() {
     }
   }
 
+  // 직전 결과에서 '마감 안 지난' API 공고만 이월(빈 화면·정보 증발 방지).
+  // 이번에 새로 받은 것이 우선, 이월분은 보충용. 시드·마감지난 건은 제외.
+  const prevCarry = loadPrevious().filter(p =>
+    p.source !== 'seed' && p.apply_end && p.apply_end >= todayStr
+  );
+
   // 시드(큐레이션) 병합 — 항상 포함
   const seed = loadSeed();
-  summary.push({ source: 'seed', label: '운영팀 큐레이션(상시 채널·대표 사업)', count: seed.length });
 
-  // 소스 간 중복 제거(공고명 기준). API 공고가 시드 항목보다 우선.
+  // 중복 제거(공고명 기준). 우선순위: 이번 수집 > 이월분 > 시드.
   const seen = new Set();
   const merged = [];
-  for (const p of [...collected, ...seed]) {
+  let carriedIn = 0;
+  for (const p of [...collected, ...prevCarry, ...seed]) {
     if (!p.title) continue;
     const key = normTitle(p.title);
     if (seen.has(key)) continue;
     seen.add(key);
     merged.push(p);
   }
+  // 실제 이월 반영 수 = 병합 결과 중 이번 collected에 없던 비시드 항목
+  const collectedKeys = new Set(collected.map(p => normTitle(p.title)));
+  carriedIn = merged.filter(p => p.source !== 'seed' && !collectedKeys.has(normTitle(p.title))).length;
+  if (carriedIn) console.log(`[collect] 이전 공고 이월: ${carriedIn}건(이번 수집에 없던 미마감분)`);
+
+  summary.push({ source: 'carryover', label: '이전 미마감 공고 이월(빈칸 방지)', count: carriedIn });
+  summary.push({ source: 'seed', label: '운영팀 큐레이션(상시 채널·대표 사업)', count: seed.length });
 
   const programs = merged
     .map(decorate)
@@ -121,10 +146,14 @@ async function main() {
     .map((p, i) => ({ id: 'p' + (i + 1), ...p }));
 
   const apiCount = collected.length;
+  const feedCount = programs.filter(p => p.source !== 'seed').length; // 구체 공모(본문) 수
+  const degraded = apiCount === 0;  // 이번 수집에서 API가 0건 → 이월/시드로 버틴 상태
+
   const output = {
     generated_at: new Date().toISOString(),
     generated_at_kst: KST().toISOString().replace('T', ' ').replace(/\..+/, ' KST'),
-    is_sample: apiCount === 0, // API 데이터가 0이면 시드만 — 샘플 표시
+    is_sample: feedCount === 0,   // 본문(구체 공모)이 완전히 비었을 때만 샘플 표시
+    degraded,                     // API 일시 장애로 이전 정보로 버티는 중
     sources: summary,
     count: programs.length,
     open_count: programs.filter(p => p.status === 'open').length,
@@ -132,7 +161,17 @@ async function main() {
     programs,
   };
 
+  // 안전장치: 이번 결과의 본문이 비었는데 직전 결과엔 본문이 있었다면,
+  // 빈 데이터로 라이브를 덮지 않는다(이전 programs.json 유지하고 종료).
   const outPath = path.join(__dirname, '..', 'assets', 'data', 'programs.json');
+  if (feedCount === 0) {
+    const prevFeed = loadPrevious().filter(p => p.source !== 'seed').length;
+    if (prevFeed > 0) {
+      console.warn(`[collect] ⚠ 이번 본문 0건(직전 ${prevFeed}건) — 빈칸 방지로 이전 데이터 유지하고 종료(덮어쓰지 않음)`);
+      return;
+    }
+  }
+
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8');
 
