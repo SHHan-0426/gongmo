@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-09T22:51:35.078Z",
-  "generated_at_kst": "2026-07-10 07:51:35 KST",
+  "generated_at": "2026-07-10T22:31:11.803Z",
+  "generated_at_kst": "2026-07-11 07:31:11 KST",
   "is_sample": false,
-  "degraded": false,
+  "degraded": true,
   "sources": [
     {
       "source": "bizinfo",
@@ -13,7 +13,8 @@
     {
       "source": "narajangteo",
       "label": "나라장터 — 용역 입찰(단체·사회서비스 필터)",
-      "count": 214
+      "count": 0,
+      "error": "JSON 파싱 실패: The backend server's SSL certificate verification failed: hostname mismatch\n"
     },
     {
       "source": "gov24",
@@ -24,7 +25,7 @@
     {
       "source": "carryover",
       "label": "이전 미마감 공고 이월(빈칸 방지)",
-      "count": 43
+      "count": 171
     },
     {
       "source": "seed",
@@ -32,346 +33,10 @@
       "count": 8
     }
   ],
-  "count": 248,
-  "open_count": 186,
-  "urgent_count": 79,
+  "count": 179,
+  "open_count": 117,
+  "urgent_count": 65,
   "programs": [
-    {
-      "id": "p1",
-      "title": "2026년 경력단계별 전환 아카데미 교육 운영",
-      "summary": "수요기관 한국농어촌공사 인재개발원 · 추정/배정 569,098,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "한국농어촌공사 인재개발원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-29",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 16:00:00",
-      "created": "2026-07-02",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607366&bidPbancOrd=001",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p2",
-      "title": "2026년 마을어장생태복원사업갯닦기용역",
-      "summary": "수요기관 경상북도 환동해지역본부 어업기술원 울릉·독도지원 · 추정/배정 99,899,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "경상북도",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-06",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-07-02",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614580&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p3",
-      "title": "김천시 마을상수도 관리대행 용역",
-      "summary": "수요기관 경상북도 김천시 · 추정/배정 85,640,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "경상북도 김천시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-07-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616908&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p4",
-      "title": "1회용품 없는 축제 만들기를 위한 다회용기 공급 세척 운반 용역",
-      "summary": "수요기관 전남광주통합특별시 장흥군 · 추정/배정 30,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "전남광주통합특별시 장흥군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-07-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619373&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p5",
-      "title": "2027학년도 연세대학교 미래캠퍼스 신편입학 온,오프라인 홍보 대행 용역",
-      "summary": "수요기관 연세대학교 미래캠퍼스 · 추정/배정 130,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "연세대학교 미래캠퍼스",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 12:00:00",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01624884&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p15",
-      "title": "서창도가 활성화를 위한 역량강화 지원 사업 용역",
-      "summary": "수요기관 양산시지역활성화지원센터 · 추정/배정 161,526,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "조달청 경남지방조달청",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 14:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01605411&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p16",
-      "title": "4-2 2026학년도 KNU-대구앵커 워라밸 취업박람회 용역",
-      "summary": "수요기관 경북대학교 산학협력단 · 추정/배정 175,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경북대학교 산학협력단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606158&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p18",
-      "title": "2026년 KIST 학생연구원 취업박람회 행사 대행 용역",
-      "summary": "수요기관 한국과학기술연구원 · 추정/배정 67,894,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "한국과학기술연구원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-29",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606446&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p19",
-      "title": "2026년 영유아 일상적 마음돌봄 지원 사업 위탁 용역",
-      "summary": "수요기관 대전광역시교육청 · 추정/배정 259,836,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "대전광역시교육청",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606958&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p21",
-      "title": "2026년도 경북대학교 직원역량강화 교육과정 위탁 용역",
-      "summary": "수요기관 경북대학교 · 추정/배정 90,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경북대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-30",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607337&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p22",
-      "title": "「2026년 서부내륙권 관광진흥사업 근대문화유산 배움코스」부여 근대역사문화축제 운영 용역[긴급]",
-      "summary": "수요기관 재단법인 백제문화재단 · 추정/배정 105,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "재단법인 백제문화재단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-06",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607170&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p23",
-      "title": "2026년 과학기술인 경력개발 콘텐츠 개발 용역",
-      "summary": "수요기관 국가과학기술인력개발원 · 추정/배정 85,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "국가과학기술인력개발원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-29",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-29",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607892&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p54",
-      "title": "(긴급)2026 웰니스 관광 축제 및 프로그램 기획·운영 대행(협상에의한계약)",
-      "summary": "수요기관 부산광역시 기장군 · 추정/배정 270,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "부산광역시 기장군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-26",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 10:00:00",
-      "created": "2026-06-25",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01601722&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p102",
-      "title": "생활숲 산림복지서비스 운영관리 및 효과분석",
-      "summary": "수요기관 한국산림복지진흥원 · 추정/배정 70,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "한국산림복지진흥원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-19",
-      "apply_end": "2026-07-10",
-      "always": false,
-      "period_text": "마감 2026-07-10 11:00:00",
-      "created": "2026-06-19",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01592101&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
     {
       "id": "p15",
       "title": "[RISE사업] NCS역량강화 캠프 운영",
@@ -393,7 +58,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -417,7 +82,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -441,7 +106,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -465,7 +130,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -489,7 +154,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -513,7 +178,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -537,7 +202,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -561,7 +226,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -585,7 +250,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -609,7 +274,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -633,7 +298,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -657,7 +322,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -681,7 +346,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -705,7 +370,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -729,7 +394,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -753,7 +418,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -777,7 +442,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -801,7 +466,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -825,7 +490,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -849,7 +514,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -873,7 +538,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -897,7 +562,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
@@ -921,7 +586,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -945,7 +610,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -969,7 +634,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -993,7 +658,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1017,7 +682,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1041,7 +706,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1065,7 +730,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1089,7 +754,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1113,7 +778,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1137,7 +802,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1161,7 +826,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1185,7 +850,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1209,7 +874,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1233,7 +898,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1257,7 +922,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1281,7 +946,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1305,7 +970,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1329,7 +994,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1353,7 +1018,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1377,7 +1042,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1401,7 +1066,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1425,7 +1090,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1449,7 +1114,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1473,7 +1138,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1497,7 +1162,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1521,7 +1186,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1548,7 +1213,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1572,7 +1237,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1596,7 +1261,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1620,7 +1285,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1644,7 +1309,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1668,7 +1333,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1692,7 +1357,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1716,7 +1381,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1740,7 +1405,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1764,7 +1429,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1788,7 +1453,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1812,7 +1477,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1836,7 +1501,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1860,7 +1525,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1884,7 +1549,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1908,7 +1573,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1935,7 +1600,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1959,7 +1624,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -1983,7 +1648,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2007,7 +1672,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2031,7 +1696,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2055,7 +1720,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2079,7 +1744,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2103,7 +1768,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2127,7 +1792,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2151,7 +1816,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2175,7 +1840,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2199,7 +1864,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2223,7 +1888,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2247,7 +1912,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2271,7 +1936,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2295,7 +1960,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2319,7 +1984,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2343,7 +2008,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2367,7 +2032,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2391,7 +2056,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2415,7 +2080,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2442,7 +2107,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2466,7 +2131,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2490,7 +2155,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2514,7 +2179,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2538,7 +2203,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2562,7 +2227,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2586,7 +2251,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2610,7 +2275,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2634,7 +2299,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2658,7 +2323,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2682,7 +2347,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2706,7 +2371,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2730,7 +2395,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2754,7 +2419,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2778,7 +2443,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2802,7 +2467,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2826,7 +2491,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2853,7 +2518,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2877,7 +2542,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 13,
+      "dday": 12,
       "urgent": false
     },
     {
@@ -2904,7 +2569,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
@@ -2928,7 +2593,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
@@ -2952,7 +2617,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
@@ -2976,7 +2641,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 18,
+      "dday": 17,
       "urgent": false
     },
     {
@@ -3000,7 +2665,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 19,
+      "dday": 18,
       "urgent": false
     },
     {
@@ -3024,7 +2689,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 19,
+      "dday": 18,
       "urgent": false
     },
     {
@@ -3048,7 +2713,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 32,
+      "dday": 31,
       "urgent": false
     },
     {
@@ -3072,7 +2737,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 40,
+      "dday": 39,
       "urgent": false
     },
     {
@@ -3099,7 +2764,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 52,
+      "dday": 51,
       "urgent": false
     },
     {
@@ -3126,7 +2791,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 112,
+      "dday": 111,
       "urgent": false
     },
     {
@@ -3153,7 +2818,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 143,
+      "dday": 142,
       "urgent": false
     },
     {
@@ -3180,7 +2845,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 143,
+      "dday": 142,
       "urgent": false
     },
     {
@@ -3207,1327 +2872,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 143,
-      "urgent": false
-    },
-    {
-      "id": "p132",
-      "title": "2026  MY 전북 세계인 축제 운영지원 용역",
-      "summary": "수요기관 재단법인전북국제협력진흥원 · 추정/배정 113,100,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "재단법인전북국제협력진흥원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-30",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-06-30",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01608825&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p133",
-      "title": "우강면 기초생활거점조성사업(2단계) 지역역량강화 용역",
-      "summary": "수요기관 당진도시공사 · 추정/배정 379,600,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "당진도시공사",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-30",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-06-30",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607482&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p134",
-      "title": "순성면 본2리·합덕읍 신석리 취약지역생활여건개조사업 휴먼케어 및 주민역량강화 용역",
-      "summary": "수요기관 당진도시공사 · 추정/배정 368,500,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "당진도시공사",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-30",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-06-30",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607511&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p135",
-      "title": "2026 여주오곡나루축제 운영대행 용역",
-      "summary": "수요기관 재단법인여주세종문화관광재단 · 추정/배정 440,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "재단법인여주세종문화관광재단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-30",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-06-30",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01609732&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p136",
-      "title": "[앵커 A1-025] 2026 G-HR 미래인재 포럼 운영",
-      "summary": "수요기관 조선대학교 · 추정/배정 88,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "조선대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-06-30",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-06-30",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01610136&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p137",
-      "title": "단양 지질공원커뮤니티센터 영상물 제작 및 설치 용역",
-      "summary": "수요기관 충청북도 단양군 · 추정/배정 90,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "충청북도 단양군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01610236&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p138",
-      "title": "[앵커] 2026 지역정주인재양성 모빌리티 취업역량 강화 4-STEP 프로그램",
-      "summary": "수요기관 조선대학교 · 추정/배정 65,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "조선대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01598850&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p139",
-      "title": "2026 제주 글로벌 콘텐츠 포럼 및 비즈니스 네트워킹 운영 용역",
-      "summary": "수요기관 재단법인제주콘텐츠진흥원 · 추정/배정 87,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "재단법인제주콘텐츠진흥원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01591240&bidPbancOrd=002",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p140",
-      "title": "2026 고려대학교 세종캠퍼스 취업박람회 행사대행 용역",
-      "summary": "수요기관 고려대학교 세종산학협력단 · 추정/배정 60,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "고려대학교 세종산학협력단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01611241&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p141",
-      "title": "2026 대구 글로벌 로봇 비즈니스 포럼 용역",
-      "summary": "수요기관 사단법인 글로벌로봇클러스터 · 추정/배정 150,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "사단법인 글로벌로봇클러스터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01606640&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p142",
-      "title": "「2026 안양천 빛축제」 행사 대행 용역",
-      "summary": "수요기관 서울특별시 구로구 · 추정/배정 155,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "서울특별시 구로구",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01611801&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p143",
-      "title": "2026년 부천국제만화축제 및 경기국제코스프레페스티벌 기획·운영 용역",
-      "summary": "수요기관 재단법인 한국만화영상진흥원 · 추정/배정 600,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도 부천시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01611985&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p144",
-      "title": "2026괴산김장축제 종합대행 용역",
-      "summary": "수요기관 괴산축제위원회 · 추정/배정 280,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "괴산축제위원회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-02",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-02",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01612674&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p145",
-      "title": "2026 제주레저힐링축제 행사 대행 용역",
-      "summary": "수요기관 제주특별자치도 제주시 · 추정/배정 280,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "제주특별자치도 제주시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-02",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-02",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01612977&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p146",
-      "title": "초평 책마을 SW 프로그램 기획 및 운영 용역",
-      "summary": "수요기관 충청북도 진천군 · 추정/배정 500,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "충청북도 진천군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-02",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-02",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01614420&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p147",
-      "title": "2026 들안길 K-푸드 축제 행사운영 용역",
-      "summary": "수요기관 재단법인수성문화재단 · 추정/배정 99,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "재단법인수성문화재단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01613988&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p148",
-      "title": "긴급_초량 돈 페스타 축제 대행 용역(협상에의한계약)",
-      "summary": "수요기관 초량이음자율상권조합 · 추정/배정 185,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "초량이음자율상권조합",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01605710&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p149",
-      "title": "부산지역 시니어 고용 현황 및 디지털 기술 활용 실태조사 용역",
-      "summary": "수요기관 부산상공회의소 · 추정/배정 36,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "부산상공회의소",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01615457&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p150",
-      "title": "광명시 지역공동체 자산구축을 위한 지역순환경제 활성화 전략수립 연구용역",
-      "summary": "수요기관 경기도 광명시 · 추정/배정 49,900,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도 광명시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01615347&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p151",
-      "title": "2026년 경기도사회복지관협회 최고중간관리자 해외연수 기획 및 운영 대행 용역 공고",
-      "summary": "수요기관 경기도사회복지관협회 · 추정/배정 39,690,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도사회복지관협회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616456&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p152",
-      "title": "당감1동 광산마을 새뜰마을사업 휴먼케어 및 주민역량강화 용역(협상에 의한 계약)",
-      "summary": "수요기관 부산광역시 부산진구 · 추정/배정 152,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "부산광역시 부산진구",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616440&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p153",
-      "title": "2026년 디지털 교육 세계화 사업 포럼 전문 행사 운영 용역",
-      "summary": "수요기관 (사)에이펙국제교육협력원 · 추정/배정 130,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "(사)에이펙국제교육협력원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-03",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01616652&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p154",
-      "title": "2026년 경상남도 공무원 역량강화 교육 용역",
-      "summary": "수요기관 경상남도 · 추정/배정 158,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경상남도",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-06",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01615734&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p155",
-      "title": "간전면 기초생활거점조성사업 지역역량강화 용역(긴급)",
-      "summary": "수요기관 전남광주통합특별시 구례군 · 추정/배정 1,795,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "전남광주통합특별시 구례군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-06",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01617374&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p156",
-      "title": "(재공고)『2026년 도약(Jump-Up) 투자유치 네트워킹』 글로벌 투자유치 역량강화 프로그램 위탁 용역",
-      "summary": "수요기관 (사)벤처기업협회 · 추정/배정 55,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "(사)벤처기업협회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-06",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01618921&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p157",
-      "title": "2026년 지역대표 K-브랜드 100 지원사업 수행기관 입찰공고 재공고(A과제_기장철마한우불고기축제)",
-      "summary": "수요기관 한국발명진흥회 부산지부 · 추정/배정 32,400,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "한국발명진흥회 부산지부",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-06",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01618981&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p158",
-      "title": "대덕복지센터 단중기 경영전략 수립 연구용역 입찰공고",
-      "summary": "수요기관 대덕복지센터 · 추정/배정 33,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "대덕복지센터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619608&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p159",
-      "title": "[긴급]2026 인재유입 고용서비스 지원을 위한 타광역 경력직 헤드헌팅 및 매칭용역",
-      "summary": "수요기관 (재)원주의료기기산업진흥원 · 추정/배정 294,800,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "(재)원주의료기기산업진흥원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01618882&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p160",
-      "title": "(재공고) 2026년 지역대표 K-브랜드 100지원사업 수행기관 용역입찰 공고(대구반야월농업협동조합)",
-      "summary": "수요기관 대구상공회의소 · 추정/배정 32,400,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "대구상공회의소",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619781&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p161",
-      "title": "2026년 영동군 공무원 역량강화 워크숍 용역[협상에 의한 계약]",
-      "summary": "수요기관 충청북도 영동군 · 추정/배정 300,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "충청북도 영동군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619555&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p162",
-      "title": "제8회 연천국화축제 행사 대행 용역(협상에 의한 계약)(재공고)",
-      "summary": "수요기관 경기도 연천군 농업기술센터 · 추정/배정 170,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도 연천군 농업기술센터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01620470&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p163",
-      "title": "제12회 정관생태하천학습문화축제 행사대행 용역(민간입찰대행)",
-      "summary": "수요기관 부산광역시 기장군 · 추정/배정 230,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "부산광역시 기장군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619043&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p164",
-      "title": "새마을금고 특별회계 개선 용역",
-      "summary": "수요기관 새마을금고중앙회 · 추정/배정 250,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "새마을금고중앙회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01620731&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p165",
-      "title": "대덕복지센터 조직진단 컨설팅 용역",
-      "summary": "수요기관 대덕복지센터 · 추정/배정 33,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "대덕복지센터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01619608&bidPbancOrd=001",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p166",
-      "title": "글로벌 AI 인재 양성·교육(GATE) 포럼 의제 및 프로그램 개발 연구",
-      "summary": "수요기관 (사)에이펙국제교육협력원 · 추정/배정 30,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "(사)에이펙국제교육협력원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01620965&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p167",
-      "title": "무등시장 군분로 지역축제 행사용역",
-      "summary": "수요기관 무등시장 문화관광형시장 육성사업단 · 추정/배정 80,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "무등시장 문화관광형시장 육성사업단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-07",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01607811&bidPbancOrd=001",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p168",
-      "title": "2026 러시아 모스크바 인터참 추계 미용 박람회 디자인설치 용역",
-      "summary": "수요기관 주식회사 한국뷰티산업무역원 · 추정/배정 76,322,400원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "주식회사 한국뷰티산업무역원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01622137&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p169",
-      "title": "2026코리아드라마페스티벌 시상식,공연,축제프로그램분야 대행용역 제한경쟁입찰",
-      "summary": "수요기관 (사)코리아드라마페스티벌조직위원회 · 추정/배정 640,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "(사)코리아드라마페스티벌조직위원회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01622196&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p170",
-      "title": "2026 경기국제포럼 PCO 운영 대행",
-      "summary": "수요기관 주식회사킨텍스 · 추정/배정 376,800,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "주식회사킨텍스",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01590251&bidPbancOrd=001",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p171",
-      "title": "제27회 국제 섬 관광 정책 포럼(2026 ITOP포럼) 행사 기획 및 운영",
-      "summary": "수요기관 제주관광공사 · 추정/배정 518,867,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "제주관광공사",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01623728&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p172",
-      "title": "취소공고[제8회 연천국화축제 행사 대행 용역(협상에 의한 계약)(재공고)]",
-      "summary": "수요기관 경기도 연천군 농업기술센터 · 추정/배정 170,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도 연천군 농업기술센터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01620470&bidPbancOrd=001",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p173",
-      "title": "퇴강리 지붕 없는 마을박물관 브랜딩.컨설팅 및 주민교육용역",
-      "summary": "수요기관 경상북도 상주시 · 추정/배정 368,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "경상북도 상주시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01623944&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p174",
-      "title": "(재공고) 2026 KBO Academy (유소년 지도자 역량강화 세미나)",
-      "summary": "수요기관 (사)한국야구위원회 · 추정/배정 33,000,000원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "(사)한국야구위원회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-08",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-08",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01624211&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p175",
-      "title": "2026년도 해외바이어 초청 현지실사·부산국제수산EXPO(BISFE) 연계 상담회 운영 대행 용역",
-      "summary": "수요기관 수협중앙회 · 추정/배정 541,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "수협중앙회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01624535&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p176",
-      "title": "(취소공고)단양 지질공원커뮤니티센터 영상물 제작 및 설치 용역",
-      "summary": "수요기관 충청북도 단양군 · 추정/배정 90,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "충청북도 단양군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01610236&bidPbancOrd=001",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p177",
-      "title": "우석대학교 2026 중국 글로벌 역량강화 더불어 함께 나눔 프로그램",
-      "summary": "수요기관 우석대학교 · 추정/배정 98,300,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "우석대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625082&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p178",
-      "title": "신용회복위원회 마음돌봄 상담 서비스 용역",
-      "summary": "수요기관 신용회복위원회 · 추정/배정 300,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "신용회복위원회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625179&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p179",
-      "title": "2026학년도 경기대학교 가을 대동제(축제)행사 대행업체 선정",
-      "summary": "수요기관 경기대학교 · 추정/배정 1원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경기대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625475&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p180",
-      "title": "명포1리(금은계마을) 농어촌 취약지역 생활여건 개조사업 지역역량강화용역(협상에의한계약)",
-      "summary": "수요기관 경상북도 성주군 · 추정/배정 122,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경상북도 성주군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625717&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p181",
-      "title": "보월2리(마찔마을) 농어촌 취약지역 생활여건 개조사업 지역역량강화용역(협상에의한계약)",
-      "summary": "수요기관 경상북도 성주군 · 추정/배정 112,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경상북도 성주군",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625771&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p182",
-      "title": "2026 여수밤바다 불꽃축제 행사 대행 용역(협상에 의한 계약)",
-      "summary": "수요기관 전남광주통합특별시 여수시 · 추정/배정 415,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "전남광주통합특별시 여수시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625965&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p183",
-      "title": "제8회 연천국화축제 행사 대행 용역(협상에 의한 계약) 입찰공고",
-      "summary": "수요기관 경기도 연천군 농업기술센터 · 추정/배정 170,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도 연천군 농업기술센터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01626135&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p184",
-      "title": "(긴급)우수 사회연대경제 꺾꽂이&턴키 자립형 공동체 돌봄마을 조성사업 운영 용역",
-      "summary": "수요기관 경상북도 영천시 · 추정/배정 500,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경상북도 영천시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01626172&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p185",
-      "title": "2026년 에듀의왕! 어울림축제 행사대행 용역(긴급)",
-      "summary": "수요기관 경기도 의왕시 · 추정/배정 180,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경기도 의왕시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-09",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-09",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01625432&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
-      "urgent": false
-    },
-    {
-      "id": "p186",
-      "title": "2026년 창원시 어린이·노인보호구역 현장조사",
-      "summary": "수요기관 재단법인 창원시정연구원 · 추정/배정 220,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "재단법인 창원시정연구원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-01",
-      "apply_end": null,
-      "always": false,
-      "period_text": "",
-      "created": "2026-07-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01610306&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": null,
+      "dday": 142,
       "urgent": false
     },
     {
@@ -5830,7 +4175,7 @@
       "urgent": false
     },
     {
-      "id": "p241",
+      "id": "p172",
       "title": "서울시50플러스 포털 — 일자리·교육·사회공헌 공모",
       "summary": "서울시50플러스재단이 운영하는 중장년 전용 포털. 일자리, 사회공헌, 창업·창직, 교육 프로그램 모집 공고가 상시 올라온다. 서울 거주 중장년이라면 가장 먼저 볼 채널.",
       "field": "일자리",
@@ -5854,7 +4199,7 @@
       "urgent": false
     },
     {
-      "id": "p242",
+      "id": "p173",
       "title": "고용24(워크넷) — 신중년 사회공헌활동 지원사업",
       "summary": "만 50세 이상 퇴직 전문인력이 비영리단체·공공기관에서 사회공헌활동에 참여하도록 활동비를 지원하는 고용노동부 사업. 매년 지역별로 참여자를 모집한다.",
       "field": "사회공헌",
@@ -5877,7 +4222,7 @@
       "urgent": false
     },
     {
-      "id": "p243",
+      "id": "p174",
       "title": "기업마당 — '중장년' 지원사업 검색",
       "summary": "중앙부처·지자체·공공기관의 모든 지원사업 공고를 모은 기업마당에서 '중장년'으로 검색한 결과. 창업·재취업·경영 관련 공모가 가장 많이 모이는 정부 종합 창구.",
       "field": "창업",
@@ -5901,7 +4246,7 @@
       "urgent": false
     },
     {
-      "id": "p244",
+      "id": "p175",
       "title": "보조금24 (정부24) — 맞춤 보조금·지원금 안내",
       "summary": "정부24가 본인 조건에 맞는 정부·지자체 보조금과 지원금을 한 번에 찾아주는 서비스. 로그인 후 '나의 혜택'에서 연령·지역 기준 맞춤 공모를 확인할 수 있다.",
       "field": "복지",
@@ -5924,7 +4269,7 @@
       "urgent": false
     },
     {
-      "id": "p245",
+      "id": "p176",
       "title": "한국사회적기업진흥원 — 협동조합·사회적기업 공모",
       "summary": "협동조합 설립·사회적기업 육성·소셜벤처 등 사회적경제 영역의 공모와 지원사업 공고. 중장년이 동료와 함께 일을 벌이려 할 때 보는 창구(두두협동조합 등과도 연결되는 영역).",
       "field": "창업",
@@ -5947,7 +4292,7 @@
       "urgent": false
     },
     {
-      "id": "p246",
+      "id": "p177",
       "title": "경기도일자리재단 — 중장년 일자리·교육 공모",
       "summary": "경기도 중장년·신중년의 재취업, 직업훈련, 창업, 인생이모작을 지원하는 공공기관. 경기 거주 중장년 대상 모집·교육 공고가 상시 올라온다.",
       "field": "일자리",
@@ -5971,7 +4316,7 @@
       "urgent": false
     },
     {
-      "id": "p247",
+      "id": "p178",
       "title": "국가평생교육진흥원 — 중장년 평생교육 강좌·공모",
       "summary": "전국 평생학습 강좌·프로그램 정보. 중장년이 새 역량을 배우거나 생애전환을 준비할 때 활용하는 국가 평생교육 창구(늘배움 연계).",
       "field": "교육",
@@ -5994,7 +4339,7 @@
       "urgent": false
     },
     {
-      "id": "p248",
+      "id": "p179",
       "title": "한국노인인력개발원 — 시니어 일자리·사회활동",
       "summary": "60대 전후 중장년·고령층의 일자리와 사회활동 지원사업. 시니어 인턴십, 사회서비스형, 시장형 일자리 등 참여자 모집 정보를 안내한다.",
       "field": "일자리",
