@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T22:08:58.096Z",
-  "generated_at_kst": "2026-08-14 07:08:58 KST",
+  "generated_at": "2026-08-14T21:46:40.372Z",
+  "generated_at_kst": "2026-08-15 06:46:40 KST",
   "is_sample": false,
   "degraded": true,
   "sources": [
@@ -25,7 +25,7 @@
     {
       "source": "carryover",
       "label": "이전 미마감 공고 이월(빈칸 방지)",
-      "count": 150
+      "count": 133
     },
     {
       "source": "seed",
@@ -33,421 +33,10 @@
       "count": 8
     }
   ],
-  "count": 158,
-  "open_count": 125,
-  "urgent_count": 82,
+  "count": 141,
+  "open_count": 108,
+  "urgent_count": 65,
   "programs": [
-    {
-      "id": "p12",
-      "title": "[서울] 2026년 중장년 채용박람회 권역별 참여기업 모집 공고",
-      "summary": "서울시50플러스재단은 중장년(40~64세) 인재채용을 희망하는 기업과 새로운 일자리를 찾는 중장년을 연결하기 위해 2026년 서울시 중장년 권역별 채용박람회(5회)와 서울시 중장년 일자리박람회(1회)를 개최합니다. 중장년 인재채용을 계획하고 있거나 우수한 경력인재와의 만남을 희망하는 기업의 많은 관심과 참여를 바랍니다. ☞ 중장년 인재채용을 계획하고 있거나",
-      "field": "일자리",
-      "organizer": "서울특별시",
-      "executor": "서울시50플러스재단",
-      "target": "중소기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-07-14",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "2026-07-14 ~ 2026-08-14",
-      "created": "2026-07-14",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000124315",
-      "tags": [
-        "인력",
-        "서울",
-        "채용홍보",
-        "기업이미지",
-        "2026"
-      ],
-      "source": "bizinfo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p13",
-      "title": "2026학년도 충남기계공고 중소기업특성화고 인력양성사업 취업맞춤반 해외 현장학습 위탁 용역",
-      "summary": "수요기관 대전광역시교육청 충남기계공업고등학교 · 추정/배정 54,649,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "대전광역시교육청 충남기계공업고등학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-03",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 15:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01655479&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p14",
-      "title": "26년도 베트남 국제축산박람회 한국관 장치시공사 입찰 공고",
-      "summary": "수요기관 (사)한국단미사료협회 · 추정/배정 41,000,300원 · 일반경쟁",
-      "field": "용역입찰",
-      "organizer": "(사)한국단미사료협회",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-03",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01661743&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "일반경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p15",
-      "title": "[앵커사업] 2026년 강원 앵커 지·산·학 파트너스 포럼 기획 및 운영 용역",
-      "summary": "수요기관 연세대학교 미래캠퍼스 · 추정/배정 47,993,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "연세대학교 미래캠퍼스",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-12",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01660288&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p16",
-      "title": "2026년 방송영상콘텐츠 후반작업지원사업 드라마 은퇴요원+관리팀 색보정 용역",
-      "summary": "수요기관 주식회사 더그레이트쇼 · 추정/배정 64,680,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "주식회사 더그레이트쇼",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-03",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 11:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01654048&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p17",
-      "title": "2026년 방송영상콘텐츠 후반작업지원사업 드라마 은퇴요원 관리팀 후반제작 CG 용역",
-      "summary": "수요기관 주식회사 더그레이트쇼 · 추정/배정 528,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "주식회사 더그레이트쇼",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-03",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 11:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01653985&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p18",
-      "title": "2026학년도 한국기술교육대학교 취업박람회",
-      "summary": "수요기관 한국기술교육대학교 · 추정/배정 60,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "한국기술교육대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-07",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662564&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p19",
-      "title": "2026 APEC 스타트업 글로벌 성장전략 포럼 행사대행 용역",
-      "summary": "수요기관 중소벤처기업진흥공단 · 추정/배정 84,069,164원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "중소벤처기업진흥공단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-12",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01662697&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p20",
-      "title": "(26211독성국004, 독성연구과)오류보정 차세대 DNA 염기서열 분석법(ecNGS) 검증 연구",
-      "summary": "수요기관 식품의약품안전처 식품의약품안전평가원 · 추정/배정 151,450,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "조달청 충북지방조달청",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-12",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01656854&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p21",
-      "title": "보건복지 개인정보보호센터  중장기 발전방안 연구 사업",
-      "summary": "수요기관 한국사회보장정보원 · 추정/배정 60,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "한국사회보장정보원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-05",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01663151&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p22",
-      "title": "2026년 경북국제교육포럼 행사 대행 용역(긴급) 재공고",
-      "summary": "수요기관 경상북도교육청 경상북도교육청연구원 · 추정/배정 70,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경상북도교육청 경상북도교육청연구원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-03",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01663649&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p23",
-      "title": "2026년 과학기술인 AI 역량강화 해외연수 기획·운영 지원 용역",
-      "summary": "수요기관 국가과학기술인력개발원 · 추정/배정 215,729,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "국가과학기술인력개발원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-03",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01664051&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p24",
-      "title": "(강원앵커사업) 지역특화형 취업 정주 특성화 교육 메카 사업_전공 맞춤형 진로지도캠프 운영 용역",
-      "summary": "수요기관 송곡대학 산학협력단 · 추정/배정 45,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "송곡대학 산학협력단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-10",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 11:00:00",
-      "created": "2026-08-06",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01670526&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p25",
-      "title": "2026여수세계섬박람회 홍보 시내버스 래핑 용역",
-      "summary": "수요기관 전남광주통합특별시 여수시 · 추정/배정 42,408,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "전남광주통합특별시 여수시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-11",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 12:00:00",
-      "created": "2026-08-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01671860&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p26",
-      "title": "2026여수세계섬박람회 셔틀버스 랩핑 용역",
-      "summary": "수요기관 전남광주통합특별시 여수시 · 추정/배정 99,247,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "전남광주통합특별시 여수시",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-11",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 12:00:00",
-      "created": "2026-08-07",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01672064&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p27",
-      "title": "2026년 대덕구 지역축제(행사) 다회용기 지원사업",
-      "summary": "수요기관 대전광역시 대덕구 · 추정/배정 86,867,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "대전광역시 대덕구",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-12",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-08-10",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01675067&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p181",
-      "title": "2026년 평생교육이용권 성과분석 연구",
-      "summary": "수요기관 국가평생교육진흥원 · 추정/배정 141,374,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "조달청 서울지방조달청",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-12",
-      "apply_end": "2026-08-14",
-      "always": false,
-      "period_text": "마감 2026-08-14 10:00:00",
-      "created": "2026-07-31",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01643817&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
     {
       "id": "p29",
       "title": "[울산] 2026년 중장년 활력UP 일자리사업 참여기관 추가 모집 공고",
@@ -472,7 +61,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -496,7 +85,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -520,7 +109,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -544,7 +133,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -568,7 +157,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -592,7 +181,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -616,7 +205,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -640,7 +229,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -664,7 +253,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -688,7 +277,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -712,7 +301,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -736,7 +325,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -760,7 +349,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -784,7 +373,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -808,7 +397,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -832,7 +421,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -856,7 +445,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -880,7 +469,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -904,7 +493,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -928,7 +517,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -952,7 +541,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -976,7 +565,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1000,7 +589,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1024,7 +613,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1048,7 +637,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1072,7 +661,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -1099,7 +688,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1123,7 +712,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1147,7 +736,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1171,7 +760,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1195,7 +784,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1219,7 +808,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1243,7 +832,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1267,7 +856,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1291,7 +880,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1315,7 +904,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1339,7 +928,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1363,7 +952,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1387,7 +976,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1411,7 +1000,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1435,7 +1024,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1459,7 +1048,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1483,7 +1072,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1507,7 +1096,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1531,7 +1120,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1555,7 +1144,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1579,7 +1168,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1603,7 +1192,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1627,7 +1216,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
@@ -1651,7 +1240,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1675,7 +1264,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1699,7 +1288,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1723,7 +1312,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1747,7 +1336,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
@@ -1774,7 +1363,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1798,7 +1387,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1822,7 +1411,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1846,7 +1435,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1870,7 +1459,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1894,7 +1483,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1918,7 +1507,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1942,7 +1531,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1969,7 +1558,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -1993,7 +1582,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -2017,7 +1606,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -2041,7 +1630,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2065,7 +1654,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2089,7 +1678,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2113,7 +1702,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2137,7 +1726,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2161,7 +1750,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2185,7 +1774,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2209,7 +1798,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2233,7 +1822,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2257,7 +1846,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2281,7 +1870,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2305,7 +1894,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2329,7 +1918,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2353,7 +1942,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2377,7 +1966,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2401,7 +1990,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2425,7 +2014,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
@@ -2449,7 +2038,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2473,7 +2062,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2497,7 +2086,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2521,7 +2110,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -2548,7 +2137,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2572,7 +2161,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2596,7 +2185,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
@@ -2623,7 +2212,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
@@ -2647,7 +2236,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
@@ -2671,7 +2260,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
@@ -2698,7 +2287,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
@@ -2725,7 +2314,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
@@ -2749,7 +2338,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
@@ -2773,7 +2362,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
@@ -2797,7 +2386,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 18,
+      "dday": 17,
       "urgent": false
     },
     {
@@ -2821,7 +2410,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 18,
+      "dday": 17,
       "urgent": false
     },
     {
@@ -2845,7 +2434,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 19,
+      "dday": 18,
       "urgent": false
     },
     {
@@ -2869,7 +2458,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 19,
+      "dday": 18,
       "urgent": false
     },
     {
@@ -2893,7 +2482,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 21,
+      "dday": 20,
       "urgent": false
     },
     {
@@ -2917,7 +2506,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 24,
+      "dday": 23,
       "urgent": false
     },
     {
@@ -2941,7 +2530,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 33,
+      "dday": 32,
       "urgent": false
     },
     {
@@ -2965,7 +2554,7 @@
       ],
       "source": "narajangteo",
       "status": "open",
-      "dday": 38,
+      "dday": 37,
       "urgent": false
     },
     {
@@ -2992,7 +2581,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 77,
+      "dday": 76,
       "urgent": false
     },
     {
@@ -3019,7 +2608,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 108,
+      "dday": 107,
       "urgent": false
     },
     {
@@ -3046,7 +2635,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 108,
+      "dday": 107,
       "urgent": false
     },
     {
@@ -3073,7 +2662,7 @@
       ],
       "source": "bizinfo",
       "status": "open",
-      "dday": 108,
+      "dday": 107,
       "urgent": false
     },
     {
@@ -3677,7 +3266,7 @@
       "urgent": false
     },
     {
-      "id": "p151",
+      "id": "p134",
       "title": "서울시50플러스 포털 — 일자리·교육·사회공헌 공모",
       "summary": "서울시50플러스재단이 운영하는 중장년 전용 포털. 일자리, 사회공헌, 창업·창직, 교육 프로그램 모집 공고가 상시 올라온다. 서울 거주 중장년이라면 가장 먼저 볼 채널.",
       "field": "일자리",
@@ -3701,7 +3290,7 @@
       "urgent": false
     },
     {
-      "id": "p152",
+      "id": "p135",
       "title": "고용24(워크넷) — 신중년 사회공헌활동 지원사업",
       "summary": "만 50세 이상 퇴직 전문인력이 비영리단체·공공기관에서 사회공헌활동에 참여하도록 활동비를 지원하는 고용노동부 사업. 매년 지역별로 참여자를 모집한다.",
       "field": "사회공헌",
@@ -3724,7 +3313,7 @@
       "urgent": false
     },
     {
-      "id": "p153",
+      "id": "p136",
       "title": "기업마당 — '중장년' 지원사업 검색",
       "summary": "중앙부처·지자체·공공기관의 모든 지원사업 공고를 모은 기업마당에서 '중장년'으로 검색한 결과. 창업·재취업·경영 관련 공모가 가장 많이 모이는 정부 종합 창구.",
       "field": "창업",
@@ -3748,7 +3337,7 @@
       "urgent": false
     },
     {
-      "id": "p154",
+      "id": "p137",
       "title": "보조금24 (정부24) — 맞춤 보조금·지원금 안내",
       "summary": "정부24가 본인 조건에 맞는 정부·지자체 보조금과 지원금을 한 번에 찾아주는 서비스. 로그인 후 '나의 혜택'에서 연령·지역 기준 맞춤 공모를 확인할 수 있다.",
       "field": "복지",
@@ -3771,7 +3360,7 @@
       "urgent": false
     },
     {
-      "id": "p155",
+      "id": "p138",
       "title": "한국사회적기업진흥원 — 협동조합·사회적기업 공모",
       "summary": "협동조합 설립·사회적기업 육성·소셜벤처 등 사회적경제 영역의 공모와 지원사업 공고. 중장년이 동료와 함께 일을 벌이려 할 때 보는 창구(두두협동조합 등과도 연결되는 영역).",
       "field": "창업",
@@ -3794,7 +3383,7 @@
       "urgent": false
     },
     {
-      "id": "p156",
+      "id": "p139",
       "title": "경기도일자리재단 — 중장년 일자리·교육 공모",
       "summary": "경기도 중장년·신중년의 재취업, 직업훈련, 창업, 인생이모작을 지원하는 공공기관. 경기 거주 중장년 대상 모집·교육 공고가 상시 올라온다.",
       "field": "일자리",
@@ -3818,7 +3407,7 @@
       "urgent": false
     },
     {
-      "id": "p157",
+      "id": "p140",
       "title": "국가평생교육진흥원 — 중장년 평생교육 강좌·공모",
       "summary": "전국 평생학습 강좌·프로그램 정보. 중장년이 새 역량을 배우거나 생애전환을 준비할 때 활용하는 국가 평생교육 창구(늘배움 연계).",
       "field": "교육",
@@ -3841,7 +3430,7 @@
       "urgent": false
     },
     {
-      "id": "p158",
+      "id": "p141",
       "title": "한국노인인력개발원 — 시니어 일자리·사회활동",
       "summary": "60대 전후 중장년·고령층의 일자리와 사회활동 지원사업. 시니어 인턴십, 사회서비스형, 시장형 일자리 등 참여자 모집 정보를 안내한다.",
       "field": "일자리",
