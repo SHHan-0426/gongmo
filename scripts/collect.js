@@ -115,9 +115,15 @@ async function main() {
   }
 
   // 직전 결과에서 '마감 안 지난' API 공고만 이월(빈 화면·정보 증발 방지).
-  // 이번에 새로 받은 것이 우선, 이월분은 보충용. 시드·마감지난 건은 제외.
+  // 단, 이번에 결과를 낸 소스의 옛 공고는 이월하지 않는다.
+  //   그 소스는 멀쩡히 살아있으므로, 이번에 안 들어온 건 마감됐거나
+  //   필터에서 일부러 뺀 것이다. 무조건 이월하면 필터를 좁혀도 걸러낸
+  //   공고가 되살아난다(나라장터 트림 직후 실제로 77건이 돌아왔다).
+  // 이월은 소스가 0건일 때 — 즉 키 누락·API 장애일 때만 의미가 있다.
+  const liveSources = new Set(summary.filter(s => s.count > 0).map(s => s.source));
   const prevCarry = loadPrevious().filter(p =>
-    p.source !== 'seed' && p.apply_end && p.apply_end >= todayStr
+    p.source !== 'seed' && !liveSources.has(p.source) &&
+    p.apply_end && p.apply_end >= todayStr
   );
 
   // 시드(큐레이션) 병합 — 항상 포함
