@@ -52,9 +52,10 @@ function decorate(p) {
   } else if (p.apply_begin && p.apply_begin <= todayStr) {
     status = 'open';
   }
-  // kind: '공모전'(작품·아이디어를 내고 겨루는 것) vs '지원사업'(신청해서 받는 것).
-  // 소스가 명시하지 않으면 지원사업으로 본다(기존 소스는 전부 지원사업).
-  const kind = p.kind || '지원사업';
+  // kind 3축: '공모전'(작품·아이디어를 내고 겨룸) · '지원사업'(신청해서 받음)
+  // · '용역입찰'(단체·법인이 응찰해 수주). 소스가 명시하지 않으면 소스로 추정한다
+  // (kind 도입 이전에 수집돼 이월되는 공고가 지원사업으로 잘못 섞이지 않게).
+  const kind = p.kind || (p.source === 'narajangteo' ? '용역입찰' : '지원사업');
   return { ...p, kind, status, dday, urgent: status === 'open' && dday !== null && dday <= 7 };
 }
 
