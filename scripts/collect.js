@@ -21,6 +21,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SOURCES = [
+  require('./sources/culture'),     // 문화포털 — 공모전(인증키 불필요)
   require('./sources/bizinfo'),     // 기업마당 — 기업지원 중심(개인 공모는 소수)
   require('./sources/narajangteo'), // 나라장터 — 단체·협동조합 응찰 용역(사회서비스)
   require('./sources/gov24'),       // 정부24·보조금24 — 개인 공공서비스(검증 결과 비활성)
@@ -51,7 +52,10 @@ function decorate(p) {
   } else if (p.apply_begin && p.apply_begin <= todayStr) {
     status = 'open';
   }
-  return { ...p, status, dday, urgent: status === 'open' && dday !== null && dday <= 7 };
+  // kind: '공모전'(작품·아이디어를 내고 겨루는 것) vs '지원사업'(신청해서 받는 것).
+  // 소스가 명시하지 않으면 지원사업으로 본다(기존 소스는 전부 지원사업).
+  const kind = p.kind || '지원사업';
+  return { ...p, kind, status, dday, urgent: status === 'open' && dday !== null && dday <= 7 };
 }
 
 // 정렬: 접수중(마감 가까운 순) → 예정(시작 가까운 순) → 상시 → 기타
@@ -158,6 +162,7 @@ async function main() {
     count: programs.length,
     open_count: programs.filter(p => p.status === 'open').length,
     urgent_count: programs.filter(p => p.urgent).length,
+    contest_count: programs.filter(p => p.kind === '공모전').length,
     programs,
   };
 
@@ -176,7 +181,7 @@ async function main() {
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8');
 
   console.log(`[collect] 저장 완료 → ${outPath}`);
-  console.log(`[collect] 총 ${programs.length}건(접수중 ${output.open_count} · 마감임박 ${output.urgent_count}) · 소스: ${summary.map(s => `${s.source}(${s.count})`).join(', ')}`);
+  console.log(`[collect] 총 ${programs.length}건(접수중 ${output.open_count} · 마감임박 ${output.urgent_count} · 공모전 ${output.contest_count}) · 소스: ${summary.map(s => `${s.source}(${s.count})`).join(', ')}`);
 }
 
 main().catch(err => {

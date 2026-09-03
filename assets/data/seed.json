@@ -1,6 +1,45 @@
 {
-  "_comment": "운영팀 큐레이션 시드. API 키가 없어도 사이트가 비지 않도록 항상 병합된다(빈 화면 노출 금지). 여기에는 '특정 마감일'이 아니라 중장년 공모가 상시 올라오는 공식 채널·대표 사업만 둔다. 새 공모를 직접 추가할 때도 이 파일에 항목을 더하면 된다. apply_begin/apply_end 에 'YYYY-MM-DD'를 넣으면 마감 임박 계산에 자동 반영된다.",
+  "_comment": "운영팀 큐레이션 시드. API 키가 없어도 사이트가 비지 않도록 항상 병합된다(빈 화면 노출 금지). 여기에는 '특정 마감일'이 아니라 중장년 공모가 상시 올라오는 공식 채널·대표 사업만 둔다. 새 공모를 직접 추가할 때도 이 파일에 항목을 더하면 된다. apply_begin/apply_end 에 'YYYY-MM-DD'를 넣으면 마감 임박 계산에 자동 반영된다. kind 필드는 '공모전'(작품·아이디어를 내고 겨루는 것) 또는 '지원사업'(신청해서 받는 것) — 비워두면 지원사업으로 본다.",
   "programs": [
+    {
+      "title": "문화포털 — 문화지원사업 캘린더(공모전 원천)",
+      "summary": "전국 문화재단·진흥원·공공기관의 공모전과 모집 공고가 모이는 한국문화정보원 공식 창구. 이 사이트의 공모전은 여기서 매일 가져온다. 마감이 지난 뒤에도 직접 더 찾아보고 싶을 때.",
+      "field": "문화·기타",
+      "organizer": "한국문화정보원",
+      "target": "제한 없음(공고별 상이)",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 갱신",
+      "url": "https://www.culture.go.kr/portal/cltBnf/cltSupCalndr/list.do?menuNo=200067",
+      "tags": [
+        "문화포털",
+        "공모전",
+        "문화재단"
+      ],
+      "source": "seed",
+      "applicant": "개인",
+      "kind": "공모전"
+    },
+    {
+      "title": "위비티 — 공모전 종합 포털(민간)",
+      "summary": "기업·기관 공모전이 가장 많이 모이는 민간 포털. 공공 공모전만 다루는 이 사이트에 없는 기업 주최 공모전을 찾을 때 들어가 본다. 응모 자격에 나이 제한이 있는 경우가 많으니 요강을 꼭 확인할 것.",
+      "field": "문화·기타",
+      "organizer": "위비티(민간)",
+      "target": "공모전별 상이",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "상시 갱신",
+      "url": "https://www.wevity.com/",
+      "tags": [
+        "공모전",
+        "민간포털"
+      ],
+      "source": "seed",
+      "applicant": "개인",
+      "kind": "공모전"
+    },
     {
       "title": "서울시50플러스 포털 — 일자리·교육·사회공헌 공모",
       "summary": "서울시50플러스재단이 운영하는 중장년 전용 포털. 일자리, 사회공헌, 창업·창직, 교육 프로그램 모집 공고가 상시 올라온다. 서울 거주 중장년이라면 가장 먼저 볼 채널.",
@@ -109,7 +148,12 @@
       "always": true,
       "period_text": "상시 모집",
       "url": "https://www.gjf.or.kr",
-      "tags": ["경기", "중장년", "일자리", "재취업"],
+      "tags": [
+        "경기",
+        "중장년",
+        "일자리",
+        "재취업"
+      ],
       "source": "seed",
       "applicant": "개인"
     },
@@ -124,7 +168,11 @@
       "always": true,
       "period_text": "상시 갱신",
       "url": "https://www.nile.or.kr",
-      "tags": ["평생교육", "생애전환", "교육"],
+      "tags": [
+        "평생교육",
+        "생애전환",
+        "교육"
+      ],
       "source": "seed",
       "applicant": "개인"
     },
@@ -139,7 +187,11 @@
       "always": true,
       "period_text": "연중·지역별 모집",
       "url": "https://www.kordi.or.kr",
-      "tags": ["시니어", "노인일자리", "사회활동"],
+      "tags": [
+        "시니어",
+        "노인일자리",
+        "사회활동"
+      ],
       "source": "seed",
       "applicant": "개인"
     }
