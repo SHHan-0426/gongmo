@@ -39,7 +39,22 @@ jobs:
           else
             DAY=$(date -u -d '+9 hours' +'%Y-%m-%d')
             git commit -m "공모 일일 자동 수집 ($DAY)"
-            git push origin main
+            # 수집에 5~7분이 걸린다. 그 사이 사람이 코드를 push하면 원격이 앞서서
+            # push가 거부되고 배포까지 통째로 실패한다(2026-09-03 실제 발생).
+            # 원격 변경분을 rebase로 따라잡고 재시도한다.
+            # 커밋하는 건 programs.json(재생성물) 하나뿐이라, 충돌 시엔
+            # 방금 수집한 쪽(-X theirs)을 택하는 것이 항상 옳다.
+            pushed=0
+            for i in 1 2 3; do
+              if git push origin main; then pushed=1; break; fi
+              echo "push 거부 — 원격 변경분 반영 후 재시도 ($i/3)"
+              git pull --rebase -X theirs origin main || git rebase --abort || true
+              sleep 5
+            done
+            if [ "$pushed" != "1" ]; then
+              echo "::error::3회 재시도에도 push 실패" >&2
+              exit 1
+            fi
           fi
 
       - name: Netlify 배포
