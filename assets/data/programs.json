@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-09-03T23:27:07.156Z",
-  "generated_at_kst": "2026-09-04 08:27:07 KST",
+  "generated_at": "2026-09-04T23:12:07.462Z",
+  "generated_at_kst": "2026-09-05 08:12:07 KST",
   "is_sample": false,
   "degraded": false,
   "sources": [
     {
       "source": "culture",
       "label": "문화포털 — 문화지원사업 캘린더(공모전 필터)",
-      "count": 29
+      "count": 25
     },
     {
       "source": "bizinfo",
       "label": "기업마당 — 지원사업정보(중장년 필터)",
-      "count": 46
+      "count": 50
     },
     {
       "source": "narajangteo",
       "label": "나라장터 — 용역 입찰(단체·사회서비스 필터)",
-      "count": 77
+      "count": 80
     },
     {
       "source": "gov24",
@@ -36,245 +36,13 @@
       "count": 10
     }
   ],
-  "count": 155,
-  "open_count": 97,
-  "urgent_count": 35,
-  "contest_count": 30,
+  "count": 158,
+  "open_count": 95,
+  "urgent_count": 25,
+  "contest_count": 26,
   "programs": [
     {
       "id": "p1",
-      "kind": "공모전",
-      "title": "제3회 문화도시 수원 페스티벌 [문화배율x125_사사로운 나의 도시] 사연 공모",
-      "summary": "제3회 문화도시 수원 페스티벌 [문화배율×125_사사로운 나의 도시] 사연 공모 2026년 8월 7일 (재)수원문화재단 제3회문화도시 수원 페스티벌이 10월 9일(금)부터 10일(토)까지 이틀간 대유평공원에서 열립니다. 우리의 평범한 일상에서 시작되는 시민들의 축제, ‘문화도시 수원 페스티벌’ \"당신의 이야기가 수원의 기억이 됩니다.\" 올해도 시민 한 사람",
-      "field": "글·이야기",
-      "organizer": "수원문화재단",
-      "region": "경기",
-      "target": "일반인",
-      "applicant": "개인",
-      "apply_begin": "2026-08-07",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "2026-08-07 ~ 2026-09-04",
-      "created": "",
-      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=227155&menuNo=200104",
-      "apply_url": "https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113116",
-      "tags": [
-        "공모전",
-        "프로그램·행사",
-        "기타"
-      ],
-      "source": "culture",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p2",
-      "kind": "공모전",
-      "title": "2026 차(茶) 문화 논문 공모전",
-      "summary": "2026 차 (茶) 문화 논문 공모전 대구광역시 수성구에서는 차 (茶) 문화를 활성화하고 공개 논문 공모를 통해 한국 차 문화 정립에 기여하고자 「 2026 차 (茶) 문화 논문 공모전 」 을 개최하오니 많은 관심과 참여 바랍니다. 2026 년 3 월 31 일 수 성 문 화 재 단 이 사 장",
-      "field": "글·이야기",
-      "organizer": "(재)수성문화재단",
-      "region": "전국",
-      "target": "일반인",
-      "applicant": "개인",
-      "apply_begin": "2026-09-02",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "2026-09-02 ~ 2026-09-04",
-      "created": "",
-      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=219673&menuNo=200104",
-      "apply_url": "https://www.sscf.or.kr/pages/sub.htm?mode=view&mv_data=aWR4PTgxMTAmc3RhcnRQYWdlPTAmbGlzdE5vPTQ4NCZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||",
-      "tags": [
-        "공모전",
-        "창작지원",
-        "기타"
-      ],
-      "source": "culture",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p3",
-      "kind": "공모전",
-      "title": "AI 대항해 시대, 공주 관광 활성화 아이디어 공모전 공고",
-      "summary": "",
-      "field": "아이디어·정책",
-      "organizer": "공주문화관광재단",
-      "region": "충남",
-      "target": "일반인",
-      "applicant": "개인",
-      "apply_begin": "2026-08-05",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "2026-08-05 ~ 2026-09-04",
-      "created": "",
-      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=226670&menuNo=200104",
-      "apply_url": "https://www.gongjucf.or.kr/gongjucf/board/read?boardManagementNo=72&boardNo=17293&searchCategory=&page=1&searchType=&searchWord=&menuLevel=2&menuNo=226",
-      "tags": [
-        "공모전",
-        "창작지원",
-        "기타"
-      ],
-      "source": "culture",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p4",
-      "kind": "공모전",
-      "title": "「2026 경기도 관광사진 공모전」 공고",
-      "summary": "",
-      "field": "창작·디자인",
-      "organizer": "경기관광공사",
-      "region": "경기",
-      "target": "일반인",
-      "applicant": "개인",
-      "apply_begin": "2026-06-15",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "2026-06-15 ~ 2026-09-04",
-      "created": "",
-      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=222966&menuNo=200104",
-      "apply_url": "https://ggtour.or.kr/gto/notice/notice/17ed182e-7c48-4518-8d7f-869dbd7f26f0?type=NOTI_NOTICE&page=0",
-      "tags": [
-        "공모전",
-        "기타"
-      ],
-      "source": "culture",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p5",
-      "title": "2030세대 대상 여론조사 용역 수의견적 공고",
-      "summary": "수요기관 통일부 · 추정/배정 28,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "통일부",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-29",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "마감 2026-09-04 10:00:00",
-      "created": "2026-08-28",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01703693&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p6",
-      "title": "2026년 대전 서구 일자리박람회 행사용역",
-      "summary": "수요기관 대전광역시 서구 · 추정/배정 44,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "대전광역시 서구",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-02",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "마감 2026-09-04 10:00:00",
-      "created": "2026-08-31",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01705384&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p7",
-      "title": "온두라스 AI 기반 개인 맞춤형 복지 안내 및 상담서비스 PoC 구현 및 확산전략 수립",
-      "summary": "수요기관 한국지능정보사회진흥원 · 추정/배정 312,322,414원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "조달청 대구지방조달청",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-04",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "마감 2026-09-04 12:00:00",
-      "created": "2026-09-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01707012&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p8",
-      "title": "2026년 일자리 으뜸기업 인증식, 2026년 일자리 창출 유공 정부포상 수여식 행사 위탁",
-      "summary": "수요기관 고용노동부 · 추정/배정 90,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "고용노동부",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-01",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "마감 2026-09-04 17:00:00",
-      "created": "2026-09-01",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01709043&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p9",
-      "title": "[대학혁신지원사업] 2026년도 공공기관 취업아카데미 위탁 교육 용역",
-      "summary": "수요기관 연세대학교 미래캠퍼스 · 추정/배정 9,661,850원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "연세대학교 미래캠퍼스",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-03",
-      "apply_end": "2026-09-04",
-      "always": false,
-      "period_text": "마감 2026-09-04 12:00:00",
-      "created": "2026-09-03",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01711442&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p10",
       "kind": "공모전",
       "title": "2026 제2회 인천 섬의 날 연계 인천 섬 사진 공모 공고",
       "summary": "",
@@ -296,11 +64,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 2,
+      "dday": 1,
       "urgent": true
     },
     {
-      "id": "p11",
+      "id": "p2",
       "kind": "공모전",
       "title": "2026 공공데이터 아이디어 공모",
       "summary": "2026 한국공예·디자인문화진흥원 공공데이터 아이디어 공모 문화체육관광부와 (재) 한국공예·디자인문화진흥원은 공예·공공디자인·전통문화·한복 분야의 공공데이터 개방과 활용 확대를 위한 창의적인 아이디어를 발굴하고자 「 2026 한국공예·디자인문화진흥원 공공데이터 아이디어 공모 」 를 개최하오니, 국민 여러분의 많은 관심과 참여를 바랍니다. □ 공모개요 ㅇ 공",
@@ -322,11 +90,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
-      "id": "p12",
+      "id": "p3",
       "title": "[경북] 2026년 소상공인 새바람 체인지업 사업 경영환경개선 희망 소상공인(고령) 추가모집 공고",
       "summary": "경상북도경제진흥원에서는 도내 소상공인의 활력 제고를 위해 분야별 컨설팅을 제공하고 경영환경개선을 지원할 수 있는 본 사업에 다음과 같이 소상공인을 모집하고자 공고하오니 많은 신청 바랍니다. ☞ 도내 창업 3년 이상인 소상공인, 고령 소재의 소상공인 ☞ 컨설팅 서비스, 점포환경개선(옥외 간판교체, 점포내외부개선, 스마트화) 지원금 지원 ※ 자세한 지원내용 공",
       "field": "창업",
@@ -350,86 +118,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
-      "id": "p13",
-      "title": "국민콜 110 기반 비긴급 신고 상담 전화 체계 구축을 위한 법령안 마련 연구",
-      "summary": "수요기관 국민권익위원회 정부합동민원센터 · 추정/배정 40,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "국민권익위원회 정부합동민원센터",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-27",
-      "apply_end": "2026-09-07",
-      "always": false,
-      "period_text": "마감 2026-09-07 10:00:00",
-      "created": "2026-08-25",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01688707&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 3,
-      "urgent": true
-    },
-    {
-      "id": "p14",
-      "title": "경남 서부권역 평생교육 컨소시엄 홍보·체험부스 설치 및 운영 용역(재공고, 긴급)",
-      "summary": "수요기관 경상국립대학교 · 추정/배정 88,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "경상국립대학교",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-25",
-      "apply_end": "2026-09-07",
-      "always": false,
-      "period_text": "마감 2026-09-07 16:00:00",
-      "created": "2026-08-25",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01697366&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 3,
-      "urgent": true
-    },
-    {
-      "id": "p15",
-      "title": "신종 니코틴 제품의 시장 동향 및 대응방안 연구",
-      "summary": "수요기관 보건복지부 · 추정/배정 60,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "보건복지부",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-04",
-      "apply_end": "2026-09-08",
-      "always": false,
-      "period_text": "마감 2026-09-08 10:00:00",
-      "created": "2026-08-25",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01697219&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 4,
-      "urgent": true
-    },
-    {
-      "id": "p16",
+      "id": "p4",
       "title": "[재공고] 제29회 울산교육문화예술제 위탁 용역",
       "summary": "수요기관 울산광역시교육청 · 추정/배정 37,400,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -450,11 +143,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p17",
+      "id": "p5",
       "title": "함열 도시재생 순환경제활력센터 운영을 위한 주민역량강화사업 용역",
       "summary": "수요기관 전북특별자치도 익산시 · 추정/배정 70,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -475,11 +168,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p18",
+      "id": "p6",
       "title": "산업융합 신제품 적합성 인증 수요 발굴을 위한 홍보 및 상담회 운영 지원",
       "summary": "수요기관 한국생산기술연구원 · 추정/배정 25,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -500,11 +193,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p19",
+      "id": "p7",
       "title": "2026학년도 우수학생 글로벌 취업 역량 강화 프로그램 운영 위탁 용역",
       "summary": "수요기관 부산광역시교육청 부산소프트웨어마이스터고등학교 · 추정/배정 32,935,280원 · 제한경쟁",
       "field": "용역입찰",
@@ -525,11 +218,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p20",
+      "id": "p8",
       "title": "근로복지공단 울산병원 인력 위탁(원무) 용역",
       "summary": "수요기관 근로복지공단본부 · 추정/배정 345,766,600원 · 일반경쟁",
       "field": "용역입찰",
@@ -550,11 +243,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p21",
+      "id": "p9",
       "title": "2026. 유초중등퇴직후행복한신중년 직무연수 숙박 용역 수의계약 안내 공고",
       "summary": "수요기관 경상남도교육청 경상남도교육연수원 · 추정/배정 30,974,000원 · 수의계약",
       "field": "용역입찰",
@@ -575,11 +268,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p22",
+      "id": "p10",
       "title": "2026년도 여수시 일자리박람회 대행용역",
       "summary": "수요기관 전남광주통합특별시 여수시 · 추정/배정 40,000,000원 · 수의계약",
       "field": "용역입찰",
@@ -600,11 +293,36 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p23",
+      "id": "p11",
+      "title": "차세대 항공무기체계용 첨단항공엔진 및 핵심 소재부품 기술개발 추진전략 수립 연구",
+      "summary": "수요기관 한국산업기술기획평가원 · 추정/배정 99,882,725원 · 수의계약",
+      "field": "용역입찰",
+      "organizer": "한국산업기술기획평가원",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": "2026-09-08",
+      "always": false,
+      "period_text": "마감 2026-09-08 18:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01714452&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "수의계약"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": 3,
+      "urgent": true
+    },
+    {
+      "id": "p12",
       "title": "새마을금고~대동아파트간 노후관 개량공사 GIS DB 구축 용역 소액수의계약 견적제출 안내 공고",
       "summary": "수요기관 경상남도 밀양시 · 추정/배정 25,200,000원 · 수의계약",
       "field": "용역입찰",
@@ -625,11 +343,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p24",
+      "id": "p13",
       "title": "상남 평촌마을~조음마을간 지역균형발전사업 GIS DB 구축 용역 소액수의계약 견적제출 안내 공고",
       "summary": "수요기관 경상남도 밀양시 · 추정/배정 51,110,000원 · 수의계약",
       "field": "용역입찰",
@@ -650,11 +368,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p25",
+      "id": "p14",
       "kind": "공모전",
       "title": "2026년 기형도문학관 창작시 공모전 ‘어느 푸른 저녁’ 개최 공고",
       "summary": "",
@@ -677,11 +395,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
-      "id": "p26",
+      "id": "p15",
       "title": "[전남광주] 에이지테크 산학공동 실증기반 제품 사업화 지원사업 수혜기업 모집 공고",
       "summary": "광주테크노파크 고령친화산업지원센터는 광주/전남 지역 에이지테크(고령친화산업) 관련 기업의 제품 경쟁력 강화 및 사업화를 지원하고자, 지역 대학의 연구 역량과 실증 인프라를 연계한「에이지테크 산학공동 실증기반 제품 사업화 지원사업」의 수혜기업을 모집하오니, 참여를 희망하는 기업의 많은 관심과 지원 바랍니다. ☞ 광주ㆍ전남 지역 내 본사 또는 주사업장이 소재한",
       "field": "교육",
@@ -705,11 +423,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
-      "id": "p27",
+      "id": "p16",
       "title": "우리 기업의 전략적 진출 지원을 위한 중남미 지역공동체와의 협력 사업",
       "summary": "수요기관 외교부 · 추정/배정 69,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -730,11 +448,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
-      "id": "p28",
+      "id": "p17",
       "title": "한국문화예술위원회 온오프라인 홍보채널 기획 운영",
       "summary": "수요기관 한국문화예술위원회 · 추정/배정 104,929,260원 · 제한경쟁",
       "field": "용역입찰",
@@ -755,11 +473,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
-      "id": "p29",
+      "id": "p18",
       "title": "[긴급] 원스톱 창업 상담창구 프로그램 운영 용역",
       "summary": "수요기관 호서대학교 산학협력단 · 추정/배정 40,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -780,11 +498,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
-      "id": "p30",
+      "id": "p19",
       "title": "2026년 가평군 대규모 일자리박람회 행사대행 용역",
       "summary": "수요기관 경기도 가평군 · 추정/배정 36,848,000원 · 수의계약",
       "field": "용역입찰",
@@ -805,11 +523,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 5,
+      "dday": 4,
       "urgent": true
     },
     {
-      "id": "p31",
+      "id": "p20",
       "kind": "공모전",
       "title": "2026 충남 인물열전 AI 콘텐츠 어워즈 개최 공고",
       "summary": "",
@@ -831,11 +549,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 6,
+      "dday": 5,
       "urgent": true
     },
     {
-      "id": "p32",
+      "id": "p21",
       "kind": "공모전",
       "title": "2026 판타지아대구페스타 AI 콘텐츠 공모전 개최 공고",
       "summary": "대구문화예술진흥원 공고 제 2026-156 호 2026 판타지아대구페스타 AI 콘텐츠 공모전 개최 공고 (재) 대구문화예술진흥원은 2026 판타지아대구페스타 시민 참여형 콘텐츠 발굴을 위하여 AI 를 활용한 콘텐츠 공모전을 다음과 같이 개최하오니 많은 관심과 참여 바랍니다. 2026 년 8 월 3 일 (재) 대구문화예술진흥원장 자세한 사항은 붙임파일을 참고",
@@ -858,11 +576,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
-      "id": "p33",
+      "id": "p22",
       "kind": "공모전",
       "title": "2026 수성 건축·조경 시각작품 국제 공모전 공고",
       "summary": "",
@@ -884,11 +602,39 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
-      "id": "p34",
+      "id": "p23",
+      "title": "[경기] 화성시 2026년 신중년 고용지원 사업 참여기업 모집 공고",
+      "summary": "「2026년 신중년 고용지원 사업」참여기업 모집을 위해 아래와 같이 공고합니다. ☞ 화성시에 주민등록을 둔 만 45세 이상 ~ 65세 미만 미취업 신중년을 2025년 7월 이후 정규직으로 신규 채용한 관내 중소ㆍ중견 기업 ☞ 신중년 1인당 최대 360만원 지원(기업당 연간 최대 3명 지원 가능)",
+      "field": "일자리",
+      "organizer": "경기도",
+      "executor": "기초자치단체",
+      "target": "중소기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-01",
+      "apply_end": "2026-09-11",
+      "always": false,
+      "period_text": "2026-09-01 ~ 2026-09-11",
+      "created": "2026-09-04",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126180",
+      "tags": [
+        "인력",
+        "경기",
+        "2026",
+        "고용지원",
+        "정규직"
+      ],
+      "source": "bizinfo",
+      "kind": "지원사업",
+      "status": "open",
+      "dday": 6,
+      "urgent": true
+    },
+    {
+      "id": "p24",
       "title": "[경북] 서부권 2026년 4차 지식재산 긴급지원(중소기업 IP바로지원) 사업 모집 공고(해외출원 지원)",
       "summary": "지역 중소기업에 맞춤형 지식재산 서비스를 지원하는 ‘지식재산 긴급지원’ 사업의 2026년 시행 계획을 다음과 같이 공고하오니 사업에 참여하고자 하는 기업의 많은 신청 바랍니다. ☞ 경상북도 서부지역 6개 시ㆍ군(구미시, 김천시, 상주시, 칠곡군, 성주군, 고령군) 소재 중소기업 (「중소기업 기본법」 제2조 및 동법 시행령 제3조에 의거) ☞ 해외출원 지원 ",
       "field": "기타",
@@ -912,11 +658,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
-      "id": "p35",
+      "id": "p25",
       "title": "가고 싶은 섬 가꾸기사업 주민역량강화 용역",
       "summary": "수요기관 전남광주통합특별시 목포시 · 추정/배정 198,086,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -937,11 +683,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
-      "id": "p36",
+      "id": "p26",
       "title": "(앵커) 지산학 인력양성 취업캠프 위탁 운영 용역업체 선정",
       "summary": "수요기관 동아방송예술대학교 산학협력단 · 추정/배정 60,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -962,11 +708,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p37",
+      "id": "p27",
       "title": "2026학년도 한경국립대학교 HK취업박람회",
       "summary": "수요기관 한경국립대학교 · 추정/배정 97,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -987,11 +733,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p38",
+      "id": "p28",
       "title": "2026년 시니어일자리 기업 상생 컨퍼런스 행사 운영 대행",
       "summary": "수요기관 한국노인인력개발원 · 추정/배정 80,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1012,11 +758,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p39",
+      "id": "p29",
       "title": "2026학년도 마산공업고등학교 경남형 직업계고 해외인턴십(해외취업연계형) 운영 용역 재공고",
       "summary": "수요기관 경상남도교육청 마산공업고등학교 · 추정/배정 68,772,050원 · 제한경쟁",
       "field": "용역입찰",
@@ -1037,11 +783,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p40",
+      "id": "p30",
       "title": "2026 문화예술교육사 포럼 운영",
       "summary": "수요기관 한국문화예술교육진흥원 · 추정/배정 60,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1062,11 +808,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p41",
+      "id": "p31",
       "title": "2026년 지역문화예술특성화지원사업 대축제 오케스트라 대중가수 협업 콘서트 운영 용역(재)",
       "summary": "수요기관 경북문화재단 · 추정/배정 139,200,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1087,11 +833,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p42",
+      "id": "p32",
       "title": "2026 홈케어/재활/복지전시회 KTL 공동홍보관 독립부스 설치",
       "summary": "수요기관 한국산업기술시험원 · 추정/배정 86,460,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1112,11 +858,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p43",
+      "id": "p33",
       "kind": "공모전",
       "title": "2026 대국민 스포츠활동 장려 미디어 챌린지 <AI활용 스포츠 활동 숏폼 공모전>",
       "summary": "서울올림픽기념국민체육진흥공단에서는 제64회 스포츠의 날을 맞아 대국민 스포츠 활동을 장려하고자「2026 대국민 스포츠 활동 장려 미디어 챌린지 」를개최합니다. - 공 모 명 : 2026 대국민 스포츠 활동 장려 미디어 챌린지 - 공모주제 : 실제 촬영한 스포츠 활동 영상을 생성형 AI로 자유롭게 재구성한 나만의 스포츠 이야기 - 공모부문 : 숏폼 영상(30",
@@ -1138,11 +884,61 @@
       ],
       "source": "culture",
       "status": "open",
+      "dday": 10,
+      "urgent": false
+    },
+    {
+      "id": "p34",
+      "title": "통합돌봄 제도 홍보영상 제작 민간협력사 선정",
+      "summary": "수요기관 한국언론진흥재단 · 추정/배정 100,000,000원 · 제한경쟁",
+      "field": "용역입찰",
+      "organizer": "한국언론진흥재단",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": "2026-09-15",
+      "always": false,
+      "period_text": "마감 2026-09-15 11:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704578&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "제한경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": 10,
+      "urgent": false
+    },
+    {
+      "id": "p35",
+      "title": "2026년 제주느영나영시니어클럽 노인일자리 참여자 문화체험 여행용역",
+      "summary": "수요기관 사단법인 느영나영복지공동체 · 추정/배정 120,000,000원 · 제한경쟁",
+      "field": "용역입찰",
+      "organizer": "사단법인 느영나영복지공동체",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": "2026-09-16",
+      "always": false,
+      "period_text": "마감 2026-09-16 18:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713749&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "제한경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
       "dday": 11,
       "urgent": false
     },
     {
-      "id": "p44",
+      "id": "p36",
       "title": "2026 사회복지공동모금회 기업사회공헌 결과보고  영상 제작",
       "summary": "수요기관 사회복지법인 사회복지공동모금회 · 추정/배정 170,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1163,11 +959,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 13,
+      "dday": 12,
       "urgent": false
     },
     {
-      "id": "p45",
+      "id": "p37",
       "kind": "공모전",
       "title": "2026년 에코스테이션 자원재순환 창작 공모전",
       "summary": "",
@@ -1190,11 +986,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
-      "id": "p46",
+      "id": "p38",
       "title": "[경북] 고령군 2026년 중소기업 기숙사 임차비 지원사업 참여기업 추가모집 공고",
       "summary": "경상북도경제진흥원에서는 고령군 소재 중소기업의 주거지원을 통한 우수인력 확보 및 장기 재직 지원으로 지역경제 활성화를 도모하고자「2026년 고령군 중소기업 기숙사 임차비 지원사업」 참여기업을 모집하오니 많은 참여 바랍니다. ☞ 고령군 소재 중소기업 중 아파트ㆍ빌라ㆍ공동주택ㆍ주거용 오피스텔ㆍ다가구주택 등을 임차하여 기숙사로 사용하는 기업 - 본사 또는 공장 ",
       "field": "일자리",
@@ -1218,11 +1014,36 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
-      "id": "p47",
+      "id": "p39",
+      "title": "찾아가는 진로 교육 및 취업지원 용역",
+      "summary": "수요기관 국방전직교육원 · 추정/배정 494,000,000원 · 제한경쟁",
+      "field": "용역입찰",
+      "organizer": "국방전직교육원",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": "2026-09-18",
+      "always": false,
+      "period_text": "마감 2026-09-18 18:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713645&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "제한경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": 13,
+      "urgent": false
+    },
+    {
+      "id": "p40",
       "kind": "공모전",
       "title": "<제10회 수성인문학제> 2026 수성구 백일장 공모전 공고",
       "summary": "제10회 수성인문학제> 2026 수성구 백일장 공모전 공고·제출기간 : 9. 17.(목) 09:00 ~ 9. 19.(토) 17:00·문의 : 범어도서관 (053-668-1624) ※ 제출기간과 제출서류를 반드시 확인해 주시기 바랍니다. ※제출기간 외에 발송된 메일은 접수되지 않으며 제출서류 누락 시 참가가 불가하오니 유의해 주시기 바랍니다.",
@@ -1245,11 +1066,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 15,
+      "dday": 14,
       "urgent": false
     },
     {
-      "id": "p48",
+      "id": "p41",
       "kind": "공모전",
       "title": "[예술교양학부]《제4회 K'ARTS 젊은 평론가상》 공모전 개최 안내",
       "summary": "예술교양학부에서 <제4회 K'ARTS 젊은 평론가상 공모전>을 개최합니다▣ □ 공모 내용 ㅇ 응모 자격: 한국예술종합학교 예술사, 전문사 재학생 및 휴학생 ㅇ 응모 기간: 2026년 5월 1일 (금) ~ 9월 20일 (일) 18:00까지 ㅇ 응모 요령: 아래 콘텐츠를 활용하여 누리 공지에 게시된 [붙임1] 젊은 평론가상 작성 서식 파일에 작성 (*200자 ",
@@ -1271,11 +1092,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 16,
+      "dday": 15,
       "urgent": false
     },
     {
-      "id": "p49",
+      "id": "p42",
       "kind": "공모전",
       "title": "2026 문화다양성 AI 영상 콘텐츠 공모전",
       "summary": "문화체육관광부와 한국문화예술교육진흥원은 미디어 분야(방송·영상·음악·게임·콘텐츠 등)의 사회적 파급력이 확대됨에 따라, 콘텐츠를 통해 문화다양성의 가치를 발견하고 확산하고자 합니다. 「나의 세계 문화가 되다」를 주제로 개인의 경험과 가치관, 감수성, 취향이 만들어낸 고유한 세계를 AI 영상으로 표현하고, 서로의 세계를 이해하고 공존하는 문화다양성에 대한 이",
@@ -1298,11 +1119,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 17,
+      "dday": 16,
       "urgent": false
     },
     {
-      "id": "p50",
+      "id": "p43",
       "kind": "공모전",
       "title": "국립정동극장 세실 '2027 창작ing' 작품 공모",
       "summary": "국립정동극장 세실 '2027 창작 ing' 작품 공모 \" 시간의 가치, 창작의 힘을 믿습니다.\" \" 창작의 과정을 공유하는 곳, 창작핵심기지 국립정동극장 세실입니다.\" 국립정동극장 세실 '2027 창작 ing' 무대에 오를 작품을 공개모집 합니다. 본 공모는 연극, 뮤지컬, 전통, 무용 4 개 분야를 대상, 열린 공모로 진행합니다. - 접수 기간 : 202",
@@ -1324,11 +1145,39 @@
       ],
       "source": "culture",
       "status": "open",
+      "dday": 16,
+      "urgent": false
+    },
+    {
+      "id": "p44",
+      "title": "2026년 6차 재취업지원서비스 기업컨설팅 지원 사업장 모집 공고",
+      "summary": "노사발전재단은 기업 내 안정적인 재취업지원서비스 제도 안착을 위해 「2026년 재취업지원서비스 기업컨설팅」 지원사업장 모집에 관한 사항을 다음과 같이 공고합니다. ☞ 재취업지원서비스 의무대상기업 및 제도 도입ㆍ개선 희망 기업 ※ 자세한 지원대상 공고문 참조 ☞ 컨설팅수행기관을 통해 사업장의 재취업지원서비스 제도 도입 및 설계, 운영 방식 및 성과관리체계 등",
+      "field": "일자리",
+      "organizer": "고용노동부",
+      "executor": "노사발전재단",
+      "target": "중소기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-01",
+      "apply_end": "2026-09-22",
+      "always": false,
+      "period_text": "2026-09-01 ~ 2026-09-22",
+      "created": "2026-09-04",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126152",
+      "tags": [
+        "경영",
+        "서울",
+        "부산",
+        "대구",
+        "인천"
+      ],
+      "source": "bizinfo",
+      "kind": "지원사업",
+      "status": "open",
       "dday": 17,
       "urgent": false
     },
     {
-      "id": "p51",
+      "id": "p45",
       "title": "2026년 하반기 여성과학기술인 R&D 경력복귀 지원사업 모집 공고",
       "summary": "이공계 여성의 R&D 분야 복귀 및 경제활동 참여를 지원하고자, 2026년 하반기「여성과학기술인 R&D 경력복귀 지원사업」을 다음과 같이 공고합니다. ☞ 경력단절 여성과학기술인을 활용하고자 하는 과학기술분야 연구기관, 중소ㆍ중견기업 ※ 지원내용 별 지원대상 상이, 공고문 참조 ☞ 인건비, 연구활동비 지원, 교육ㆍ멘토링 지원 ※ 자세한 지원내용 공고문 참조",
       "field": "일자리",
@@ -1352,11 +1201,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 19,
+      "dday": 18,
       "urgent": false
     },
     {
-      "id": "p52",
+      "id": "p46",
       "title": "정선읍 농촌중심지활성화사업  배후 읍,면마을 지역역량강화 용역",
       "summary": "수요기관 한국농어촌공사 강원지역본부 원주지사 · 추정/배정 3,000,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -1377,11 +1226,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 19,
+      "dday": 18,
       "urgent": false
     },
     {
-      "id": "p53",
+      "id": "p47",
       "kind": "공모전",
       "title": "2026년 인천관광 열린혁신 아이디어 공모전",
       "summary": "열린혁신아이디어공모전_포스터.jpg (2MByte) 사진 다운받기",
@@ -1403,11 +1252,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
-      "id": "p54",
+      "id": "p48",
       "kind": "공모전",
       "title": "「2026 고향사랑기금사업」 세종 시각예술인 미술작품 공모 안내",
       "summary": "세종특별자치시가 2026 고향사랑기금사업 일환으로 추진하는 세종 시각예술인 미술작품 공모 를 안내드립니다. 우리 시는 세종 예술인의 안정적인 창작활동을 지원하고 지역 미술시장 활성화를 위해 「 세종 시각예술인 미술작품 공모」를 추진합니다. 세종 시각예술인(미술작품 모든 분야) 께서는 공고문 및 아래 내용을 참고하시어 신청하여 주시기 바랍니다. ※ 자세한 내",
@@ -1429,11 +1278,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 26,
+      "dday": 25,
       "urgent": false
     },
     {
-      "id": "p55",
+      "id": "p49",
       "kind": "공모전",
       "title": "[모두의 예술 공모전] Be the AI Artist : AI 아트 공모전 <나는 아티스트>",
       "summary": "",
@@ -1456,11 +1305,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 26,
+      "dday": 25,
       "urgent": false
     },
     {
-      "id": "p56",
+      "id": "p50",
       "kind": "공모전",
       "title": "제19회 잡지 미디어 콘텐츠 공모전",
       "summary": "2026 년 『 제 19 회 잡지 미디어 콘텐츠 공모전 - 잡지가 문화다 !』 ❙ 목적 : (사) 한국잡지협회는 잡지가 우리 사회의 문화적 다양성에 기여하고 문화의 근간이 되는 중요한 매체임을 알리기 위하여 한국언론진흥재단의 지원으로 < 잡지 미디어 콘텐츠 공모전 > 을 개최합니다. 잡지에 연관된 산문, 영상, 만화, 그림, 사진 등 독자가 직접 만드는 다",
@@ -1482,11 +1331,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 26,
+      "dday": 25,
       "urgent": false
     },
     {
-      "id": "p57",
+      "id": "p51",
       "kind": "공모전",
       "title": "2026년 과학경진대회 브이로그 공모전",
       "summary": "2026년 과학경진대회 브이로그 공모전 2026년 과학경진대회에 도전하는 순간들을 생생한 영상으로 남겨보세요! 실험·연구·제작 과정부터 고민과 성장, 현장의 경험까지 여러분만의 특별한 이야기를 기다립니다. □ 브이로그 공모전 ○ (공 모 명) 2026년 과학경진대회 브이로그 공모전 ○ (공모내용) 과학경진대회(학생과학발명품경진대회, 과학전람회) 준비과정 또",
@@ -1508,11 +1357,39 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 26,
+      "dday": 25,
       "urgent": false
     },
     {
-      "id": "p58",
+      "id": "p52",
+      "title": "[경기] 2026년 직장문화개선 기업워크숍(청년여성 특화프로그램) 참여 기업 모집 공고",
+      "summary": "경기도일자리재단(경기광역새일센터)에서 청년 여성의 초기경력 형성을 지원하여 선제적 경력단절예방에 기여하기 위해 청년여성 재직자가 포함된 기업에 워크숍을 지원해드립니다. ☞ 경기도 기업체 및 새일센터 구인등록기업, 여성친화일촌기업 등 - 청년 여성(만19세~39세) 포함 20명 이상 참여 가능한 기업 ☞ 사내 워크숍(신체활동 프로그램, 팀빌딩 워크숍 등 참여",
+      "field": "일자리",
+      "organizer": "경기도",
+      "executor": "경기도일자리재단",
+      "target": "중소기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-03",
+      "apply_end": "2026-09-30",
+      "always": false,
+      "period_text": "2026-09-03 ~ 2026-09-30",
+      "created": "2026-09-04",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126147",
+      "tags": [
+        "인력",
+        "경기",
+        "슬로건작성",
+        "경기광역여성새로일하기센터",
+        "경력설계"
+      ],
+      "source": "bizinfo",
+      "kind": "지원사업",
+      "status": "open",
+      "dday": 25,
+      "urgent": false
+    },
+    {
+      "id": "p53",
       "title": "[제주] 2026년 3차 중장년 중소기업 장기재직 재형저축 참여기업(중장년근로자) 모집 공고",
       "summary": "인력 수급이 어려운 중소기업의 숙련인력 장기근속 장려를 통한 기업경쟁력 강화 및 근로자의 목돈마련 지원을 위하여「제주특별자치도 일자리 창출 지원에 관한 조례」 제6조 및 제13조에 따라 2026년「제주 중소기업 장기재직 재형저축」사업 참여기업 및 중장년 노동자 3차 모집을 아래와 같이 공고합니다. ☞ 「중소기업기본법」제2조에 따른 중소기업 ※ 자세한 지원대",
       "field": "일자리",
@@ -1536,11 +1413,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 26,
+      "dday": 25,
       "urgent": false
     },
     {
-      "id": "p59",
+      "id": "p54",
       "kind": "공모전",
       "title": "[유관기관협조] 2026 제주, 기후의 경고를 담다 - 제2회 제주 환경 포토에세이 전국 공모전",
       "summary": "제주특별자치도 지속가능환경교육센터는 제주특별자치도로부터 제주환경교육센터(광역)로 지정받아 운영하고 있으며, 기후에너지환경부 우수 환경교육프로그램 지정(도내 최다)과 교육부 교육기부 진로체험기관 인증을 받은 환경교육 전문기관입니다. 본 센터에서는 제주의 기후위기 및 환경재난에 대한 관심과 인식을 높이고, 환경보전 실천문화를 확산하기 위해 `2026 제주, 기",
@@ -1562,11 +1439,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 28,
+      "dday": 27,
       "urgent": false
     },
     {
-      "id": "p60",
+      "id": "p55",
       "kind": "공모전",
       "title": "2026 경남 3D 웹툰배경 활용 단편웹툰 공모전 공고",
       "summary": "재) 경남문화예술진흥원 공고 제 2026 - 266 호 2026 경남 3D 웹툰배경 활용 단편웹툰 공모전 모집 공고 (재) 경남문화예술진흥원에서는 경남의 지역 자원을 소재로 한 웹툰 콘텐츠 제작 활성화로 지역 문화자원의 홍보와 웹툰 산업의 동반 성장을 위해 「 2026 경남 3D 웹툰배경 활용 단편웹툰 공모전 」 을 개최하오니 도내 예비, 기성웹툰 작가분들",
@@ -1589,11 +1466,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 34,
+      "dday": 33,
       "urgent": false
     },
     {
-      "id": "p61",
+      "id": "p56",
       "kind": "공모전",
       "title": "[유관기관협조] 제8회 아름다운 해상교량 사진 공모전",
       "summary": "우리 청에서는 올해 `사람과 함께 담는 해상교량`이라는 주제로 해상교량의 대국민 홍보를 위해「제8회 아름다운 해상교량 사진 공모전」을 추진하고 있습니다. 사진공모전에 관심있는 분들의 많이 참여 바랍니다. - 공모전 개요 - 가. 공모기간 : `26. 04. 01. ~ `26. 10. 12. 나. 참가대상 : 우리 청 해상교량에 관심있는 누구나 참여 가능 다",
@@ -1615,11 +1492,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 38,
+      "dday": 37,
       "urgent": false
     },
     {
-      "id": "p62",
+      "id": "p57",
       "kind": "공모전",
       "title": "2026년 고모역 사진 공모전 개최",
       "summary": "2026년 고모역 사진 공모전』 (재)수성문화재단 문화도시본부에서는 고모역의 매력을 확산하고 널리 알리고자 『2026년 고모역 사진 공모전』 을 개최하오니 많은 관심과 참여 바랍니다. ■ 세부내용은 포스터와 붙임 공고문을 참조 해 주시기 바랍니다. [유의사항] ■ 모든 출품작은 타 공모전에 발표되지 않거나, 상품화 등록(중)이 되지 않은 결격 사유가 없는 ",
@@ -1642,11 +1519,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 44,
+      "dday": 43,
       "urgent": false
     },
     {
-      "id": "p63",
+      "id": "p58",
       "kind": "공모전",
       "title": "[공고] 제9회 국립김해박물관 가야 웹툰 공모전 개최(참가신청서)",
       "summary": "국립김해박물관 공고 제 2026-11 호 「 제 9 회 국립김해박물관 가야 웹툰 공모전 」 개최 공고 국립김해박물관과 인제대학교 글로컬대학사업본부는 가야를 널리 홍보하고자 「 제 9 회 국립김해박물관 가야 웹툰 공모전 」 을 아래와 같이 개최하오니 관심 있는 분의 많은 지원을 바랍니다. 2026. 7. 6. 국 립 김 해 박 물 관 장 1. 공 모 명 : ",
@@ -1668,11 +1545,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 44,
+      "dday": 43,
       "urgent": false
     },
     {
-      "id": "p64",
+      "id": "p59",
       "title": "2026년 퇴직공무원 사회공헌사업(방위사업 Bridge와 함께 참여해요) 컨설팅 참여기업 모집 공고",
       "summary": "본 사업은 인사혁신처에서 주관하고 청에서 운영하는 퇴직공무원 사회공헌사업으로, 방위사업청 퇴직공무원의 전문성을 활용하여 방위사업에 관심 있는 기업에 대한 컨설팅을 실시할 예정이오니, 관심있는 기업들은 아래의 양식에 따라 신청하여 주시기 바랍니다. ☞ 방위사업에 관심 있는 기업 ☞ 방위사업 절차, 방산원가 산정방법 및 원가 관련 규정, 청에서 주관하는 각종 ",
       "field": "사회공헌",
@@ -1696,25 +1573,25 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 56,
+      "dday": 55,
       "urgent": false
     },
     {
-      "id": "p65",
+      "id": "p60",
       "kind": "공모전",
       "title": "한국PCO협회, 「2026년 신규 MICE 행사 아이디어 공모전」안내",
       "summary": "사)한국PCO협회에서는 「2026년 신규 MICE 행사 아이디어 공모전」을 통해 창의적인 아이디어를 선발하고, 실제 행사로 개최될 수 있도록 육성하고자 다음과 같이 공모전을 공고합니다. MICE 산업에 관심과 재능을 가진 분들의 많은 참여를 바랍니다. [공모개요] - 공 모 명: 2026년 신규 MICE 행사 아이디어 공모전 - 공모기간: 2026년 9월 ",
       "field": "아이디어·정책",
       "organizer": "K-MICE",
       "region": "전국",
-      "target": "일반인,관련종사자",
+      "target": "일반인,관광인,관련종사자",
       "applicant": "개인",
       "apply_begin": "2026-09-01",
       "apply_end": "2026-11-15",
       "always": false,
       "period_text": "2026-09-01 ~ 2026-11-15",
       "created": "",
-      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=228738&menuNo=200104",
+      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=229035&menuNo=200104",
       "apply_url": "https://k-mice.visitkorea.or.kr/",
       "tags": [
         "공모전",
@@ -1722,11 +1599,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 72,
+      "dday": 71,
       "urgent": false
     },
     {
-      "id": "p66",
+      "id": "p61",
       "kind": "공모전",
       "title": "2026 충주문화예술지원사업 대외활동 참가비 지원(공모전 · 대회 · 콩쿠르 등)",
       "summary": "2026 충주문화예술지원사업 대외활동 참가비 지원(공모전·대회·콩쿠르 등) 안내문 ❚ 지원목적 • 충주시 예술가들의 대외활동 지원을 통한 예술 활동 문화 조성 ❚ 지원내용 • 지원자격 - (개인) 공고일 이전 최소 6개월 이상 주민등록상 충주시에 거주하는 예술인 - (단체) 공고일 이전 최소 6개월 이상 충주시에 소재지를 두고 활동하고 있는 단체로 아래사항",
@@ -1748,11 +1625,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 87,
+      "dday": 86,
       "urgent": false
     },
     {
-      "id": "p67",
+      "id": "p62",
       "title": "2026년 소상공인 무료 법률ㆍ세무ㆍ노무 간편상담 지원사업 모집 공고",
       "summary": "중소벤처기업부와 소상공인연합회는 소상공인 여러분의 성공적인 사업 운영을 돕고 경영 현장에서 겪는 다양한 애로사항을 해결해 드리고자 「소상공인 간편상담센터」를 운영합니다. 각 분야의 전문가가 1:1 맞춤형 무료 상담을 제공하오니, 소상공인 여러분의 많은 관심과 참여를 바랍니다. 소상공인의 성공을 함께하는 든든한 동반자가 되겠습니다. ☞ 소상공인이라면 누구나 ",
       "field": "기타",
@@ -1776,11 +1653,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 87,
+      "dday": 86,
       "urgent": false
     },
     {
-      "id": "p68",
+      "id": "p63",
       "title": "2026년 일터혁신 상생컨설팅 지원사업 기업 모집 공고",
       "summary": "한국능률협회컨설팅에서는 일터혁신 상생컨설팅을 희망하는 기업에 맞춤형 컨설팅을 지원하여 근로자의 전문성을 높이고, 일과 삶의 조화를 추구하며 기업의 경쟁력을 강화하기 위해「일터혁신 상생컨설팅 지원사업 기업 모집」을 다음과 같이 공고하오니, 본 사업에 참여를 원하는 기업은 신청하여 주시기 바랍니다. ☞ 고용보험에 가입하고, 일터혁신에 대한 필요성과 의지가 있는",
       "field": "일자리",
@@ -1804,11 +1681,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 87,
+      "dday": 86,
       "urgent": false
     },
     {
-      "id": "p69",
+      "id": "p64",
       "title": "2026년 시니어인턴십 사업 참여 기업 모집 공고",
       "summary": "60세 이상자에게 일할 기회를 제공함으로써 시니어의 직업능력 강화 및 재취업기회를 촉진함과 동시에 시니어에 대한 긍정적 인식의 확산을 도모하는 사업입니다. ☞ 만 60세 이상 시니어를 채용 예정인 전국 4대보험 가입 사업장 (지역제한없음) ☞ 일반형 (1인당 최대 270만원), 장기취업유지형 (1인당 최대 280만원) 지원 ※ 자세한 지원내용 공고문 참조",
       "field": "일자리",
@@ -1832,11 +1709,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 87,
+      "dday": 86,
       "urgent": false
     },
     {
-      "id": "p70",
+      "id": "p65",
       "title": "연안침식 완충구역 설정에 대한 주민 수용성 조사 및 분석",
       "summary": "수요기관 한국해양수산개발원 · 추정/배정 36,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1861,7 +1738,7 @@
       "urgent": false
     },
     {
-      "id": "p71",
+      "id": "p66",
       "title": "「수산물 온라인 유통시장 동향조사」",
       "summary": "수요기관 한국해양수산개발원 · 추정/배정 170,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1886,7 +1763,7 @@
       "urgent": false
     },
     {
-      "id": "p72",
+      "id": "p67",
       "title": "2026년 으뜸기업 및 일자리창출 정부포상 행사 운영 수의계약 안내 공고",
       "summary": "수요기관 고용노동부 · 추정/배정 90,000,000원 · 수의계약",
       "field": "용역입찰",
@@ -1911,7 +1788,7 @@
       "urgent": false
     },
     {
-      "id": "p73",
+      "id": "p68",
       "title": "논산 문화예술교육지원 및 네트워킹 운영 용역",
       "summary": "수요기관 백석대학교 산학협력단 · 추정/배정 15,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -1936,7 +1813,7 @@
       "urgent": false
     },
     {
-      "id": "p74",
+      "id": "p69",
       "title": "퇴직공제제도 계리용역",
       "summary": "수요기관 재단법인새마을금고복지회 · 추정/배정 140,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -1961,7 +1838,7 @@
       "urgent": false
     },
     {
-      "id": "p75",
+      "id": "p70",
       "title": "2026년 군포시늘푸른노인복지관 식자재 납품 선정 입찰 공고",
       "summary": "수요기관 군포시늘푸른노인복지관 · 추정/배정 800,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -1986,7 +1863,7 @@
       "urgent": false
     },
     {
-      "id": "p76",
+      "id": "p71",
       "title": "[2차년도 앵커사업] 대구가톨릭대학교 2026 경북 앵커 U-온동네 초등돌봄·교육 전문인력 양성 2차 연수 용역 사업자 선정",
       "summary": "수요기관 대구가톨릭대학교 · 제한경쟁",
       "field": "용역입찰",
@@ -2011,7 +1888,7 @@
       "urgent": false
     },
     {
-      "id": "p77",
+      "id": "p72",
       "title": "2026 은퇴선수 일자리 창출 사업 운영 대행 용역",
       "summary": "수요기관 서울특별시체육회 · 추정/배정 97,600,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2036,7 +1913,7 @@
       "urgent": false
     },
     {
-      "id": "p78",
+      "id": "p73",
       "title": "2026 세대공감 기억웹툰 운영 대행 용역(협상계약)",
       "summary": "수요기관 전남광주통합특별시 순천시 · 추정/배정 150,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2061,7 +1938,7 @@
       "urgent": false
     },
     {
-      "id": "p79",
+      "id": "p74",
       "title": "제3회 광명시 주민자치박람회 행사대행 용역",
       "summary": "수요기관 경기도 광명시 · 추정/배정 75,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2086,7 +1963,7 @@
       "urgent": false
     },
     {
-      "id": "p80",
+      "id": "p75",
       "title": "(재공고) 2026년 CO-SHOW 차세대통신 컨소시엄 행사 운영 용역",
       "summary": "수요기관 국민대학교 산학협력단 · 추정/배정 200,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2111,7 +1988,7 @@
       "urgent": false
     },
     {
-      "id": "p81",
+      "id": "p76",
       "title": "2026학년도 AI기반 MJU 취업·창업·진학박람회 용역",
       "summary": "수요기관 명지대학교 · 추정/배정 53,100,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2136,7 +2013,7 @@
       "urgent": false
     },
     {
-      "id": "p82",
+      "id": "p77",
       "title": "울진 해양치유 전문인력 양성 및 주민 역량강화 교육 용역",
       "summary": "수요기관 경상북도 울진군 · 추정/배정 100,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2161,7 +2038,7 @@
       "urgent": false
     },
     {
-      "id": "p83",
+      "id": "p78",
       "title": "(국고)2026학년도「온∙오프라인 하이브리드형 취업박람회 및「매칭데이 2차」프로그램",
       "summary": "수요기관 대전과학기술대학교 산학협력단 · 추정/배정 51,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2186,7 +2063,7 @@
       "urgent": false
     },
     {
-      "id": "p84",
+      "id": "p79",
       "title": "2026 사회적경제 아이디어 발굴 솔버톤대회 운영",
       "summary": "수요기관 재단법인 부여군 지역공동체 활성화 재단 · 추정/배정 67,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2211,7 +2088,7 @@
       "urgent": false
     },
     {
-      "id": "p85",
+      "id": "p80",
       "title": "2026 동물복지 인증 가치소비 페스타 운영 용역",
       "summary": "수요기관 사단법인 식생활교육국민네트워크 · 추정/배정 50,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2236,7 +2113,7 @@
       "urgent": false
     },
     {
-      "id": "p86",
+      "id": "p81",
       "title": "「북이면 화상1리 휴먼케어 및 주민역량강화 용역」제안서 제출안내(협상에 의한 계약)(재공고)",
       "summary": "수요기관 충청북도 청주시 · 추정/배정 94,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2261,7 +2138,7 @@
       "urgent": false
     },
     {
-      "id": "p87",
+      "id": "p82",
       "title": "「북이면 현암2리 휴먼케어 및 주민역량강화 용역」제안서 제출안내(협상에 의한 계약)(재공고)",
       "summary": "수요기관 충청북도 청주시 · 추정/배정 86,400,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2286,7 +2163,7 @@
       "urgent": false
     },
     {
-      "id": "p88",
+      "id": "p83",
       "title": "(긴급)유엔남구대학로자율상권조합 유엔남구대학로상권 청년마을 용역",
       "summary": "수요기관 유엔남구대학로 자율상권조합 · 추정/배정 110,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2311,7 +2188,7 @@
       "urgent": false
     },
     {
-      "id": "p89",
+      "id": "p84",
       "title": "(긴급)유엔남구대학로자율상권조합 청년과 외국인이 함께하는 문화예술 콘서트 용역",
       "summary": "수요기관 유엔남구대학로 자율상권조합 · 추정/배정 98,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2336,7 +2213,7 @@
       "urgent": false
     },
     {
-      "id": "p90",
+      "id": "p85",
       "title": "영주로 상권 인생고기Day & 인생야시장 운영 용역",
       "summary": "수요기관 영주원도심자율상권조합 · 추정/배정 60,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2361,7 +2238,7 @@
       "urgent": false
     },
     {
-      "id": "p91",
+      "id": "p86",
       "title": "신노년층 노인의 경로당 이용 확대 방안 연구",
       "summary": "수요기관 사단법인 대한노인회 중앙회 · 추정/배정 44,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2386,7 +2263,7 @@
       "urgent": false
     },
     {
-      "id": "p92",
+      "id": "p87",
       "title": "2026년 세종 지역주도형 일자리사업 실태조사",
       "summary": "수요기관 재단법인세종일자리경제진흥원 · 추정/배정 40,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2411,7 +2288,7 @@
       "urgent": false
     },
     {
-      "id": "p93",
+      "id": "p88",
       "title": "2026년 타운매니지먼트 및 마을라운지 운영 용역",
       "summary": "수요기관 경기도 의왕시 · 추정/배정 82,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2436,7 +2313,7 @@
       "urgent": false
     },
     {
-      "id": "p94",
+      "id": "p89",
       "title": "[2차년도 앵커사업] 대구가톨릭대학교 경북 앵커 U-온동네 초등돌봄・교육 간담회 운영 사업자 선정",
       "summary": "수요기관 대구가톨릭대학교 · 추정/배정 60,900,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2461,7 +2338,7 @@
       "urgent": false
     },
     {
-      "id": "p95",
+      "id": "p90",
       "title": "부·울·경 광역이음프로젝트 통합 거버넌스 구축 및 2차년도 신규일자리 발굴 연구",
       "summary": "수요기관 부산상공회의소 · 추정/배정 150,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2486,7 +2363,7 @@
       "urgent": false
     },
     {
-      "id": "p96",
+      "id": "p91",
       "title": "2026학년도 2학기 AI기반 취업성공 로드맵",
       "summary": "수요기관 서정대학 · 추정/배정 27,760,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2511,7 +2388,7 @@
       "urgent": false
     },
     {
-      "id": "p97",
+      "id": "p92",
       "title": "내일을 잇는 희망사다리 평생교육 아카데미 위탁 운영",
       "summary": "수요기관 조선대학교 · 추정/배정 45,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2536,7 +2413,82 @@
       "urgent": false
     },
     {
-      "id": "p98",
+      "id": "p93",
+      "title": "한국사회복지공제회 사회복지종사자 상해보험 가입 실태조사",
+      "summary": "수요기관 한국사회복지공제회 · 추정/배정 35,000,000원 · 일반경쟁",
+      "field": "용역입찰",
+      "organizer": "한국사회복지공제회",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": null,
+      "always": false,
+      "period_text": "",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713510&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "일반경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p94",
+      "title": "새마을금고 배리어프리 자동화기기 UI/UX 컨설팅 및 개발지원 용역",
+      "summary": "수요기관 새마을금고중앙회 · 일반경쟁",
+      "field": "용역입찰",
+      "organizer": "새마을금고중앙회",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": null,
+      "always": false,
+      "period_text": "",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713579&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "일반경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p95",
+      "title": "경기대학교 수원캠퍼스 제2복지관 구내서점 운영사업자 선정 입찰",
+      "summary": "수요기관 경기대학교 · 추정/배정 1원 · 제한경쟁",
+      "field": "용역입찰",
+      "organizer": "경기대학교",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-04",
+      "apply_end": null,
+      "always": false,
+      "period_text": "",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713975&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "제한경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p96",
       "title": "2027학년도 신입생 모집 입학 관련  상담 및 홍보업무 위탁(재공고)",
       "summary": "수요기관 서일대학 · 추정/배정 66,000,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2561,7 +2513,7 @@
       "urgent": false
     },
     {
-      "id": "p99",
+      "id": "p97",
       "title": "2026년 충남 예비노인 일자리지원 기본계획 수립 연구 용역",
       "summary": "수요기관 재단법인충남경제진흥원 · 추정/배정 38,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2586,7 +2538,82 @@
       "urgent": false
     },
     {
+      "id": "p98",
+      "title": "차세대소형위성2호 영상활용 연구 과제 관련 위성영상 분석의뢰",
+      "summary": "수요기관 국립공원공단국립공원연구원 · 추정/배정 16,000,000원 · 수의계약",
+      "field": "용역입찰",
+      "organizer": "국립공원공단국립공원연구원",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-07",
+      "apply_end": "2026-09-07",
+      "always": false,
+      "period_text": "마감 2026-09-07 11:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01712670&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "수의계약"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "upcoming",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p99",
+      "title": "여성 전 생애 경력진단 체계 구축 및 프로그램 개발 연구",
+      "summary": "수요기관 성평등가족부 · 추정/배정 100,000,000원 · 수의계약",
+      "field": "용역입찰",
+      "organizer": "성평등가족부",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-07",
+      "apply_end": "2026-09-07",
+      "always": false,
+      "period_text": "마감 2026-09-07 15:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713167&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "수의계약"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "upcoming",
+      "dday": null,
+      "urgent": false
+    },
+    {
       "id": "p100",
+      "title": "2026년 해리천 새마을2교 정밀안전진단 용역 수의(소액)견적 제출 안내",
+      "summary": "수요기관 전북특별자치도 고창군 · 추정/배정 37,999,500원 · 수의계약",
+      "field": "용역입찰",
+      "organizer": "전북특별자치도 고창군",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-07",
+      "apply_end": "2026-09-11",
+      "always": false,
+      "period_text": "마감 2026-09-11 16:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713862&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "수의계약"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "upcoming",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p101",
       "title": "외국인 유학생 취업·정주 통합지원 프로그램 운영 용역",
       "summary": "수요기관 부경대학교 산학협력단 · 추정/배정 100,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2611,7 +2638,7 @@
       "urgent": false
     },
     {
-      "id": "p101",
+      "id": "p102",
       "title": "2026년 은퇴선수 취업역량강화 프로그램 운영 용역",
       "summary": "수요기관 대한체육회 · 추정/배정 103,500,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2636,7 +2663,7 @@
       "urgent": false
     },
     {
-      "id": "p102",
+      "id": "p103",
       "title": "로봇산업과 신재생에너지산업의 국내외 동향 조사분석",
       "summary": "수요기관 한국탄소산업진흥원 · 추정/배정 120,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2661,7 +2688,7 @@
       "urgent": false
     },
     {
-      "id": "p103",
+      "id": "p104",
       "title": "신천마을 취약지역생활여건개조사업 지역역량강화 용역",
       "summary": "수요기관 한국농어촌공사 경남지역본부 고성.통영.거제지사 · 추정/배정 103,600,000원 · 일반경쟁",
       "field": "용역입찰",
@@ -2686,7 +2713,7 @@
       "urgent": false
     },
     {
-      "id": "p104",
+      "id": "p105",
       "title": "스포츠산업 관련 첨단기술 동향 조사 및 정책 분석(재공고)",
       "summary": "수요기관 한국스포츠과학원 · 추정/배정 33,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2711,7 +2738,7 @@
       "urgent": false
     },
     {
-      "id": "p105",
+      "id": "p106",
       "title": "연세대학교 미래캠퍼스 연세아츠위크 페스티벌 행사 용역",
       "summary": "수요기관 연세대학교 미래캠퍼스 · 추정/배정 159,973,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2736,7 +2763,7 @@
       "urgent": false
     },
     {
-      "id": "p106",
+      "id": "p107",
       "title": "2026년 찾아가는 문화예술체험 프로그램 운영 위탁용역",
       "summary": "수요기관 전북특별자치도교육청 · 추정/배정 178,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2761,7 +2788,7 @@
       "urgent": false
     },
     {
-      "id": "p107",
+      "id": "p108",
       "title": "2026년 평생교육이용권 성과분석 연구",
       "summary": "수요기관 국가평생교육진흥원 · 추정/배정 141,374,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2786,7 +2813,7 @@
       "urgent": false
     },
     {
-      "id": "p108",
+      "id": "p109",
       "title": "2026학년도 장애학생 글로벌 역량강화를 위한 학습공동체 해외단기연수",
       "summary": "수요기관 한경국립대학교 · 추정/배정 262,286,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2811,7 +2838,7 @@
       "urgent": false
     },
     {
-      "id": "p109",
+      "id": "p110",
       "title": "2026년 충청남도 일자리 박람회 운영 용역",
       "summary": "수요기관 재단법인충남경제진흥원 · 추정/배정 152,800,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2836,7 +2863,7 @@
       "urgent": false
     },
     {
-      "id": "p110",
+      "id": "p111",
       "title": "외국인 우수인재 유치 정주를 위한 유학생 취업가이드북 개발 연구 용역",
       "summary": "수요기관 교육부 국립국제교육원 · 추정/배정 50,000,000원 · 제한경쟁",
       "field": "용역입찰",
@@ -2861,7 +2888,32 @@
       "urgent": false
     },
     {
-      "id": "p111",
+      "id": "p112",
+      "title": "2026년 마을기업 정책박람회 개최·운영 용역",
+      "summary": "수요기관 행정안전부 · 추정/배정 111,146,000원 · 제한경쟁",
+      "field": "용역입찰",
+      "organizer": "조달청 대전지방조달청",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-28",
+      "apply_end": "2026-09-30",
+      "always": false,
+      "period_text": "마감 2026-09-30 10:00:00",
+      "created": "2026-09-04",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01712184&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "제한경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "upcoming",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p113",
       "title": "문화포털 — 문화지원사업 캘린더(공모전 원천)",
       "summary": "전국 문화재단·진흥원·공공기관의 공모전과 모집 공고가 모이는 한국문화정보원 공식 창구. 이 사이트의 공모전은 여기서 매일 가져온다. 마감이 지난 뒤에도 직접 더 찾아보고 싶을 때.",
       "field": "문화·기타",
@@ -2885,7 +2937,7 @@
       "urgent": false
     },
     {
-      "id": "p112",
+      "id": "p114",
       "title": "위비티 — 공모전 종합 포털(민간)",
       "summary": "기업·기관 공모전이 가장 많이 모이는 민간 포털. 공공 공모전만 다루는 이 사이트에 없는 기업 주최 공모전을 찾을 때 들어가 본다. 응모 자격에 나이 제한이 있는 경우가 많으니 요강을 꼭 확인할 것.",
       "field": "문화·기타",
@@ -2908,7 +2960,7 @@
       "urgent": false
     },
     {
-      "id": "p113",
+      "id": "p115",
       "title": "서울시50플러스 포털 — 일자리·교육·사회공헌 공모",
       "summary": "서울시50플러스재단이 운영하는 중장년 전용 포털. 일자리, 사회공헌, 창업·창직, 교육 프로그램 모집 공고가 상시 올라온다. 서울 거주 중장년이라면 가장 먼저 볼 채널.",
       "field": "일자리",
@@ -2933,7 +2985,7 @@
       "urgent": false
     },
     {
-      "id": "p114",
+      "id": "p116",
       "title": "고용24(워크넷) — 신중년 사회공헌활동 지원사업",
       "summary": "만 50세 이상 퇴직 전문인력이 비영리단체·공공기관에서 사회공헌활동에 참여하도록 활동비를 지원하는 고용노동부 사업. 매년 지역별로 참여자를 모집한다.",
       "field": "사회공헌",
@@ -2957,7 +3009,7 @@
       "urgent": false
     },
     {
-      "id": "p115",
+      "id": "p117",
       "title": "기업마당 — '중장년' 지원사업 검색",
       "summary": "중앙부처·지자체·공공기관의 모든 지원사업 공고를 모은 기업마당에서 '중장년'으로 검색한 결과. 창업·재취업·경영 관련 공모가 가장 많이 모이는 정부 종합 창구.",
       "field": "창업",
@@ -2982,7 +3034,7 @@
       "urgent": false
     },
     {
-      "id": "p116",
+      "id": "p118",
       "title": "보조금24 (정부24) — 맞춤 보조금·지원금 안내",
       "summary": "정부24가 본인 조건에 맞는 정부·지자체 보조금과 지원금을 한 번에 찾아주는 서비스. 로그인 후 '나의 혜택'에서 연령·지역 기준 맞춤 공모를 확인할 수 있다.",
       "field": "복지",
@@ -3006,7 +3058,7 @@
       "urgent": false
     },
     {
-      "id": "p117",
+      "id": "p119",
       "title": "한국사회적기업진흥원 — 협동조합·사회적기업 공모",
       "summary": "협동조합 설립·사회적기업 육성·소셜벤처 등 사회적경제 영역의 공모와 지원사업 공고. 중장년이 동료와 함께 일을 벌이려 할 때 보는 창구(두두협동조합 등과도 연결되는 영역).",
       "field": "창업",
@@ -3030,7 +3082,7 @@
       "urgent": false
     },
     {
-      "id": "p118",
+      "id": "p120",
       "title": "경기도일자리재단 — 중장년 일자리·교육 공모",
       "summary": "경기도 중장년·신중년의 재취업, 직업훈련, 창업, 인생이모작을 지원하는 공공기관. 경기 거주 중장년 대상 모집·교육 공고가 상시 올라온다.",
       "field": "일자리",
@@ -3055,7 +3107,7 @@
       "urgent": false
     },
     {
-      "id": "p119",
+      "id": "p121",
       "title": "국가평생교육진흥원 — 중장년 평생교육 강좌·공모",
       "summary": "전국 평생학습 강좌·프로그램 정보. 중장년이 새 역량을 배우거나 생애전환을 준비할 때 활용하는 국가 평생교육 창구(늘배움 연계).",
       "field": "교육",
@@ -3079,7 +3131,7 @@
       "urgent": false
     },
     {
-      "id": "p120",
+      "id": "p122",
       "title": "한국노인인력개발원 — 시니어 일자리·사회활동",
       "summary": "60대 전후 중장년·고령층의 일자리와 사회활동 지원사업. 시니어 인턴십, 사회서비스형, 시장형 일자리 등 참여자 모집 정보를 안내한다.",
       "field": "일자리",
@@ -3103,7 +3155,7 @@
       "urgent": false
     },
     {
-      "id": "p121",
+      "id": "p123",
       "title": "[경남] 양산시 2026년 신중년고용지원금 지원사업 참여 기업 모집 공고",
       "summary": "신중년의 일자리 창출과 관내 기업의 구인난 해소를 위하여 2026년도「양산형 신중년고용지원금 지원사업」 참여 기업을 다음과 같이 모집 공고합니다. ☞ 양산시 소재(본사 또는 주공장) 상시근로자 5인이상 제조업 관련 중소기업 ※ 상시근로자수는 고용보험 피보험자수 기준, 일용직근로자 제외 - 40세 이상 64세 이하 양산시에 주소를 둔(정규직 채용일 기준) 신",
       "field": "일자리",
@@ -3131,7 +3183,7 @@
       "urgent": false
     },
     {
-      "id": "p122",
+      "id": "p124",
       "title": "2026년 고령군 국내ㆍ외 단체 관광객 유치 여행사(기관) 인센티브 지원 공고",
       "summary": "고령군에서는 관광객 유치 증대를 도모하기 위하여 단체관광객을 유치한 여행사(기관)에 대하여 인센티브를 제공하고자 아래와 같이 공고하오니 전국 여행업체의 많은 관심과 참여 바랍니다. ☞ 여행업 등록(관광진흥법 제4조)을 필한 여행사, 고령군과 관광 관련 업무 협약을 맺은 기관 ☞ 국내ㆍ외 단체 관광객 유치 여행사(기관) 인센티브 지원 ※ 자세한 지원내용 공고",
       "field": "기타",
@@ -3159,7 +3211,7 @@
       "urgent": false
     },
     {
-      "id": "p123",
+      "id": "p125",
       "title": "[경북] 문경시 2026년 중소기업 운전자금 지원 계획 공고",
       "summary": "자금난을 겪고 있는 중소기업에 대하여 운전자금 융자 및 대출이자 일부를 지원하여 기업 경영 안정화를 도모하고자 「2026년도 문경시 중소기업 운전자금 지원 계획」을 붙임과 같이 공고합니다. ☞ 문경시 내 사업장(사업자등록증명원의 소재지, 매출액)을 두고 정상 운영 중인 ｢중소기업기본법｣ 상의 중소기업 ☞ 중소기업 운전자금 융자한도 업체당 최대 3억원(우대업",
       "field": "금융",
@@ -3187,7 +3239,7 @@
       "urgent": false
     },
     {
-      "id": "p124",
+      "id": "p126",
       "title": "2026년 희망리턴패키지 특화취업지원 소상공인 모집 수정 공고",
       "summary": "소상공인의 임금근로자 전환을 지원하기 위한 2026년「희망리턴패키지 특화취업지원」사업을 다음과 같이 공고합니다. ☞ 취업 의사가 있는 폐업(예정) 소상공인(만 15세 이상~만 69세 이하) ☞ 취업 교육(기초+심화) 및 심리회복 프로그램, 전직장려수당(최대 100만원), 국민취업지원제도 참여 연계 등 지원",
       "field": "일자리",
@@ -3215,7 +3267,7 @@
       "urgent": false
     },
     {
-      "id": "p125",
+      "id": "p127",
       "title": "[인천] 2026년 새일여성인턴 참여 기업 모집 공고",
       "summary": "경력단절여성등의 일경험(인턴십)을 통한 취업 및 고용유지 지원을 위한 '새일여성인턴 사업' 참여기업을 모집합니다. ☞ 상시근로자 수 5인이상~1,000인미만(4대보험가입장) 기업 - 인턴 시작일 기준 3개월전까지 권고사직 이력이 없는 기업 (인턴 사업 최초 참여 사업장의 경우 1개월 이력 확인) ☞ 기업지원금(인턴지원금, 고용장려금) 총 400만원 지원",
       "field": "일자리",
@@ -3243,7 +3295,7 @@
       "urgent": false
     },
     {
-      "id": "p126",
+      "id": "p128",
       "title": "2026년 시니어 취업지원(취업알선형) 참여기업 모집 공고",
       "summary": "주식회사 에스테이트는 보건복지부, 한국노인인력개발원과 함께 만 60세 이상자의 고용 촉진 및 기업 지원의 일환으로 「2026년 시니어 취업 지원(취업알선형) 사업」을 추진하고 있습니다. 이에 따라, 아래와 같이 모집 내용을 공고하오니 관심 있는 기업의 적극적인 참여를 부탁드립니다. ☞ 만 60세 이상 채용 의사가 있는 4대보험 가입 사업장 (경비ㆍ미화ㆍ요양",
       "field": "일자리",
@@ -3271,7 +3323,7 @@
       "urgent": false
     },
     {
-      "id": "p127",
+      "id": "p129",
       "title": "2026년 고령친화식품 사용성평가 참여기업 모집 공고",
       "summary": "한국식품산업클러스터진흥원은 고령친화산업진흥법 제10조에 따라 고령친화식품산업 활성화 지원을 위하여 고령친화산업지원센터로부터 ‘고령친화식품 사용성평가 운영기관’으로 지정받아 「고령친화우수식품 사용성평가 참여기업 모집」을 다음과 같이 공고 하오니 관심있는 기업의 많은 참여 부탁드립니다. ☞ 고령친화식품 사용성평가 희망 기업 ☞ 고령친화우수식품 지정제도 활성화를",
       "field": "기타",
@@ -3299,7 +3351,7 @@
       "urgent": false
     },
     {
-      "id": "p128",
+      "id": "p130",
       "title": "2026년 현장실습 훈련 지원사업(시니어 인턴십) 기업모집 공고",
       "summary": "현장실습 훈련(시니어 인턴십)이란, 만 60세 이상자의 취업지원을 위해 기업에 인건비를 지원하며 신규 및 계속 고용을 유도하는 사업입니다. ☞ 60세 이상 근로자를 고용 할 의사가 있는 4대 보험 가입 사업장 ☞ 시니어인턴십 채용지원금 지원 - 일반형(인턴지원금) : 입사일로부터 3개월당 1인당 월 급여의 50%지원(월 최대 40만원 한도 내, 최대 3개월",
       "field": "일자리",
@@ -3327,7 +3379,7 @@
       "urgent": false
     },
     {
-      "id": "p129",
+      "id": "p131",
       "title": "[서울] 2026년 중장년 경력 인재 지원(채용형) 참여기업 모집 공고",
       "summary": "서울시50플러스재단은 경험과 경력을 보유한 중장년의 일자리 창출과 고용 기회 확대를 위해「중장년 경력 인재 지원(채용형)」사업을 추진하고 있습니다. 중장년 채용 수요가 있는 기업을 대상으로, 중장년의 경험과 역량을 현장에서 활용할 수 있도록 지원하오니 중장년 채용을 희망하는 기업의 많은 관심과 참여 바랍니다. ☞ 서울시 소재 기업 중 상시근로자수(고용보험 ",
       "field": "일자리",
@@ -3355,7 +3407,7 @@
       "urgent": false
     },
     {
-      "id": "p130",
+      "id": "p132",
       "title": "2026년 현장실습 훈련(시니어인턴십) 지원사업 공고(지에스씨넷)",
       "summary": "60세 이상자의 고용촉진을 위해 기업에 인건비를 지원하여 계속 고용을 유도하는 사업입니다. ☞ 60세 이상 근로자를 고용할 의사가 있는 4대보험 가입 사업장 ☞ 인건비(일반형 1인당 최대 270만원, 세대통합형 1인당 최대 300만원, 장기취업유지형 1인당 최대 280만원) 지원 ※ 자세한 지원내용 공고문 참조",
       "field": "일자리",
@@ -3383,7 +3435,7 @@
       "urgent": false
     },
     {
-      "id": "p131",
+      "id": "p133",
       "title": "2026년 현장실습 훈련(구 시니어인턴십) 지원사업 공고(위더스)",
       "summary": "만 60세 이상 근로자를 신규 채용하는 기업에 최대 550만원 인건비를 지원하는 현장실습훈련지원(구. 시니어인턴십) 사업의 참가기업을 모집합니다. ☞ 만 60세 이상 근로자를 고용할 의사가 있는 4대보험 가입 사업장 ☞ 시니어인턴십 일반형 지원금 지원(최대 550만원) 지원 - 인턴지원금 : 입사일로부터 3개월간 1인당 120만원 (월 급여의 50%, 최대",
       "field": "일자리",
@@ -3411,7 +3463,7 @@
       "urgent": false
     },
     {
-      "id": "p132",
+      "id": "p134",
       "title": "[인천] 2026년 신개념 세대융합 청년창업 지원 멘티 상시모집 공고",
       "summary": "중장년 전문가들의 경험과 노하우를 활용하여, 인천광역시 청년 창업가들이 기ㆍ술ㆍ창ㆍ업 과정에서 마주하는 어려움을 해결할 수 있도록 지원하는 이번 모집에 많은 참여바랍니다. ☞ 만 39세 이하(1987년 1월 1일 이후 출생)의 예비창업자(주민등록상 거주지가 인천) 또는 사업자등록증 기준 사업장 소재지가 인천인 3년 이내 창업자 ☞ 1:1 맞춤형 멘토링 : ",
       "field": "창업",
@@ -3439,7 +3491,7 @@
       "urgent": false
     },
     {
-      "id": "p133",
+      "id": "p135",
       "title": "2026년 환경산업 분야 퇴직전문가 중소기업 기술지원 사업 참여기업 모집 공고",
       "summary": "환경산업 분야 퇴직 전문인력의 숙련된 기술 노하우를 창업·중소기업에 맞춤형으로 전수해 환경기업의 경쟁력을 확보하도록 지원하는 ‘2026년 퇴직전문가 중소기업 기술지원’ 참여기업을 다음과 같이 모집합니다. ☞ 환경분야 퇴직전문가를 채용하여 기술지원을 받고자 하는 창업ㆍ중소 환경기업 - (전담형) 기존 사업 확대 또는 배출시설 개선을 희망하는 중소기업 - (선",
       "field": "창업",
@@ -3467,7 +3519,7 @@
       "urgent": false
     },
     {
-      "id": "p134",
+      "id": "p136",
       "title": "[서울] 2026년 시니어 인턴십(인건비 지원형ㆍ경상비 지원형) 기업 모집 공고",
       "summary": "서울시니어일자리지원센터에서 '시니어 취업교육'을 통한 기업 맞춤 인재 양성을 도모하고자 서울 소재 60세 이상 시니어 인력 채용기업을 대상으로 인건비 및 경상비를 지원해드리는 사업입니다. ☞ 서울 소재, 상시근로자 수 5인 이상, 중소ㆍ중견기업, 4대보험 가입 사업장 - 60세 이상 시니어 인력 채용기업(근로계약 및 4대보험 가입 필수) ☞ 인건비 지원형(",
       "field": "일자리",
@@ -3495,7 +3547,7 @@
       "urgent": false
     },
     {
-      "id": "p135",
+      "id": "p137",
       "title": "[경기] 2026년 베이비부머 라이트잡 모집 공고",
       "summary": "경기도와 경기도일자리재단에서는 중장년 고용 활성화를 위하여 2026년「베이비부머 라이트잡」사업을 공고하오니 많은 관심 바랍니다. ☞ 경기도 소재 기업, 비영리 법인, 개인 사업자 등 ※ 본점이 경기도 외 지역이라도 분점, 지점, 대리점 등이 경기도 소재이면 인정 ☞ 근로자 1인당 월 40만원 사업자에 지원 ※ 자세한 지원내용 공고문 참조",
       "field": "일자리",
@@ -3523,7 +3575,7 @@
       "urgent": false
     },
     {
-      "id": "p136",
+      "id": "p138",
       "title": "2026년 체육인 직업안정 사업(창업지원) 참여자 모집 공고",
       "summary": "은퇴(예정) 또는 경력단절 체육인의 직업전환을 지원하고, 창업 교육ㆍ보육ㆍ점검 등 단계별 맞춤 창업지원 프로그램을 통해 체육인의 창업 성공률을 높이고 진로 선택의 폭을 확대하기 위한 「2026년 체육인 직업안정 사업(창업지원)」에 참여할 유망 체육인 모집 계획을 다음과 같이 공고합니다. ☞ 은퇴(예정) 또는 경력 단절 체육인 중 전ㆍ현직 선수, 지도자, 심",
       "field": "창업",
@@ -3551,7 +3603,7 @@
       "urgent": false
     },
     {
-      "id": "p137",
+      "id": "p139",
       "title": "2026년 현장실습 훈련(시니어인턴십) 참여기업 모집 수정 공고",
       "summary": "주식회사 에스테이트는 보건복지부, 한국노인인력개발원과 함께 만 60세 이상자의 고용촉진 및 기업지원의 일환으로 「2026년 현장실습 훈련(시니어인턴십) 사업」을 추진하고 있습니다. 이에 따라, 아래와 같이 모집 내용을 공고하오니 관심 있는 기업의 적극적인 참여를 부탁드립니다. ☞ 만 60세 이상 근로자를 고용할 의사가 있는 4대보험 가입 사업장 ※ 경비원,",
       "field": "일자리",
@@ -3579,7 +3631,7 @@
       "urgent": false
     },
     {
-      "id": "p138",
+      "id": "p140",
       "title": "2026년 현장실습 훈련(시니어인턴십) 지원사업 공고(아이피시)",
       "summary": "만 60세 이상 채용하는 기업을 대상으로 1인 최대 550만원 인건비를 지원해드리는 보건복지부 [2026년 현장실습훈련(시니어인턴십)]사업 참여기업을 모집합니다. ☞ 만 60세 이상(1966년 이전 출생)을 신규 고용하는 4대보험 사업장 - 도급, 용역 업종 가능 (※ 파견직은 참여 불가) ☞ 인턴지원금(1인당 최대 120만원), 채용지원금(1인당 최대 1",
       "field": "일자리",
@@ -3607,7 +3659,7 @@
       "urgent": false
     },
     {
-      "id": "p139",
+      "id": "p141",
       "title": "[충북] 2026년 청년 일경험 지원사업 인턴형 참여기업 모집 공고",
       "summary": "우리 충북바이오산학융합원은 미취업 청년에게 다양한 일경험을 제공함으로써 직무탐색, 직무역량 강화를 지원하고, 원활한 노동시장 진입을 위해「청년 일경험 지원사업」을 운영하오니 도내 기업의 많은 관심과 참여 바랍니다. ☞ 고용보험 피보험자 10인 이상 기업, 공공기관, 지방공기업, 비영리단체, 비영리법인 등 ☞ 청년인턴 1인당 운영지원금 지원 - 기업지원금 최",
       "field": "일자리",
@@ -3635,7 +3687,7 @@
       "urgent": false
     },
     {
-      "id": "p140",
+      "id": "p142",
       "title": "[대구] 2026년 지역 플러스 고용활력 프로젝트 사업 공고",
       "summary": "대구지역 모빌리티 산업의 지속적인 성장을 위한 신규 고용과 지속 고용을 위한 「플러스 고용활력 프로젝트」의 모집공고를 안내드립니다. ☞ 대구지역 모빌리티 기업 등에 정규직으로 2026.01.01. 이후 취업한 근로자 및 채용한 사업주 - 모빌리티 기업의 고용보험 피보험자수 5인 이상 500인 이하 중소기업 ☞ 모빌리티 중장년 채움 지원금 지원 ㆍ3, 6, ",
       "field": "일자리",
@@ -3663,7 +3715,7 @@
       "urgent": false
     },
     {
-      "id": "p141",
+      "id": "p143",
       "title": "[경북] 고령군 2026년 소상공인 카드수수료 지원사업 참여점포 모집 공고",
       "summary": "경상북도경제진흥원에서는 국내외 경기침체로 어려움을 겪고 있는 소상공인들을 위한 ‘소상공인 카드수수료 지원사업’ 참여점포를 다음과 같이 모집하오니 많은 신청 부탁드립니다. ☞ ’25년도 연매출액이 1억 원 이하이며,사업자등록증 상의 소재지가 고령군인 소상공인 ※ 매출액은 부가가치세과세표준증명원 혹은 면세사업자수입금액증명원을 기준으로 함 ☞ 전년도 카드매출액의",
       "field": "기타",
@@ -3691,7 +3743,7 @@
       "urgent": false
     },
     {
-      "id": "p142",
+      "id": "p144",
       "title": "[충북] 2026년 2차 식품근로자 및 기업 고용안정 지원사업 모집 공고(지역상생형 일터혁신 프로젝트)",
       "summary": "고용노동부, 충청북도, 충주시, 제천시, 보은군, 옥천군, 증평군, 진천군, 괴산군, 음성군, 충청북도기업진흥원은 도내 식품제조기업의 인력난 해소와 경쟁력 강화를 위해 「2026 충북식품 근로자 및 기업 고용안정 지원사업」참여 기업을 다음과 같이 모집합니다. ☞ 충주시, 제천시, 보은군, 옥천군, 증평군, 진천군, 괴산군, 음성군 소재 고용보험법상 5인 이",
       "field": "일자리",
@@ -3719,7 +3771,7 @@
       "urgent": false
     },
     {
-      "id": "p143",
+      "id": "p145",
       "title": "[경북] 고령군 2026년 지역발전 우수기업 환경개선 사업 참가기업 모집 공고",
       "summary": "(재)경상북도경제진흥원에서는 고령군 소재 제조업체의 열악한 작업환경ㆍ복지공간 개선 지원을 통해 근로자 복지 향상과 기업 생산성을 제고하여 지역경제 활성화 및 지방 소멸 위기에 대응하고자「2025년 고령군 지역발전 우수기업 환경개선 사업」참가기업을 모집하오니 많은 참여 바랍니다. ☞ 아래 조건을 하나 이상 충족하는 고령군 소재 중소 제조기업 - 근로자 2인 ",
       "field": "일자리",
@@ -3747,7 +3799,7 @@
       "urgent": false
     },
     {
-      "id": "p144",
+      "id": "p146",
       "title": "[광주] 2026년 스마트공장 지원계획 공고",
       "summary": "제조 현장의 경쟁력 제고를 위하여 중소벤처기업부 등에서 추진하고 있는 2026년도 스마트 제조혁신 지원사업과 관련하여 광주광역시 지역 내 중소ㆍ중견기업 대상 지원계획을 다음과 같이 공고합니다. ☞ 광주광역시 소재 중소ㆍ중견 기업중 지원유형 선정기업 ☞ 대중소 상생형(삼성형), 고도화(정부형, 지역특화프로젝트 레전드50+, 제조AI특화(AI공장구축)), 광주",
       "field": "기타",
@@ -3775,7 +3827,7 @@
       "urgent": false
     },
     {
-      "id": "p145",
+      "id": "p147",
       "title": "[경남] 2026년 경력단절예방지원사업 직장문화개선 기업컨설팅 참여기업 모집 공고",
       "summary": "경남광역여성새로일하기센터는 도내 기업을 대상으로 심층 솔루션을 제공하여 지속 가능한 경영 체계를 구축함으로써 기업 및 조직 경쟁력을 향상하기 위해「2026년 직장문화개선 기업컨설팅」사업을 진행합니다. 이에 다음과 같이 참여기업을 모집 공고합니다. ☞ 경남지역 새일센터 구인등록 기업 및 여성친화일촌기업 등 ☞ 선발기업에 전담노무사의 컨설팅 제공 (기업당 최대",
       "field": "일자리",
@@ -3803,7 +3855,7 @@
       "urgent": false
     },
     {
-      "id": "p146",
+      "id": "p148",
       "title": "2026년 현장실습 훈련(시니어 인턴십) 참여 기업 모집 공고",
       "summary": "만 60세 이상 채용하는 기업을 대상으로 1인 최대 550만원 인건비를 지원하는 보건복지부 [2026년 현장실습훈련(시니어 인턴십)] 사업 참여 기업을 모집합니다. 많은 관심과 신청 바랍니다. ☞ 만 60세 이상(1966년 이전 출생)을 신규 고용하는 4대보험 사업장 ☞ 기업 1인당 최대 550만원 인건비 지원 - 6개월 간 1인당 인건비 최대 270만원 ",
       "field": "일자리",
@@ -3831,7 +3883,7 @@
       "urgent": false
     },
     {
-      "id": "p147",
+      "id": "p149",
       "title": "[경북] 2026년 FTA활용지원사업 추가 공고",
       "summary": "산업통상부, 경상북도, 구미상공회의소가 운영하는「경북FTA통상진흥센터」에서는 전문인력 부족으로 FTA 활용에 어려움을 겪고 있는 경북지역 수출입기업 및 수출물품 제조업체들을 위하여 다음과 같이 경북FTA활용지원사업을 추가로 시행하오니 많은 신청 바랍니다. ☞ 경북 지역 내 중소기업 中 직ㆍ간접 수출 또는 수출 희망업체 - 수행가능 지역 : 구미, 경산, 김",
       "field": "일자리",
@@ -3859,7 +3911,7 @@
       "urgent": false
     },
     {
-      "id": "p148",
+      "id": "p150",
       "title": "[호남권] 2026년 중소·중견기업 기업맞춤 고용지원사업 방문컨설팅 공고",
       "summary": "기업의 현황과 채용예정에 맞춤 지원사업을 한 번에 확인할 수 있는 방문컨설팅을 안내드립니다. 올해 기업에 신규 입사한 청년에도 지원가능한 사업이 있으니, 청년과 기업 담당자의 많은 참여바랍니다! ☞ 채용 예정 인원이 있는 기업 - 고용장려금 및 지원사업 활용을 희망하는 기업 - 청년 채용 및 유지 관리가 필요한 기업 - 정부지원사업 정보를 한 번에 안내받고",
       "field": "일자리",
@@ -3887,7 +3939,7 @@
       "urgent": false
     },
     {
-      "id": "p149",
+      "id": "p151",
       "title": "[서울] 2026년 하반기 중장년 소상공인 디지털 전환지원 사업 모집 공고",
       "summary": "디지털 전환을 통한 소상공인의 지속가능한 성장을 도모하기 위하여 중장년 소상공인 디지털 전환지원 사업의 하반기 참여 소상공인을 모집하오니 많은 참여를 바랍니다. ☞ 사업 신청일 기준 다음 요건을 모두 충족하는 소상공인 - 만 40세 이상이며, 사업자등록증상 사업장 소재지가 ‘서울시’인 기업 ※ 개업일이 2025년 7월 1일 이전인 자 ☞ 디지털 전환을 위한",
       "field": "교육",
@@ -3915,7 +3967,7 @@
       "urgent": false
     },
     {
-      "id": "p150",
+      "id": "p152",
       "title": "2026년 현장실습훈련지원사업(시니어인턴십) 세대통합형 참여기업 모집 공고",
       "summary": "주식회사 아이피시 관악지사는 보건복지부 산하 한국노인인력개발원과 함께 「2026년 현장실습훈련지원사업(시니어인턴십) 세대통합형」 참여기업을 모집합니다. 기존 근무자를 포함한 숙련기술을 보유한 60세 이상 인력을 채용하는 기업에 1인당 300만원의 채용지원금을 지원하오니 많은 관심과 참여 바랍니다. ☞ 만 60세 이상의 숙련기술보유자(해당 업종 관련 10년 ",
       "field": "일자리",
@@ -3943,7 +3995,7 @@
       "urgent": false
     },
     {
-      "id": "p151",
+      "id": "p153",
       "title": "[경기] 2026년 생애 최초 경영안정화 교육지원 모집 공고(경기도 중장년 최초 창업 지원)",
       "summary": "경기도와 경기도시장상권진흥원에서는 실습중심 창업 교육ㆍ컨설팅ㆍ창업자금ㆍ이자비 지원 등을 지원하는 [경기도 중장년 최초 창업 지원] 「2026년 생애 최초 경영안정화 교육지원」 사업 모집공고를 아래와 같이 진행하오니 만40세 이상 중장년층 예비창업자의 많은 관심과 참여 바랍니다. ☞ 공고일(’26.5.22.) 기준 경기도 거주, 도내 창업을 희망하는 만 40",
       "field": "창업",
@@ -3971,7 +4023,7 @@
       "urgent": false
     },
     {
-      "id": "p152",
+      "id": "p154",
       "title": "2026년 현장실습 훈련(시니어 인턴십) 지원사업 참여 기업 모집 공고(차오름)",
       "summary": "현장실습 훈련(시니어인턴십) 지원사업은 60세 이상자의 고용촉진을 위해 기업에 인건비를 지원하여 계속고용을 유도하는 사업입니다. ☞ 60세 이상인 자를 고용할 의사가 있는 4대보험 가입사업장 중 근로자 보호 규정을 준수하는 기업 ☞ 현장실습훈련 지원금(최대 550만원) - 인턴지원금 : 입사일로부터 3개월 간 1인당 120만원 (월 급여의 50%, 최대 4",
       "field": "일자리",
@@ -3999,7 +4051,7 @@
       "urgent": false
     },
     {
-      "id": "p153",
+      "id": "p155",
       "title": "[전남광주] 2026년 전남형 신중년 사회연대경제 노동통합 모델 구축사업 참여기업 상시 모집 공고",
       "summary": "전남사회적경제통합지원센터에서는 고용노동부와 전라남도가 함께 추진하는「전략사업별 지역생태계 활성화 사업」의 운영기관으로서, 사회연대경제기업의 성장과 현장 혁신을 지원하고, 신중년의 경력과 전문성을 지역사회에 환원할 수 있는 지속가능한 노동통합 모델 구축을 위해 다음과 같이 참여기업을 모집하오니, 관련 기업의 적극적인 관심과 참여를 바랍니다. ☞ 근로자 5인 ",
       "field": "일자리",
@@ -4027,7 +4079,7 @@
       "urgent": false
     },
     {
-      "id": "p154",
+      "id": "p156",
       "title": "[경남] 고성군 2026년 신중년 내일이음 50+사업 참여기업 모집 변경 공고",
       "summary": "고성군 공고 제2026-1066호로 공고한 「2026년 신중년 내일이음 50+사업 참여기업 모집」와 관련하여, 경상남도 사업 시행지침 변경에 따라 지원대상 연령 등을 다음과 같이 변경하여 공고합니다. ☞ 2026. 1. 1. 이후 중장년 근로자를 신규 채용한 고성군 소재 중소ㆍ중견 기업 ※ 자세한 지원대상 공고문 참조 ☞ 신규 채용 근로자 1인당 월 50만",
       "field": "일자리",
@@ -4055,7 +4107,7 @@
       "urgent": false
     },
     {
-      "id": "p155",
+      "id": "p157",
       "title": "[전북] 완주군 2026년 신중년 유연근무형 일자리 지원사업 참여기업 모집 공고",
       "summary": "경력과 전문성을 보유한 신중년의 맞춤형 유연근무 일자리를 지원하고 기업에 숙련된 인력 확보를 위한 「2026년 신중년 유연근무형 일자리 지원사업」의 참여기업을 다음과 같이 모집 공고합니다. ☞ 사업 공고일 이후, 유연근무 일자리(주24시간~주35시간)에 도내에 거주하는 신중년(2026. 1. 1. 기준, 40세~64세)을 신규 채용(예정)인 사업장 - 상시",
       "field": "일자리",
@@ -4075,6 +4127,34 @@
         "2026",
         "유연근무",
         "전북특별자치도"
+      ],
+      "source": "bizinfo",
+      "kind": "지원사업",
+      "status": "always",
+      "dday": null,
+      "urgent": false
+    },
+    {
+      "id": "p158",
+      "title": "[경남] 진주시 2026년 신중년 내일이음 50+ 사업 참여기업 모집 변경 공고",
+      "summary": "신중년 구직자에게 재취업 기회를 제공하고, 관내 중소ㆍ중견기업의 인건비 부담을 완화하기 위한 「2026년 신중년 내일이음 50+사업」 참여기업 모집을 다음과 같이 변경 공고하오니 많은 참여 바랍니다. ☞ 주민등록상 주소지를 경남도에 둔 만40세 이상 64세 이하 중장년 구직자를 2026. 1. 1. 이후 신규 채용한 진주시 소재 중소ㆍ중견기업 ☞ 신중년 구",
+      "field": "일자리",
+      "organizer": "경상남도",
+      "executor": "기초자치단체",
+      "target": "중소기업",
+      "applicant": "기업·기관",
+      "apply_begin": null,
+      "apply_end": null,
+      "always": true,
+      "period_text": "예산 소진시까지",
+      "created": "2026-09-04",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126171",
+      "tags": [
+        "인력",
+        "경남",
+        "재취업",
+        "구직자",
+        "진주시"
       ],
       "source": "bizinfo",
       "kind": "지원사업",
