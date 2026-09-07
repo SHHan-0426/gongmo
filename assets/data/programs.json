@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-06T22:57:35.447Z",
-  "generated_at_kst": "2026-09-07 07:57:35 KST",
+  "generated_at": "2026-09-07T23:38:08.436Z",
+  "generated_at_kst": "2026-09-08 08:38:08 KST",
   "is_sample": false,
   "degraded": false,
   "sources": [
     {
       "source": "culture",
       "label": "문화포털 — 문화지원사업 캘린더(공모전 필터)",
-      "count": 25
+      "count": 24
     },
     {
       "source": "bizinfo",
@@ -30,7 +30,7 @@
     {
       "source": "carryover",
       "label": "이전 미마감 공고 이월(빈칸 방지)",
-      "count": 55
+      "count": 52
     },
     {
       "source": "seed",
@@ -38,115 +38,11 @@
       "count": 10
     }
   ],
-  "count": 89,
-  "open_count": 67,
-  "urgent_count": 34,
-  "contest_count": 26,
+  "count": 85,
+  "open_count": 64,
+  "urgent_count": 33,
+  "contest_count": 25,
   "programs": [
-    {
-      "id": "p1",
-      "kind": "공모전",
-      "title": "2026 공공데이터 아이디어 공모",
-      "summary": "2026 한국공예·디자인문화진흥원 공공데이터 아이디어 공모 문화체육관광부와 (재) 한국공예·디자인문화진흥원은 공예·공공디자인·전통문화·한복 분야의 공공데이터 개방과 활용 확대를 위한 창의적인 아이디어를 발굴하고자 「 2026 한국공예·디자인문화진흥원 공공데이터 아이디어 공모 」 를 개최하오니, 국민 여러분의 많은 관심과 참여를 바랍니다. □ 공모개요 ㅇ 공",
-      "field": "아이디어·정책",
-      "organizer": "한국공예디자인문화진흥원",
-      "region": "전국",
-      "target": "일반인",
-      "applicant": "개인",
-      "apply_begin": "2026-08-11",
-      "apply_end": "2026-09-07",
-      "always": false,
-      "period_text": "2026-08-11 ~ 2026-09-07",
-      "created": "",
-      "url": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?viewTp=3&rcrtSn=227461&menuNo=200104",
-      "apply_url": "https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&bbIdx=9112&brdCodeValue=",
-      "tags": [
-        "공모전",
-        "창작지원"
-      ],
-      "source": "culture",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p3",
-      "title": "[경북] 2026년 소상공인 새바람 체인지업 사업 경영환경개선 희망 소상공인(고령) 추가모집 공고",
-      "summary": "경상북도경제진흥원에서는 도내 소상공인의 활력 제고를 위해 분야별 컨설팅을 제공하고 경영환경개선을 지원할 수 있는 본 사업에 다음과 같이 소상공인을 모집하고자 공고하오니 많은 신청 바랍니다. ☞ 도내 창업 3년 이상인 소상공인, 고령 소재의 소상공인 ☞ 컨설팅 서비스, 점포환경개선(옥외 간판교체, 점포내외부개선, 스마트화) 지원금 지원 ※ 자세한 지원내용 공",
-      "field": "창업",
-      "organizer": "경상북도",
-      "executor": "경상북도경제진흥원",
-      "target": "소상공인",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-08-24",
-      "apply_end": "2026-09-07",
-      "always": false,
-      "period_text": "2026-08-24 ~ 2026-09-07",
-      "created": "2026-08-25",
-      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000125782",
-      "tags": [
-        "경영",
-        "경북",
-        "점포내외부개선",
-        "2026",
-        "옥외간판교체"
-      ],
-      "source": "bizinfo",
-      "kind": "지원사업",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p90",
-      "title": "차세대소형위성2호 영상활용 연구 과제 관련 위성영상 분석의뢰",
-      "summary": "수요기관 국립공원공단국립공원연구원 · 추정/배정 16,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "국립공원공단국립공원연구원",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-07",
-      "apply_end": "2026-09-07",
-      "always": false,
-      "period_text": "마감 2026-09-07 11:00:00",
-      "created": "2026-09-04",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01712670&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
-    {
-      "id": "p91",
-      "title": "여성 전 생애 경력진단 체계 구축 및 프로그램 개발 연구",
-      "summary": "수요기관 성평등가족부 · 추정/배정 100,000,000원 · 수의계약",
-      "field": "용역입찰",
-      "organizer": "성평등가족부",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-07",
-      "apply_end": "2026-09-07",
-      "always": false,
-      "period_text": "마감 2026-09-07 15:00:00",
-      "created": "2026-09-04",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01713167&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "수의계약"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "open",
-      "dday": 0,
-      "urgent": true
-    },
     {
       "id": "p4",
       "title": "함열 도시재생 순환경제활력센터 운영을 위한 주민역량강화사업 용역",
@@ -169,7 +65,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -194,7 +90,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -219,7 +115,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -244,7 +140,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -269,7 +165,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -294,7 +190,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -319,7 +215,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -344,7 +240,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
@@ -369,11 +265,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 1,
+      "dday": 0,
       "urgent": true
     },
     {
-      "id": "p14",
+      "id": "p10",
       "kind": "공모전",
       "title": "2026년 기형도문학관 창작시 공모전 ‘어느 푸른 저녁’ 개최 공고",
       "summary": "",
@@ -396,7 +292,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 2,
+      "dday": 1,
       "urgent": true
     },
     {
@@ -424,7 +320,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 2,
+      "dday": 1,
       "urgent": true
     },
     {
@@ -449,7 +345,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 2,
+      "dday": 1,
       "urgent": true
     },
     {
@@ -474,7 +370,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 2,
+      "dday": 1,
       "urgent": true
     },
     {
@@ -499,11 +395,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 2,
+      "dday": 1,
       "urgent": true
     },
     {
-      "id": "p19",
+      "id": "p15",
       "kind": "공모전",
       "title": "2026 충남 인물열전 AI 콘텐츠 어워즈 개최 공고",
       "summary": "",
@@ -525,11 +421,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 3,
+      "dday": 2,
       "urgent": true
     },
     {
-      "id": "p20",
+      "id": "p16",
       "kind": "공모전",
       "title": "2026 판타지아대구페스타 AI 콘텐츠 공모전 개최 공고",
       "summary": "대구문화예술진흥원 공고 제 2026-156 호 2026 판타지아대구페스타 AI 콘텐츠 공모전 개최 공고 (재) 대구문화예술진흥원은 2026 판타지아대구페스타 시민 참여형 콘텐츠 발굴을 위하여 AI 를 활용한 콘텐츠 공모전을 다음과 같이 개최하오니 많은 관심과 참여 바랍니다. 2026 년 8 월 3 일 (재) 대구문화예술진흥원장 자세한 사항은 붙임파일을 참고",
@@ -552,11 +448,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
-      "id": "p21",
+      "id": "p17",
       "kind": "공모전",
       "title": "2026 수성 건축·조경 시각작품 국제 공모전 공고",
       "summary": "",
@@ -578,7 +474,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -606,7 +502,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -634,7 +530,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -659,7 +555,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -684,7 +580,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
       "urgent": true
     },
     {
@@ -709,7 +605,32 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 4,
+      "dday": 3,
+      "urgent": true
+    },
+    {
+      "id": "p93",
+      "title": "외국인 유학생 취업·정주 통합지원 프로그램 운영 용역",
+      "summary": "수요기관 부경대학교 산학협력단 · 추정/배정 100,000,000원 · 제한경쟁",
+      "field": "용역입찰",
+      "organizer": "부경대학교 산학협력단",
+      "executor": "",
+      "target": "응찰 단체·기업",
+      "applicant": "기업·기관",
+      "apply_begin": "2026-09-08",
+      "apply_end": "2026-09-11",
+      "always": false,
+      "period_text": "마감 2026-09-11 10:00:00",
+      "created": "2026-08-31",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704921&bidPbancOrd=000",
+      "tags": [
+        "나라장터",
+        "제한경쟁"
+      ],
+      "kind": "용역입찰",
+      "source": "narajangteo",
+      "status": "open",
+      "dday": 3,
       "urgent": true
     },
     {
@@ -734,7 +655,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -759,7 +680,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -784,7 +705,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -809,7 +730,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -834,7 +755,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -859,7 +780,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -884,7 +805,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
@@ -909,11 +830,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 7,
+      "dday": 6,
       "urgent": true
     },
     {
-      "id": "p35",
+      "id": "p32",
       "kind": "공모전",
       "title": "2026 대국민 스포츠활동 장려 미디어 챌린지 <AI활용 스포츠 활동 숏폼 공모전>",
       "summary": "서울올림픽기념국민체육진흥공단에서는 제64회 스포츠의 날을 맞아 대국민 스포츠 활동을 장려하고자「2026 대국민 스포츠 활동 장려 미디어 챌린지 」를개최합니다. - 공 모 명 : 2026 대국민 스포츠 활동 장려 미디어 챌린지 - 공모주제 : 실제 촬영한 스포츠 활동 영상을 생성형 AI로 자유롭게 재구성한 나만의 스포츠 이야기 - 공모부문 : 숏폼 영상(30",
@@ -935,8 +856,8 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 8,
-      "urgent": false
+      "dday": 7,
+      "urgent": true
     },
     {
       "id": "p32",
@@ -960,11 +881,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 8,
-      "urgent": false
+      "dday": 7,
+      "urgent": true
     },
     {
-      "id": "p37",
+      "id": "p34",
       "kind": "공모전",
       "title": "제6회 경기문화재단 문화상품 공모 공고",
       "summary": "",
@@ -987,7 +908,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 9,
+      "dday": 8,
       "urgent": false
     },
     {
@@ -1012,7 +933,7 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 9,
+      "dday": 8,
       "urgent": false
     },
     {
@@ -1037,11 +958,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 10,
+      "dday": 9,
       "urgent": false
     },
     {
-      "id": "p40",
+      "id": "p37",
       "kind": "공모전",
       "title": "2026년 에코스테이션 자원재순환 창작 공모전",
       "summary": "",
@@ -1064,7 +985,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -1092,7 +1013,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
@@ -1117,11 +1038,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 11,
+      "dday": 10,
       "urgent": false
     },
     {
-      "id": "p43",
+      "id": "p40",
       "kind": "공모전",
       "title": "<제10회 수성인문학제> 2026 수성구 백일장 공모전 공고",
       "summary": "제10회 수성인문학제> 2026 수성구 백일장 공모전 공고·제출기간 : 9. 17.(목) 09:00 ~ 9. 19.(토) 17:00·문의 : 범어도서관 (053-668-1624) ※ 제출기간과 제출서류를 반드시 확인해 주시기 바랍니다. ※제출기간 외에 발송된 메일은 접수되지 않으며 제출서류 누락 시 참가가 불가하오니 유의해 주시기 바랍니다.",
@@ -1144,11 +1065,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 12,
+      "dday": 11,
       "urgent": false
     },
     {
-      "id": "p44",
+      "id": "p41",
       "kind": "공모전",
       "title": "[예술교양학부]《제4회 K'ARTS 젊은 평론가상》 공모전 개최 안내",
       "summary": "예술교양학부에서 <제4회 K'ARTS 젊은 평론가상 공모전>을 개최합니다▣ □ 공모 내용 ㅇ 응모 자격: 한국예술종합학교 예술사, 전문사 재학생 및 휴학생 ㅇ 응모 기간: 2026년 5월 1일 (금) ~ 9월 20일 (일) 18:00까지 ㅇ 응모 요령: 아래 콘텐츠를 활용하여 누리 공지에 게시된 [붙임1] 젊은 평론가상 작성 서식 파일에 작성 (*200자 ",
@@ -1170,11 +1091,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 13,
+      "dday": 12,
       "urgent": false
     },
     {
-      "id": "p45",
+      "id": "p42",
       "kind": "공모전",
       "title": "2026 문화다양성 AI 영상 콘텐츠 공모전",
       "summary": "문화체육관광부와 한국문화예술교육진흥원은 미디어 분야(방송·영상·음악·게임·콘텐츠 등)의 사회적 파급력이 확대됨에 따라, 콘텐츠를 통해 문화다양성의 가치를 발견하고 확산하고자 합니다. 「나의 세계 문화가 되다」를 주제로 개인의 경험과 가치관, 감수성, 취향이 만들어낸 고유한 세계를 AI 영상으로 표현하고, 서로의 세계를 이해하고 공존하는 문화다양성에 대한 이",
@@ -1197,11 +1118,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
-      "id": "p46",
+      "id": "p43",
       "kind": "공모전",
       "title": "국립정동극장 세실 '2027 창작ing' 작품 공모",
       "summary": "국립정동극장 세실 '2027 창작 ing' 작품 공모 \" 시간의 가치, 창작의 힘을 믿습니다.\" \" 창작의 과정을 공유하는 곳, 창작핵심기지 국립정동극장 세실입니다.\" 국립정동극장 세실 '2027 창작 ing' 무대에 오를 작품을 공개모집 합니다. 본 공모는 연극, 뮤지컬, 전통, 무용 4 개 분야를 대상, 열린 공모로 진행합니다. - 접수 기간 : 202",
@@ -1223,7 +1144,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 14,
+      "dday": 13,
       "urgent": false
     },
     {
@@ -1251,7 +1172,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 15,
+      "dday": 14,
       "urgent": false
     },
     {
@@ -1279,7 +1200,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 16,
+      "dday": 15,
       "urgent": false
     },
     {
@@ -1304,11 +1225,11 @@
       "kind": "용역입찰",
       "source": "narajangteo",
       "status": "open",
-      "dday": 16,
+      "dday": 15,
       "urgent": false
     },
     {
-      "id": "p50",
+      "id": "p47",
       "kind": "공모전",
       "title": "2026년 인천관광 열린혁신 아이디어 공모전",
       "summary": "열린혁신아이디어공모전_포스터.jpg (2MByte) 사진 다운받기",
@@ -1330,11 +1251,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 20,
+      "dday": 19,
       "urgent": false
     },
     {
-      "id": "p51",
+      "id": "p48",
       "kind": "공모전",
       "title": "「2026 고향사랑기금사업」 세종 시각예술인 미술작품 공모 안내",
       "summary": "세종특별자치시가 2026 고향사랑기금사업 일환으로 추진하는 세종 시각예술인 미술작품 공모 를 안내드립니다. 우리 시는 세종 예술인의 안정적인 창작활동을 지원하고 지역 미술시장 활성화를 위해 「 세종 시각예술인 미술작품 공모」를 추진합니다. 세종 시각예술인(미술작품 모든 분야) 께서는 공고문 및 아래 내용을 참고하시어 신청하여 주시기 바랍니다. ※ 자세한 내",
@@ -1356,11 +1277,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
-      "id": "p52",
+      "id": "p49",
       "kind": "공모전",
       "title": "[모두의 예술 공모전] Be the AI Artist : AI 아트 공모전 <나는 아티스트>",
       "summary": "",
@@ -1383,11 +1304,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
-      "id": "p53",
+      "id": "p50",
       "kind": "공모전",
       "title": "제19회 잡지 미디어 콘텐츠 공모전",
       "summary": "2026 년 『 제 19 회 잡지 미디어 콘텐츠 공모전 - 잡지가 문화다 !』 ❙ 목적 : (사) 한국잡지협회는 잡지가 우리 사회의 문화적 다양성에 기여하고 문화의 근간이 되는 중요한 매체임을 알리기 위하여 한국언론진흥재단의 지원으로 < 잡지 미디어 콘텐츠 공모전 > 을 개최합니다. 잡지에 연관된 산문, 영상, 만화, 그림, 사진 등 독자가 직접 만드는 다",
@@ -1409,11 +1330,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
-      "id": "p54",
+      "id": "p51",
       "kind": "공모전",
       "title": "2026년 과학경진대회 브이로그 공모전",
       "summary": "2026년 과학경진대회 브이로그 공모전 2026년 과학경진대회에 도전하는 순간들을 생생한 영상으로 남겨보세요! 실험·연구·제작 과정부터 고민과 성장, 현장의 경험까지 여러분만의 특별한 이야기를 기다립니다. □ 브이로그 공모전 ○ (공 모 명) 2026년 과학경진대회 브이로그 공모전 ○ (공모내용) 과학경진대회(학생과학발명품경진대회, 과학전람회) 준비과정 또",
@@ -1435,7 +1356,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
@@ -1463,7 +1384,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
@@ -1491,11 +1412,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 23,
+      "dday": 22,
       "urgent": false
     },
     {
-      "id": "p57",
+      "id": "p54",
       "kind": "공모전",
       "title": "[유관기관협조] 2026 제주, 기후의 경고를 담다 - 제2회 제주 환경 포토에세이 전국 공모전",
       "summary": "제주특별자치도 지속가능환경교육센터는 제주특별자치도로부터 제주환경교육센터(광역)로 지정받아 운영하고 있으며, 기후에너지환경부 우수 환경교육프로그램 지정(도내 최다)과 교육부 교육기부 진로체험기관 인증을 받은 환경교육 전문기관입니다. 본 센터에서는 제주의 기후위기 및 환경재난에 대한 관심과 인식을 높이고, 환경보전 실천문화를 확산하기 위해 `2026 제주, 기",
@@ -1517,11 +1438,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 25,
+      "dday": 24,
       "urgent": false
     },
     {
-      "id": "p58",
+      "id": "p55",
       "kind": "공모전",
       "title": "2026 경남 3D 웹툰배경 활용 단편웹툰 공모전 공고",
       "summary": "재) 경남문화예술진흥원 공고 제 2026 - 266 호 2026 경남 3D 웹툰배경 활용 단편웹툰 공모전 모집 공고 (재) 경남문화예술진흥원에서는 경남의 지역 자원을 소재로 한 웹툰 콘텐츠 제작 활성화로 지역 문화자원의 홍보와 웹툰 산업의 동반 성장을 위해 「 2026 경남 3D 웹툰배경 활용 단편웹툰 공모전 」 을 개최하오니 도내 예비, 기성웹툰 작가분들",
@@ -1544,11 +1465,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 31,
+      "dday": 30,
       "urgent": false
     },
     {
-      "id": "p59",
+      "id": "p56",
       "kind": "공모전",
       "title": "[유관기관협조] 제8회 아름다운 해상교량 사진 공모전",
       "summary": "우리 청에서는 올해 `사람과 함께 담는 해상교량`이라는 주제로 해상교량의 대국민 홍보를 위해「제8회 아름다운 해상교량 사진 공모전」을 추진하고 있습니다. 사진공모전에 관심있는 분들의 많이 참여 바랍니다. - 공모전 개요 - 가. 공모기간 : `26. 04. 01. ~ `26. 10. 12. 나. 참가대상 : 우리 청 해상교량에 관심있는 누구나 참여 가능 다",
@@ -1570,11 +1491,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 35,
+      "dday": 34,
       "urgent": false
     },
     {
-      "id": "p60",
+      "id": "p57",
       "kind": "공모전",
       "title": "2026년 고모역 사진 공모전 개최",
       "summary": "2026년 고모역 사진 공모전』 (재)수성문화재단 문화도시본부에서는 고모역의 매력을 확산하고 널리 알리고자 『2026년 고모역 사진 공모전』 을 개최하오니 많은 관심과 참여 바랍니다. ■ 세부내용은 포스터와 붙임 공고문을 참조 해 주시기 바랍니다. [유의사항] ■ 모든 출품작은 타 공모전에 발표되지 않거나, 상품화 등록(중)이 되지 않은 결격 사유가 없는 ",
@@ -1597,11 +1518,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 41,
+      "dday": 40,
       "urgent": false
     },
     {
-      "id": "p61",
+      "id": "p58",
       "kind": "공모전",
       "title": "[공고] 제9회 국립김해박물관 가야 웹툰 공모전 개최(참가신청서)",
       "summary": "국립김해박물관 공고 제 2026-11 호 「 제 9 회 국립김해박물관 가야 웹툰 공모전 」 개최 공고 국립김해박물관과 인제대학교 글로컬대학사업본부는 가야를 널리 홍보하고자 「 제 9 회 국립김해박물관 가야 웹툰 공모전 」 을 아래와 같이 개최하오니 관심 있는 분의 많은 지원을 바랍니다. 2026. 7. 6. 국 립 김 해 박 물 관 장 1. 공 모 명 : ",
@@ -1623,7 +1544,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 41,
+      "dday": 40,
       "urgent": false
     },
     {
@@ -1651,11 +1572,11 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 53,
+      "dday": 52,
       "urgent": false
     },
     {
-      "id": "p63",
+      "id": "p60",
       "kind": "공모전",
       "title": "한국PCO협회, 「2026년 신규 MICE 행사 아이디어 공모전」안내",
       "summary": "사)한국PCO협회에서는 「2026년 신규 MICE 행사 아이디어 공모전」을 통해 창의적인 아이디어를 선발하고, 실제 행사로 개최될 수 있도록 육성하고자 다음과 같이 공모전을 공고합니다. MICE 산업에 관심과 재능을 가진 분들의 많은 참여를 바랍니다. [공모개요] - 공 모 명: 2026년 신규 MICE 행사 아이디어 공모전 - 공모기간: 2026년 9월 ",
@@ -1677,11 +1598,11 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 69,
+      "dday": 68,
       "urgent": false
     },
     {
-      "id": "p64",
+      "id": "p61",
       "kind": "공모전",
       "title": "2026 충주문화예술지원사업 대외활동 참가비 지원(공모전 · 대회 · 콩쿠르 등)",
       "summary": "2026 충주문화예술지원사업 대외활동 참가비 지원(공모전·대회·콩쿠르 등) 안내문 ❚ 지원목적 • 충주시 예술가들의 대외활동 지원을 통한 예술 활동 문화 조성 ❚ 지원내용 • 지원자격 - (개인) 공고일 이전 최소 6개월 이상 주민등록상 충주시에 거주하는 예술인 - (단체) 공고일 이전 최소 6개월 이상 충주시에 소재지를 두고 활동하고 있는 단체로 아래사항",
@@ -1703,7 +1624,7 @@
       ],
       "source": "culture",
       "status": "open",
-      "dday": 84,
+      "dday": 83,
       "urgent": false
     },
     {
@@ -1731,7 +1652,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 84,
+      "dday": 83,
       "urgent": false
     },
     {
@@ -1759,7 +1680,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 84,
+      "dday": 83,
       "urgent": false
     },
     {
@@ -1787,32 +1708,7 @@
       "source": "bizinfo",
       "kind": "지원사업",
       "status": "open",
-      "dday": 84,
-      "urgent": false
-    },
-    {
-      "id": "p93",
-      "title": "외국인 유학생 취업·정주 통합지원 프로그램 운영 용역",
-      "summary": "수요기관 부경대학교 산학협력단 · 추정/배정 100,000,000원 · 제한경쟁",
-      "field": "용역입찰",
-      "organizer": "부경대학교 산학협력단",
-      "executor": "",
-      "target": "응찰 단체·기업",
-      "applicant": "기업·기관",
-      "apply_begin": "2026-09-08",
-      "apply_end": "2026-09-11",
-      "always": false,
-      "period_text": "마감 2026-09-11 10:00:00",
-      "created": "2026-08-31",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01704921&bidPbancOrd=000",
-      "tags": [
-        "나라장터",
-        "제한경쟁"
-      ],
-      "kind": "용역입찰",
-      "source": "narajangteo",
-      "status": "upcoming",
-      "dday": null,
+      "dday": 83,
       "urgent": false
     },
     {
@@ -2091,7 +1987,7 @@
       "urgent": false
     },
     {
-      "id": "p80",
+      "id": "p76",
       "title": "문화포털 — 문화지원사업 캘린더(공모전 원천)",
       "summary": "전국 문화재단·진흥원·공공기관의 공모전과 모집 공고가 모이는 한국문화정보원 공식 창구. 이 사이트의 공모전은 여기서 매일 가져온다. 마감이 지난 뒤에도 직접 더 찾아보고 싶을 때.",
       "field": "문화·기타",
@@ -2115,7 +2011,7 @@
       "urgent": false
     },
     {
-      "id": "p81",
+      "id": "p77",
       "title": "위비티 — 공모전 종합 포털(민간)",
       "summary": "기업·기관 공모전이 가장 많이 모이는 민간 포털. 공공 공모전만 다루는 이 사이트에 없는 기업 주최 공모전을 찾을 때 들어가 본다. 응모 자격에 나이 제한이 있는 경우가 많으니 요강을 꼭 확인할 것.",
       "field": "문화·기타",
@@ -2138,7 +2034,7 @@
       "urgent": false
     },
     {
-      "id": "p82",
+      "id": "p78",
       "title": "서울시50플러스 포털 — 일자리·교육·사회공헌 공모",
       "summary": "서울시50플러스재단이 운영하는 중장년 전용 포털. 일자리, 사회공헌, 창업·창직, 교육 프로그램 모집 공고가 상시 올라온다. 서울 거주 중장년이라면 가장 먼저 볼 채널.",
       "field": "일자리",
@@ -2163,7 +2059,7 @@
       "urgent": false
     },
     {
-      "id": "p83",
+      "id": "p79",
       "title": "고용24(워크넷) — 신중년 사회공헌활동 지원사업",
       "summary": "만 50세 이상 퇴직 전문인력이 비영리단체·공공기관에서 사회공헌활동에 참여하도록 활동비를 지원하는 고용노동부 사업. 매년 지역별로 참여자를 모집한다.",
       "field": "사회공헌",
@@ -2187,7 +2083,7 @@
       "urgent": false
     },
     {
-      "id": "p84",
+      "id": "p80",
       "title": "기업마당 — '중장년' 지원사업 검색",
       "summary": "중앙부처·지자체·공공기관의 모든 지원사업 공고를 모은 기업마당에서 '중장년'으로 검색한 결과. 창업·재취업·경영 관련 공모가 가장 많이 모이는 정부 종합 창구.",
       "field": "창업",
@@ -2212,7 +2108,7 @@
       "urgent": false
     },
     {
-      "id": "p85",
+      "id": "p81",
       "title": "보조금24 (정부24) — 맞춤 보조금·지원금 안내",
       "summary": "정부24가 본인 조건에 맞는 정부·지자체 보조금과 지원금을 한 번에 찾아주는 서비스. 로그인 후 '나의 혜택'에서 연령·지역 기준 맞춤 공모를 확인할 수 있다.",
       "field": "복지",
@@ -2236,7 +2132,7 @@
       "urgent": false
     },
     {
-      "id": "p86",
+      "id": "p82",
       "title": "한국사회적기업진흥원 — 협동조합·사회적기업 공모",
       "summary": "협동조합 설립·사회적기업 육성·소셜벤처 등 사회적경제 영역의 공모와 지원사업 공고. 중장년이 동료와 함께 일을 벌이려 할 때 보는 창구(두두협동조합 등과도 연결되는 영역).",
       "field": "창업",
@@ -2260,7 +2156,7 @@
       "urgent": false
     },
     {
-      "id": "p87",
+      "id": "p83",
       "title": "경기도일자리재단 — 중장년 일자리·교육 공모",
       "summary": "경기도 중장년·신중년의 재취업, 직업훈련, 창업, 인생이모작을 지원하는 공공기관. 경기 거주 중장년 대상 모집·교육 공고가 상시 올라온다.",
       "field": "일자리",
@@ -2285,7 +2181,7 @@
       "urgent": false
     },
     {
-      "id": "p88",
+      "id": "p84",
       "title": "국가평생교육진흥원 — 중장년 평생교육 강좌·공모",
       "summary": "전국 평생학습 강좌·프로그램 정보. 중장년이 새 역량을 배우거나 생애전환을 준비할 때 활용하는 국가 평생교육 창구(늘배움 연계).",
       "field": "교육",
@@ -2309,7 +2205,7 @@
       "urgent": false
     },
     {
-      "id": "p89",
+      "id": "p85",
       "title": "한국노인인력개발원 — 시니어 일자리·사회활동",
       "summary": "60대 전후 중장년·고령층의 일자리와 사회활동 지원사업. 시니어 인턴십, 사회서비스형, 시장형 일자리 등 참여자 모집 정보를 안내한다.",
       "field": "일자리",
