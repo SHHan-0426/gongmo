@@ -1,8 +1,8 @@
-name: 공모 일일 자동 수집·배포
+name: 공모 주간 자동 수집·배포
 
 on:
   schedule:
-    - cron: '30 21 * * *'   # 매일 06:30 KST (UTC 21:30)
+    - cron: '30 21 * * 0'   # 매주 월요일 06:30 KST (UTC 일요일 21:30)
   workflow_dispatch:
 
 permissions:
