@@ -21,7 +21,7 @@ gongmo/
 │  └─ sources/
 │     ├─ culture.js            # 문화포털 공모전 소스(인증키 불필요)
 │     ├─ bizinfo.js            # 기업마당 지원사업 API(중장년 필터)
-│     └─ narajangteo.js        # 나라장터 용역 입찰(단체 필터)
+│     └─ narajangteo.js        # 나라장터 용역 입찰(공식 분류로 특수 용역만 제외)
 └─ .github/workflows/collect-daily.yml   # 매주 월요일 06:30 KST 자동 수집(파일명은 옛 이름 그대로)
 ```
 

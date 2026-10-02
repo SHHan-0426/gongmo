@@ -23,7 +23,7 @@ const path = require('path');
 const SOURCES = [
   require('./sources/culture'),     // 문화포털 — 공모전(인증키 불필요)
   require('./sources/bizinfo'),     // 기업마당 — 기업지원 중심(개인 공모는 소수)
-  require('./sources/narajangteo'), // 나라장터 — 단체·협동조합 응찰 용역(사회서비스)
+  require('./sources/narajangteo'), // 나라장터 — 용역 입찰(특수 용역만 빼고 전체)
   require('./sources/gov24'),       // 정부24·보조금24 — 개인 공공서비스(검증 결과 비활성)
 ];
 
@@ -33,6 +33,8 @@ const todayStr = KST().toISOString().slice(0, 10);
 function normTitle(t) {
   return String(t || '').toLowerCase().replace(/[\s\[\]()·,.!?'"\-]/g, '');
 }
+
+const keyOf = (p) => p.uid || normTitle(p.title);
 
 function daysBetween(a, b) {
   return Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
@@ -129,20 +131,20 @@ async function main() {
   // 시드(큐레이션) 병합 — 항상 포함
   const seed = loadSeed();
 
-  // 중복 제거(공고명 기준). 우선순위: 이번 수집 > 이월분 > 시드.
+  // 중복 제거(공고명 기준, 소스가 uid를 주면 그것으로). 우선순위: 이번 수집 > 이월분 > 시드.
   const seen = new Set();
   const merged = [];
   let carriedIn = 0;
   for (const p of [...collected, ...prevCarry, ...seed]) {
     if (!p.title) continue;
-    const key = normTitle(p.title);
+    const key = keyOf(p);
     if (seen.has(key)) continue;
     seen.add(key);
     merged.push(p);
   }
   // 실제 이월 반영 수 = 병합 결과 중 이번 collected에 없던 비시드 항목
-  const collectedKeys = new Set(collected.map(p => normTitle(p.title)));
-  carriedIn = merged.filter(p => p.source !== 'seed' && !collectedKeys.has(normTitle(p.title))).length;
+  const collectedKeys = new Set(collected.map(keyOf));
+  carriedIn = merged.filter(p => p.source !== 'seed' && !collectedKeys.has(keyOf(p))).length;
   if (carriedIn) console.log(`[collect] 이전 공고 이월: ${carriedIn}건(이번 수집에 없던 미마감분)`);
 
   summary.push({ source: 'carryover', label: '이전 미마감 공고 이월(빈칸 방지)', count: carriedIn });

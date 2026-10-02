@@ -98,6 +98,8 @@
   .go { margin-top: 12px; font-size: 16px; font-weight: 700; color: var(--brand); }
   .go::after { content: " →"; }
 
+  .more { display: block; width: 100%; margin: 18px 0 4px; padding: 14px; font: inherit; font-size: 16px; font-weight: 700; color: var(--brand, #355e8a); background: #fff; border: 1.5px solid currentColor; border-radius: 12px; cursor: pointer; }
+
   .empty { text-align: center; color: var(--ink-soft); padding: 50px 20px; font-size: 18px; }
 
   /* 상시 채널 섹션 */
@@ -143,7 +145,7 @@
     <header class="hero">
       <span class="eyebrow">중장년이 응모·신청할 수 있는 것</span>
       <h1>지금 응모·신청할 수 있는 공모를<br>마감 임박 순으로 모았습니다</h1>
-      <p>작품·아이디어를 내고 겨루는 <b>공모전</b>부터, 신청해서 받는 일자리·교육·창업 <b>지원사업</b>까지. 나이 제한 없이 중장년도 응모할 수 있는 것만 골라 매주 월요일 모아드립니다. 단체·협동조합이 응찰하는 <b>용역입찰</b>은 위 '종류'에서 따로 볼 수 있습니다.</p>
+      <p>작품·아이디어를 내고 겨루는 <b>공모전</b>부터, 신청해서 받는 일자리·교육·창업 <b>지원사업</b>까지. 나이 제한 없이 중장년도 응모할 수 있는 것만 골라 매주 월요일 모아드립니다. 단체·기업이 응찰하는 나라장터 <b>용역입찰</b>은 설계·감리·시설관리 같은 특수 용역만 빼고 모두 모아, 아래 '종류'에서 따로 볼 수 있습니다.</p>
       <div class="updated">마지막 갱신 <span class="b" id="updated">—</span></div>
       <div class="sample-note" id="sampleNote" style="display:none">
         <b>안내</b> — 지금은 운영팀이 골라둔 <b>상시 공모 채널</b>만 표시 중입니다.
@@ -174,6 +176,7 @@
 
     <div class="count-line" id="countLine"></div>
     <div class="grid" id="grid"></div>
+    <button class="more" id="more" type="button" style="display:none"></button>
     <div class="empty" id="empty" style="display:none">조건에 맞는 공모가 없습니다. 필터를 바꿔보세요.</div>
 
     <section class="channels-sec" id="channelsSec">
@@ -287,9 +290,19 @@
 
   function esc(s) { return String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
-  function render() {
-    const list = FEED.filter(passFilter);
-    $('#countLine').textContent = `${list.length}건 표시`;
+  // 용역입찰은 1,500건이 넘는다. 한꺼번에 그리면 휴대폰에서 버벅이므로
+  // PAGE건씩 끊어 그리고 '더 보기'로 이어 붙인다. 필터를 바꾸면 처음부터.
+  const PAGE = 60;
+  let shown = PAGE;
+  function render(keep) {
+    if (keep !== true) shown = PAGE;
+    const matched = FEED.filter(passFilter);
+    const list = matched.slice(0, shown);
+    $('#countLine').textContent = matched.length > list.length
+      ? `${matched.length}건 중 ${list.length}건 표시` : `${matched.length}건 표시`;
+    const more = $('#more');
+    more.style.display = matched.length > list.length ? '' : 'none';
+    more.textContent = `더 보기 (${Math.min(PAGE, matched.length - list.length)}건)`;
     const grid = $('#grid');
     grid.innerHTML = list.map(p => {
       const dday = fmtDday(p);
@@ -436,6 +449,7 @@
     render();
     renderChannels();
     $('#search').addEventListener('input', e => { fQuery = e.target.value.trim(); render(); });
+    $('#more').addEventListener('click', () => { shown += PAGE; render(true); });
   }
   init();
 

@@ -1,86 +1,81 @@
 /*
  * 소스: 조달청 나라장터 — 입찰공고정보서비스(용역)
  * ─────────────────────────────────────────────
- * 정부·지자체·공공기관이 발주하는 '용역' 입찰공고 중, 중장년 네트워크나
- * 협동조합·단체가 실제 응찰할 만한 사회서비스성 용역만 추려 반환한다.
- *   예) 행사 운영대행 · 교육/연수 운영 · 조사·연구 · 공동체 역량강화 ·
- *       일자리/사회적경제 박람회 · 돌봄/복지 프로그램 운영
+ * 정부·지자체·공공기관이 발주하는 '용역' 입찰공고를 모은다.
  *
- * '개인 공모'가 아니라 '단체·기업이 응찰하는' 영역이므로 applicant='기업·기관'
- * 이고, kind도 '공모전·지원사업'과 구분되는 '용역입찰'로 낸다(화면 기본에서 빠짐).
- * (두두협동조합·컴투게더 같은 조직이 직접 수주할 수 있는 기회를 모으는 소스)
+ * 2026-10-02부터 '중장년' 키워드로 고르지 않는다(운영팀 결정).
+ *   전에는 공고명에 중장년·일자리·마을 같은 말이 있어야만 실었는데,
+ *   이제는 면허·전문장비가 있어야만 하는 아주 특수한 용역만 빼고 전부 싣는다.
+ *   무엇이 특수한지는 공고명 키워드가 아니라 조달청 공식 분류
+ *   (pubPrcrmntLrgClsfcNm·pubPrcrmntMidClsfcNm)로 가른다 — 키워드는
+ *   '세대'→'차세대', '마을'→'○○마을 해체공사' 식 오탐이 끊이지 않았다.
+ *
+ * '개인 공모'가 아니라 '단체·기업이 응찰하는' 영역이므로 applicant='기업·기관',
+ * kind='용역입찰'(화면 기본에서는 빠지고 '종류' 칩으로 연다).
+ * field에는 공식 대분류를 짧게 줄인 이름을 넣어 분야 칩으로 고를 수 있게 한다.
  *
  * 인증키(env.NARA_API_KEY)는 공공데이터포털에서
  *   "조달청_나라장터 입찰공고정보서비스"(15129394) 활용신청 → 발급되는
- *   일반 인증키(serviceKey). gov24와 같은 data.go.kr 계정 키를 써도 된다
- *   (해당 데이터 활용신청만 별도로 하면 됨).
+ *   일반 인증키(serviceKey). gov24와 같은 data.go.kr 계정 키를 써도 된다.
  *
  * 엔드포인트: https://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServc
  *   파라미터: serviceKey · inqryDiv=1(공고게시일시 기준) · inqryBgnDt · inqryEndDt
  *            (YYYYMMDDHHMM) · pageNo · numOfRows · type=json
  *   응답: { response:{ body:{ totalCount, items:[ … ] } } }
- *   필드(2026-06 확인): bidNtceNm(공고명) · ntceInsttNm(공고기관) · dminsttNm(수요기관)
+ *   필드: bidNtceNo(공고번호) · bidNtceOrd(차수) · ntceKindNm(등록/변경/재/취소공고)
+ *     · bidNtceNm(공고명) · ntceInsttNm(공고기관) · dminsttNm(수요기관)
  *     · bidClseDt(입찰마감일시) · bidBeginDt(입찰개시) · bidNtceDt(공고일시)
  *     · bidNtceDtlUrl(상세URL) · asignBdgtAmt(배정예산) · presmptPrce(추정가격)
- *     · cntrctCnclsMthdNm(계약방법) · srvceDivNm(용역구분)
+ *     · cntrctCnclsMthdNm(계약방법) · srvceDivNm(일반용역/기술용역)
+ *     · pubPrcrmntLrgClsfcNm / pubPrcrmntMidClsfcNm(공공조달 대·중분류)
  *
- * ⚠ 나라장터 용역은 양이 매우 많다(7일 약 3,900건). 대부분 IT·건설·시설·장비라
- *    무관 → CORE 키워드 매칭 AND EXC 제외로 사회서비스성만 남긴다.
- *    공고게시일 기준 최근 LOOKBACK일치를 훑는다(긴 마감은 일부 놓칠 수 있음).
+ * 실측(2026-10-02, 공고게시 10일치): 4,372행 → 미마감 3,456행.
+ *   대분류 분포 — 기술용역 916 · 행사·사업지원 532 · 연구조사 483 · ICT 424
+ *   · 폐기물 287 · 임대·위탁·수리 223 · 교육·전문 206 · 여행·숙박·음식·운송·보험 202
+ *   · 매체·디자인·홍보 101 · 시설물관리·청소 70 · 정보통신방송 11.
  */
 
 const ENDPOINT = 'https://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServc';
 const PER = 100;
-const MAX_PAGES = 60;     // 최대 6,000건(최근 발주분 풀)
-const LOOKBACK_DAYS = 10; // 공고게시일 기준 조회 범위
+const MAX_PAGES = 90;     // 최대 9,000행
+const LOOKBACK_DAYS = 14; // 공고게시일 기준 조회 범위(수집이 주 1회라 10→14일)
 
-// 단체·협동조합이 수행 가능한 사회서비스성 용역 신호.
-//
-// ⚠ '역량강화·박람회·포럼·축제'는 뺐다(2026-09-03).
-//    어디에나 붙는 말이라 오탐이 압도적이었다 — 실측 184건 중 이 넷으로만
-//    걸려온 게 103건(공직자 워크숍·곶감축제 셔틀버스·도제학교 연수·
-//    엑스포 부스 설치 등 컴투게더가 응찰할 일이 없는 것들). 빼고 나면 81건.
-//    이 말들이 진짜 필요한 공고는 대개 '일자리·시니어·복지'도 함께 달고 있다.
-const CORE = [
-  '중장년', '신중년', '노인', '어르신', '고령', '시니어', '베이비부머',
-  '은퇴', '퇴직', '경력', '일자리', '취업', '재취업', '전직',
-  '돌봄', '복지', '사회적경제', '협동조합', '마을', '공동체', '자원봉사',
-  '평생교육', '생애', '상담', '사회공헌', '커뮤니티', '주민', '세대',
-  '인생', '문화예술', '마을기업',
-  // 조사·연구 계열 신호(운영팀 요청, 2026-09-03).
-  // 실측으로는 유입이 적다 — 10일치 4,504건 중 '동향' 4건이고 대개
-  // 기술동향·시장동향이다. 조사연구 용역 자체가 전문 연구기관 영역이라
-  // 드문 것이지 필터가 막고 있는 게 아니다(연구용역 43건도 대부분 무관).
-  '동향',
+// 빼는 것 ① 대분류 통째로 — 면허·전문장비·시설이 있어야만 하는 영역.
+const EXCLUDE_LARGE = [
+  '기술용역',                       // 설계·감리·측량·건설사업관리·안전점검
+  '폐기물 처리 및 재활용서비스',
+  '시설물관리 및 청소서비스',
+  '임대*위탁 및 수리서비스',        // 장비 임대·수리, 공동주택 위수탁관리, 시설 민간위탁
+  '정보통신방송서비스',             // 전용회선 등 통신사업자
 ];
-// 명백히 무관(기술·건설·시설·장비·임차)
-const EXC = [
-  '건설', '토목', '전기', '소방', '정보시스템', '전산', '소프트웨어', '시스템',
-  '클라우드', '네트워크', '인프라', '유지보수', '청소', '경비', '시설',
-  '방역', '조경', '측량', '감리', '설계', '폐기물', '상하수도', '도로', '포장',
-  '임차', '임대', '차량', '장비', '수리', '점검', '구매', '구입', '살수차',
-  '정비', '인공지능', '빅데이터', '반도체', '국방', '보안', 'R&D',
-  '유지관리', '교량', '항만', '플랜트', '발전소', '준설', '터널', '관로',
-  '정수장', '하수', '기계설비', '해상', '댐', '전력', '통신망',
-  // 2026-10-02 실측(71건)에서 남아 있던 무관 부류.
-  // 금융·보험·급식 위탁
-  '퇴직연금', '보험', '복지카드', '식당', '급식',
-  // 건축·환경 기술용역, 물품 처리
-  '해체', '환경영향평가', '위수탁관리', '조성사업', '타당성', '제작설치', '폐기',
-  // IT·기술·지식재산
-  '홈페이지', '플랫폼', '개인정보', '의료기기', '특허', '정보체계', '발사체',
-  // 해외·ODA, 기업 수출상담, 방송 외주
-  '해외', 'KOICA', 'PMC', '상담회', '콜센터', '외주제작',
+// 빼는 것 ② 살리는 대분류 안의 일부 중분류 — 해당 업 면허가 있어야만 한다.
+const EXCLUDE_MID = [
+  '보험서비스',                     // 보험사
+  '운송서비스',                     // 전세버스·화물 운수업
+  '보건서비스',                     // 건강검진(의료기관)
+  '기술시험,검사 및 분석',
+  '문화재 조사/발굴 및 수리',
 ];
 
-// '세대'는 '차세대'·'연세대학교'에도 들어 있다 — CORE 매칭 전에 지운다.
-const NOISE = /차세대|연세대/g;
+// 대분류 → 화면 분야 칩 이름
+const FIELD_OF = {
+  '행사관리 및 기타 사업 지원서비스': '행사·사업지원',
+  '연구조사서비스': '연구·조사',
+  '교육 및 전문직종/기술서비스': '교육·전문서비스',
+  'ICT 서비스': 'ICT',
+  '매체제작, 디자인, 홍보/마케팅 서비스': '홍보·디자인·매체',
+  '여행*숙박*음식*운송 및 보험서비스': '여행·숙박·음식',
+};
 
-// 청년·학생 전용 용역(대학 취업캠프·직업계고 인턴십 등)은 중장년 단체가
-// 응찰할 일이 없다. 다만 '대학 … 노인복지관 프로그램'처럼 중장년 신호가
-// 함께 있으면 살린다(문화포털 공모전의 AGE_LOCKED와 같은 생각).
-const YOUTH = ['청년', '대학', '학년도', '고등학교', '직업계고', '초등', '어린이', '청소년', '외국인'];
-const SENIOR = ['중장년', '신중년', '노인', '어르신', '고령', '시니어', '베이비부머', '은퇴', '퇴직'];
+// 공식 분류로 '실을 용역인가'를 가른다. 수집 없이 필터만 검증할 수 있게 export.
+function relevant(row = {}) {
+  const large = (row.pubPrcrmntLrgClsfcNm || '').trim();
+  const mid = (row.pubPrcrmntMidClsfcNm || '').trim();
+  if ((row.srvceDivNm || '').trim() === '기술용역') return false;
+  if (EXCLUDE_LARGE.includes(large)) return false;
+  if (EXCLUDE_MID.includes(mid)) return false;
+  return true;
+}
 
 const KST = () => new Date(Date.now() + 9 * 3600 * 1000);
 
@@ -92,14 +87,6 @@ function ymdhm(d) {
 function dateOnly(s = '') {
   const m = String(s).match(/(\d{4})-(\d{2})-(\d{2})/);
   return m ? `${m[1]}-${m[2]}-${m[3]}` : null;
-}
-
-function relevant(name = '') {
-  const n = name.replace(NOISE, ' ');
-  if (!CORE.some(k => n.includes(k))) return false;
-  if (EXC.some(k => name.includes(k))) return false;
-  if (YOUTH.some(k => name.includes(k)) && !SENIOR.some(k => name.includes(k))) return false;
-  return true;
 }
 
 function won(n) {
@@ -135,39 +122,57 @@ async function fetchEvents(env) {
   const bgn = ymdhm(new Date(Date.UTC(bgnDate.getUTCFullYear(), bgnDate.getUTCMonth(), bgnDate.getUTCDate(), 0, 0)));
   const end = ymdhm(new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 23, 59)));
 
-  const todayStr = now.toISOString().slice(0, 10);
-  const out = [];
+  // 같은 공고가 차수(등록→변경→취소)별로 여러 행 온다. 공고번호별로 마지막
+  // 차수만 남기고, 그 마지막이 취소공고면 버린다.
+  const latest = new Map();
   for (let p = 1; p <= MAX_PAGES; p++) {
     const { rows } = await fetchPage(key, bgn, end, p);
     if (!rows.length) break;
     for (const r of rows) {
-      const name = (r.bidNtceNm || '').trim();
-      if (!relevant(name)) continue;
-      const end_ = dateOnly(r.bidClseDt);
-      if (end_ && end_ < todayStr) continue; // 마감 지난 건 제외
-      const budget = won(r.asignBdgtAmt || r.presmptPrce);
-      const demand = (r.dminsttNm || '').trim();
-      out.push({
-        title: name,
-        summary: [demand && `수요기관 ${demand}`, budget && `추정/배정 ${budget}`,
-          (r.cntrctCnclsMthdNm || '').trim()].filter(Boolean).join(' · '),
-        field: '용역입찰',
-        organizer: (r.ntceInsttNm || '').trim(),
-        executor: '',
-        target: '응찰 단체·기업',
-        applicant: '기업·기관',
-        apply_begin: dateOnly(r.bidBeginDt) || dateOnly(r.bidNtceDt),
-        apply_end: end_,
-        always: false,
-        period_text: (r.bidClseDt || '').trim() ? `마감 ${(r.bidClseDt || '').trim()}` : '',
-        created: dateOnly(r.bidNtceDt),
-        url: (r.bidNtceDtlUrl || '').trim() || 'https://www.g2b.go.kr',
-        tags: ['나라장터', (r.cntrctCnclsMthdNm || '').trim()].filter(Boolean).slice(0, 3),
-        kind: '용역입찰',
-        source: 'narajangteo',
-      });
+      const no = (r.bidNtceNo || '').trim() || `${r.bidNtceNm}|${r.ntceInsttNm}`;
+      const prev = latest.get(no);
+      if (!prev || String(r.bidNtceOrd || '') >= String(prev.bidNtceOrd || '')) latest.set(no, r);
     }
     if (rows.length < PER) break;
+  }
+
+  const todayStr = now.toISOString().slice(0, 10);
+  const out = [];
+  for (const [no, r] of latest) {
+    const name = (r.bidNtceNm || '').trim();
+    if (!name) continue;
+    if ((r.ntceKindNm || '').includes('취소')) continue;
+    if (!relevant(r)) continue;
+    // 직접·우편 제출(직찰) 공고는 전자입찰 마감(bidClseDt)이 비어 있다(실측 12%).
+    // 그때는 개찰일시를 마감으로 본다 — 제출은 그 전까지여야 한다.
+    const direct = !(r.bidClseDt || '').trim();
+    const closeAt = ((direct ? r.opengDt : r.bidClseDt) || '').trim();
+    const end_ = dateOnly(closeAt);
+    if (!end_ || end_ < todayStr) continue; // 마감 지났거나 알 수 없는 건 제외
+    const budget = won(r.asignBdgtAmt || r.presmptPrce);
+    const demand = (r.dminsttNm || '').trim();
+    const large = (r.pubPrcrmntLrgClsfcNm || '').trim();
+    const mid = (r.pubPrcrmntMidClsfcNm || '').trim();
+    const method = (r.cntrctCnclsMthdNm || '').trim();
+    out.push({
+      uid: `nara:${no}`,   // 학교마다 같은 이름의 공고가 많다 — 공고명 대신 공고번호로 중복을 가린다
+      title: name,
+      summary: [demand && `수요기관 ${demand}`, budget && `추정/배정 ${budget}`, method].filter(Boolean).join(' · '),
+      field: FIELD_OF[large] || '기타',
+      organizer: (r.ntceInsttNm || '').trim(),
+      executor: '',
+      target: '응찰 단체·기업',
+      applicant: '기업·기관',
+      apply_begin: dateOnly(r.bidBeginDt) || dateOnly(r.bidNtceDt),
+      apply_end: end_,
+      always: false,
+      period_text: `${direct ? '개찰(직접 제출)' : '마감'} ${closeAt.slice(0, 16)}`,
+      created: dateOnly(r.bidNtceDt),
+      url: (r.bidNtceDtlUrl || '').trim() || 'https://www.g2b.go.kr',
+      tags: [mid && mid !== '기타' ? mid : '', method].filter(Boolean),
+      kind: '용역입찰',
+      source: 'narajangteo',
+    });
   }
   return out;
 }
@@ -175,7 +180,7 @@ async function fetchEvents(env) {
 module.exports = {
   relevant, // 필터만 따로 검증할 때 쓴다(수집은 실행되지 않음)
   id: 'narajangteo',
-  label: '나라장터 — 용역 입찰(단체·사회서비스 필터)',
+  label: '나라장터 — 용역 입찰(특수 용역 제외 전체)',
   requiresEnv: 'NARA_API_KEY',
   enabled: true,
   fetchEvents,
