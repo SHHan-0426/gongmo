@@ -62,7 +62,25 @@ const EXC = [
   '정비', '인공지능', '빅데이터', '반도체', '국방', '보안', 'R&D',
   '유지관리', '교량', '항만', '플랜트', '발전소', '준설', '터널', '관로',
   '정수장', '하수', '기계설비', '해상', '댐', '전력', '통신망',
+  // 2026-10-02 실측(71건)에서 남아 있던 무관 부류.
+  // 금융·보험·급식 위탁
+  '퇴직연금', '보험', '복지카드', '식당', '급식',
+  // 건축·환경 기술용역, 물품 처리
+  '해체', '환경영향평가', '위수탁관리', '조성사업', '타당성', '제작설치', '폐기',
+  // IT·기술·지식재산
+  '홈페이지', '플랫폼', '개인정보', '의료기기', '특허', '정보체계', '발사체',
+  // 해외·ODA, 기업 수출상담, 방송 외주
+  '해외', 'KOICA', 'PMC', '상담회', '콜센터', '외주제작',
 ];
+
+// '세대'는 '차세대'·'연세대학교'에도 들어 있다 — CORE 매칭 전에 지운다.
+const NOISE = /차세대|연세대/g;
+
+// 청년·학생 전용 용역(대학 취업캠프·직업계고 인턴십 등)은 중장년 단체가
+// 응찰할 일이 없다. 다만 '대학 … 노인복지관 프로그램'처럼 중장년 신호가
+// 함께 있으면 살린다(문화포털 공모전의 AGE_LOCKED와 같은 생각).
+const YOUTH = ['청년', '대학', '학년도', '고등학교', '직업계고', '초등', '어린이', '청소년', '외국인'];
+const SENIOR = ['중장년', '신중년', '노인', '어르신', '고령', '시니어', '베이비부머', '은퇴', '퇴직'];
 
 const KST = () => new Date(Date.now() + 9 * 3600 * 1000);
 
@@ -77,7 +95,11 @@ function dateOnly(s = '') {
 }
 
 function relevant(name = '') {
-  return CORE.some(k => name.includes(k)) && !EXC.some(k => name.includes(k));
+  const n = name.replace(NOISE, ' ');
+  if (!CORE.some(k => n.includes(k))) return false;
+  if (EXC.some(k => name.includes(k))) return false;
+  if (YOUTH.some(k => name.includes(k)) && !SENIOR.some(k => name.includes(k))) return false;
+  return true;
 }
 
 function won(n) {
@@ -151,6 +173,7 @@ async function fetchEvents(env) {
 }
 
 module.exports = {
+  relevant, // 필터만 따로 검증할 때 쓴다(수집은 실행되지 않음)
   id: 'narajangteo',
   label: '나라장터 — 용역 입찰(단체·사회서비스 필터)',
   requiresEnv: 'NARA_API_KEY',

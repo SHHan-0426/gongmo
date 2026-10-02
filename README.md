@@ -1,6 +1,6 @@
 # 공모 한눈에 — 중장년 공모전·지원사업 모음
 
-중장년이 **응모·신청할 수 있는** 두 가지를 매일 모아 **마감 임박 순**으로
+중장년이 **응모·신청할 수 있는** 두 가지를 매주 모아 **마감 임박 순**으로
 보여주는 한 페이지 사이트입니다.
 
 | 종류 | 뜻 | 주 출처 |
@@ -22,7 +22,7 @@ gongmo/
 │     ├─ culture.js            # 문화포털 공모전 소스(인증키 불필요)
 │     ├─ bizinfo.js            # 기업마당 지원사업 API(중장년 필터)
 │     └─ narajangteo.js        # 나라장터 용역 입찰(단체 필터)
-└─ .github/workflows/collect-daily.yml   # 매일 06:30 KST 자동 수집
+└─ .github/workflows/collect-daily.yml   # 매주 월요일 06:30 KST 자동 수집(파일명은 옛 이름 그대로)
 ```
 
 ## 어떻게 채워지나
@@ -34,7 +34,7 @@ gongmo/
 3. **seed.json**의 운영팀 큐레이션(상시 공모 채널·직접 등록 공고)을 항상 병합한다.
 4. 종료된 공고 제거 → 중복 제거 → 상태(접수중/예정/상시)·마감 D-day 계산 →
    마감 임박 순 정렬 → `programs.json` 저장.
-5. GitHub Actions가 매일 새벽 돌려 자동 커밋·푸시 → Netlify가 라이브 반영.
+5. GitHub Actions가 매주 월요일 새벽 돌려 자동 커밋·푸시 → Netlify가 라이브 반영.
 
 ### 공모전은 '중장년 필터'를 반대로 쓴다
 
@@ -57,7 +57,7 @@ API 키가 없으면 **시드 카드만으로도 사이트가 비지 않는다**
    승인되면 **이메일로 `crtfcKey`가 발급**된다.
 4. GitHub 저장소 → **Settings → Secrets and variables → Actions →
    New repository secret** → 이름 `BIZINFO_API_KEY`, 값에 발급키 붙여넣기.
-5. **Actions** 탭 → "중장년 공모 일일 자동 수집" → **Run workflow**로 즉시 1회 실행.
+5. **Actions** 탭 → "공모 주간 자동 수집·배포" → **Run workflow**로 즉시 1회 실행.
 
 > 참고: 신청서에 IP를 적어도 보통 IP에 묶이지 않는다. 만약 GitHub Actions에서
 > `인증키 거부` 오류가 나면 키가 IP에 묶인 것이므로, 로컬에서
