@@ -1,8 +1,13 @@
 /*
  * 소스: 기업마당 (bizinfo.go.kr) — 지원사업정보 API
  * ─────────────────────────────────────────────
- * 중앙부처·지자체·공공기관의 최신 지원사업 공고 중 "중장년 관련"만
- * 키워드로 추려 정규화해서 반환한다.
+ * 중앙부처·지자체·공공기관의 최신 지원사업 공고를 전부 정규화해서 반환한다.
+ *
+ * 2026-10-02부터 '중장년' 키워드로 고르지 않는다(운영팀 결정 — 나라장터와 같이).
+ *   전에는 중장년·신중년·50+ 같은 말이 있는 공고만 실어 40건 남짓이었고,
+ *   이제는 접수가 끝나지 않은 공고 전부(실측 약 1,400건)를 싣는다.
+ *   중장년 키워드는 버리지 않고 '중장년' 태그를 붙이는 데만 쓴다
+ *   (화면 검색창에 '중장년'을 치면 예전 목록이 나온다).
  *
  * 인증키(env.BIZINFO_API_KEY)는 기업마당(bizinfo.go.kr) 자체에서 발급하는 crtfcKey.
  *   로그인 → 활용정보 > 정책정보 개방 > 지원사업정보 API 사용신청 → 이메일 발급.
@@ -17,16 +22,15 @@
  *   · pldirSportRealmLclasCodeNm(지원분야 대분류) · creatPnttm(등록일시)
  *   · pblancUrl(상세 상대경로) · hashTags · inqireCo(조회수)
  *
- * 주의: bizinfo는 본래 기업·창업 지원이 중심이라 "중장년 직접 대상" 공고는
- *       전체의 일부다. 그래서 키워드 필터로 좁히고, 빈 화면은 사이트의
- *       시드 카드(programs.json 큐레이션)가 메운다.
+ * 주의: bizinfo는 본래 기업·창업 지원이 중심이라 대부분 신청 주체가 기업이다.
+ *       개인이 신청할 수 있는 것은 applicant 추정값('개인')으로 화면에서 고른다.
  */
 
 const ENDPOINT = 'https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do';
 const PAGE = 500;       // 페이지당 건수
 const MAX_PAGES = 6;    // 최대 3,000건까지 훑는다(전체 공고 풀)
 
-// 중장년 당사자가 공모·신청할 수 있는 사업을 가려내는 키워드.
+// 중장년 관련 공고에 '중장년' 태그를 붙이기 위한 키워드(수집 대상을 거르지는 않는다).
 // STRONG: 어디에 나와도 중장년 신호가 분명 → 본문 어디든 매칭.
 // WEAK: 일반 사업 요약에도 우연히 섞이는 말(은퇴·퇴직·경력 등) →
 //       제목·대상·해시태그에 나올 때만 매칭(오탐 억제).
@@ -54,7 +58,15 @@ function cleanText(s = '') {
     .trim();
 }
 
-// 분야 대분류명 → 사이트 공통 분야로 정규화
+// 분야: 기업마당 공식 대분류(금융·기술·인력·수출·내수·창업·경영)를 그대로 쓴다.
+// 전체를 싣게 되면서, 요약문에 '교육'이 한 번 나왔다고 교육으로 분류하던
+// 추정 방식은 맞지 않게 됐다. 대분류가 비었거나 '기타'일 때만 글에서 추정한다.
+const OFFICIAL_FIELDS = ['금융', '기술', '인력', '수출', '내수', '창업', '경영'];
+function fieldOf(raw = '', text = '') {
+  const r = String(raw).trim();
+  return OFFICIAL_FIELDS.includes(r) ? r : mapField(r, text);
+}
+
 function mapField(raw = '', text = '') {
   const c = raw + ' ' + text;
   if (/창업|재창업|예비창업|창직/.test(c)) return '창업';
@@ -153,14 +165,17 @@ async function fetchEvents(env) {
   const todayStr = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
   const out = [];
   for (const r of all) {
-    if (!isMidlife(r)) continue;
+    const title = (r.pblancNm || '').trim();
+    if (!title) continue;
     const period = parsePeriod(r.reqstBeginEndDe);
     // 종료된 공고 제외(끝 날짜가 오늘 이전). 상시·날짜불명은 남긴다.
     if (period.end && period.end < todayStr) continue;
     out.push({
-      title: (r.pblancNm || '').trim(),
+      // 지자체마다 같은 이름의 공고가 있다 — 공고명 대신 공고ID로 중복을 가린다
+      ...(r.pblancId ? { uid: `bizinfo:${r.pblancId}` } : {}),
+      title,
       summary: cleanText(r.bsnsSumryCn).slice(0, 200),
-      field: mapField(r.pldirSportRealmLclasCodeNm, `${r.pblancNm} ${r.bsnsSumryCn}`),
+      field: fieldOf(r.pldirSportRealmLclasCodeNm, `${r.pblancNm} ${r.bsnsSumryCn}`),
       organizer: (r.jrsdInsttNm || r.excInsttNm || '').trim(),
       executor: (r.excInsttNm || '').trim(),
       target: (r.trgetNm || '제한 없음').trim() || '제한 없음',
@@ -171,7 +186,10 @@ async function fetchEvents(env) {
       period_text: (r.reqstBeginEndDe || '').trim() || (period.always ? '상시·예산 소진 시' : ''),
       created: (r.creatPnttm || '').slice(0, 10),
       url: detailUrl(r),
-      tags: (r.hashtags || '').split(/[,#·\s]+/).filter(Boolean).slice(0, 5),
+      tags: [...new Set([
+        ...(isMidlife(r) ? ['중장년'] : []),
+        ...(r.hashtags || '').split(/[,#·\s]+/).filter(Boolean),
+      ])].slice(0, 5),
       source: 'bizinfo',
     });
   }
@@ -180,7 +198,7 @@ async function fetchEvents(env) {
 
 module.exports = {
   id: 'bizinfo',
-  label: '기업마당 — 지원사업정보(중장년 필터)',
+  label: '기업마당 — 지원사업정보(접수 중 전체)',
   requiresEnv: 'BIZINFO_API_KEY',
   enabled: true,
   fetchEvents,

@@ -22,7 +22,7 @@ const path = require('path');
 
 const SOURCES = [
   require('./sources/culture'),     // 문화포털 — 공모전(인증키 불필요)
-  require('./sources/bizinfo'),     // 기업마당 — 기업지원 중심(개인 공모는 소수)
+  require('./sources/bizinfo'),     // 기업마당 — 접수 중 지원사업 전체(기업지원 중심)
   require('./sources/narajangteo'), // 나라장터 — 용역 입찰(특수 용역만 빼고 전체)
   require('./sources/gov24'),       // 정부24·보조금24 — 개인 공공서비스(검증 결과 비활성)
 ];
@@ -61,7 +61,7 @@ function decorate(p) {
   return { ...p, kind, status, dday, urgent: status === 'open' && dday !== null && dday <= 7 };
 }
 
-// 정렬: 접수중(마감 가까운 순) → 예정(시작 가까운 순) → 상시 → 기타
+// 정렬: 접수중(마감 가까운 순) → 예정(시작 가까운 순) → 상시 → 기타(뒤 둘은 최근 등록 순)
 function sortKey(p) {
   if (p.status === 'open') return [0, p.apply_end || '9999-12-31'];
   if (p.status === 'upcoming') return [1, p.apply_begin || '9999-12-31'];
@@ -154,7 +154,9 @@ async function main() {
     .map(decorate)
     .sort((a, b) => {
       const [ar, av] = sortKey(a), [br, bv] = sortKey(b);
-      return ar !== br ? ar - br : (av < bv ? -1 : av > bv ? 1 : 0);
+      if (ar !== br) return ar - br;
+      const c = av < bv ? -1 : av > bv ? 1 : 0;
+      return ar >= 2 ? -c : c;   // 상시·날짜 미정은 최근 등록 순
     })
     .map((p, i) => ({ id: 'p' + (i + 1), ...p }));
 
@@ -187,7 +189,12 @@ async function main() {
   }
 
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8');
+  // 3,000건이 넘어 들여쓰기를 하면 3MB를 넘긴다. 공고 한 건을 한 줄로 써서
+  // 크기를 줄이되 git diff는 줄 단위로 읽히게 한다.
+  const { programs: rows, ...meta } = output;
+  const body = JSON.stringify(meta, null, 2).replace(/\n}$/, ',\n  "programs": [\n')
+    + rows.map(r => '    ' + JSON.stringify(r)).join(',\n') + '\n  ]\n}\n';
+  fs.writeFileSync(outPath, body, 'utf-8');
 
   console.log(`[collect] 저장 완료 → ${outPath}`);
   console.log(`[collect] 총 ${programs.length}건(접수중 ${output.open_count} · 마감임박 ${output.urgent_count} · 공모전 ${output.contest_count}) · 소스: ${summary.map(s => `${s.source}(${s.count})`).join(', ')}`);
